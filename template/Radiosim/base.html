@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+
+    {% block head %}
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <title>{% block title %} SPARC {% endblock %}  </title>
+
+    {% endblock %}
+
+</head>
+
+<body>
+{% block content %}
+
+<!-- contain goes here -->
+
+{% endblock %}
+
+{% block tail %}
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+
+{% endblock %}
+
+{% block footer %}
+<footer class="footer">
+    <div class="container"> <p class="text-muted">&copy; Copyright 2019 by <a href="https://engineering.purdue.edu/~shreyas/SparcLab/sparc-lab-people.html">SPARC</a> </p> </div>
+</footer>
+{% endblock %}
+
+</body>
+</html>

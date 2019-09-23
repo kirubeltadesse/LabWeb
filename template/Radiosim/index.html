@@ -1,0 +1,96 @@
+{% extends "Radiosim/base.html" %}
+{% block title %} SPARC Lab {% endblock %}
+
+{% load static %}
+
+{% block head %}
+{{block.super}}
+{% load static %}
+
+{% endblock %}
+
+
+{% block content %}
+
+<div>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="https://engineering.purdue.edu/~shreyas/SparcLab/sparc-lab-people.html"> SPARC </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+</div>
+<div>
+    <!-- Nav tabs -->
+    <ul class="nav nav-tabs" role="tablist" id="myTab">
+        <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab"> Home </a></li>
+<!--        <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Irrigation Parameters </a></li>-->
+<!--        <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Irrigation Model</a></li>-->
+<!--        <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Decision Path</a></li>-->
+<!--        <li role="presentation"><a href="#loadjson" aria-controls="loadjson" role="tab" data-toggle="tab">Operation Cost Setting</a></li>-->
+    </ul>
+
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+
+        <div role="tabpanel" class="tab-pane active" id="home">
+            <div>
+
+                <p>
+
+                </p>
+            </div>
+
+
+
+        </div>
+
+        <!-- --------------------------- Input form ------------------------------------------------------------------------------------------>
+        <div role="tabpanel" class="tab-pane" id="profile">
+
+
+            <div class="col-sm-offset-3 col-sm-6">
+
+            </div>
+        </div>
+
+        <!----------------------------- Decision Path -------------------------------------------------------------------------------------------->
+        <div role="tabpanel" class="tab-pane" id="settings">
+            <div class="container">
+            </div>
+        </div>
+
+        <!----------------------------- Calculator -------------------------------------------------------------------------------------------->
+        <div role="tabpanel" class="tab-pane" id="loadjson">
+            <div class="container">
+            </div>
+        </div>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('a[data-toggle="tab"]').on('show.bs.tab', function(e) {
+                    localStorage.setItem('activeTab', $(e.target).attr('href'));
+                });
+                var activeTab = localStorage.getItem('activeTab');
+                if(activeTab){
+                    $('#myTab a[href="' + activeTab + '"]').tab('show');
+                }
+            });
+        </script>
+
+    </div>
+</div>
+{% endblock %}
