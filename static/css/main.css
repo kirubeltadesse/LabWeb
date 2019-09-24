@@ -1,0 +1,80 @@
+body{
+    background-color: #e9caca;
+}
+
+.navbar{
+    background: #002E6E;
+    color: white;
+    border: none;
+    margin-bottom: 0px;
+}
+.navbar-default .navbar-nav>li>a{
+    color: #ffe8e8;
+}
+
+.navbar .navbar .nav{
+    display: inline-block;
+    float: none;
+    vertical-align: top;
+}
+
+.navbar .navbar-collapse{
+    text-align: center;
+}
+
+
+form{
+    background: #002E6E;
+    padding: 40px;
+    -webkit-box-shadow: 9px 15px 39px -9px rgba(0,0,0,0.75);
+    -moz-box-shadow: 9px 15px 39px -9px rgba(0,0,0,0.75);
+    box-shadow: 9px 15px 39px -9px rgba(0,0,0,0.75);
+    color: white;
+}
+/* form input fields */
+form input, #zipcode, #id_soil_type, #id_irrigation, #id_graph_type {
+    color:#0e0e0e;
+}
+
+select option{
+    color: #8c8c8c;
+}
+/*form input{*/
+/*outline: 1;*/
+/*backgroud: #f2f2f2;*/
+/*width: 100%;*/
+/*border: 0;*/
+/*margin: 0 0 15px;*/
+/*padding: 15px;*/
+/*box-sizing: border-box;*/
+/*font-size: 14px;*/
+/*}*/
+.nav-tabs{
+    margin-left: auto;
+    border-bottom: 1px solid #ddd;
+    margin-right: auto;
+    display: table;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.nav nav-tabs>li>a{
+    border-radius: 0px;
+    background: #002E6E;
+    color: white;
+}
+
+.nav nav-tabs>li>a:hover{
+    border-radius: 0px;
+    background: #002E6E;
+    color: white;
+}
+
+/* this code for the footer on the site */
+footer{
+    position: fixed;
+    left;0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}

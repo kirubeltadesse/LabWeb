@@ -5,80 +5,60 @@
 
 {% block head %}
 {{block.super}}
+
 {% load static %}
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript" src="{% static "js/cavas.js" %}"></script>
 
 {% endblock %}
 
 
 {% block content %}
-
 <div>
-    <nav class="navbar navbar-default">
-        <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="https://engineering.purdue.edu/~shreyas/SparcLab/sparc-lab-people.html"> SPARC </a>
-            </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-
-            </div><!-- /.navbar-collapse -->
-        </div><!-- /.container-fluid -->
+    <!-- Just an image -->
+    <nav class="navbar navbar-light bg-light">
+         <a class="navbar-brand" href="https://engineering.purdue.edu/~shreyas/SparcLab/sparc-lab-people.html">
+        SPARC Lab
+             <!-- img src="/docs/4.3/assets/brand/bootstrap-solid.svg" width="30" height="30" alt=""-->
+        </a>
     </nav>
-</div>
-<div>
-    <!-- Nav tabs -->
-    <ul class="nav nav-tabs" role="tablist" id="myTab">
-        <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab"> Home </a></li>
-<!--        <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab"> Profile  </a></li>-->
-<!--        <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">message</a></li>-->
-<!--        <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">settings</a></li>-->
-<!--        <li role="presentation"><a href="#plus" aria-controls="loadjson" role="tab" data-toggle="tab">plus</a></li>-->
+     <!--
+     <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item"><a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home"aria-selected="True" >Home</a> </li>
+        <li class="nav-item"><a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false"  >Profile</a></li>
+        <li class="nav-item"><a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false" >Contact</a></li>
     </ul>
 
+    <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade" id="home" role="tabpanel" aria-labelledby="home-tab">home</div>
+        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">home</div>
+        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">prof</div>
+        <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">cont</div>
+    </div>
+    -->
+    <div class="container">
+        <div class="slidecontainer">
+            <p>slider for the value of the radius</p>
+            <input type="range" min="0.00" max="500.00" value="0.0" class="slider" id="myRange">
+            <p>Value: <span id="demo"></span></p>
+            <script>
+                // slider
+                var slider = document.getElementById("myRange");
+                var output = document.getElementById("demo");
+                output.innerHTML = slider.value; // Display the default slider value
 
-    <!-- Tab panes -->
-    <div class="tab-content">
 
-        <div role="tabpanel" class="tab-pane active" id="home">
-            <div>
-
-                <p>
-
-                </p>
-            </div>
-
-
-
+                // Update the current slider value (each time you drag the slider handle)
+                slider.oninput = function() {
+                    output.innerHTML = (this.value/100);
+                }
+            </script>
         </div>
 
-        <!-- --------------------------- Profile ------------------------------------------------------------------------------------------>
-        <div role="tabpanel" class="tab-pane" id="profile">
+    </div>
 
 
-            <div class="col-sm-offset-3 col-sm-6">
-
-            </div>
-        </div>
-
-        <!----------------------------- Message -------------------------------------------------------------------------------------------->
-        <div role="tabpanel" class="tab-pane" id="settings">
-            <div class="container">
-            </div>
-        </div>
-
-        <!----------------------------- Settings --------------------------------------------------------------------------------------->
-        <div role="tabpanel" class="tab-pane" id="loadjson">
-            <div class="container">
-            </div>
-        </div>
         <script type="text/javascript">
             $(document).ready(function(){
                 $('a[data-toggle="tab"]').on('show.bs.tab', function(e) {
