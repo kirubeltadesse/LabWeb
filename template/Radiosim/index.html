@@ -8,8 +8,11 @@
 
 {% load static %}
 
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script type="text/javascript" src="{% static "js/cavas.js" %}"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="{% static "js/cavas.js" %}"></script>
 
 {% endblock %}
 
@@ -23,7 +26,6 @@
              <!-- img src="/docs/4.3/assets/brand/bootstrap-solid.svg" width="30" height="30" alt=""-->
         </a>
     </nav>
-     <!--
      <ul class="nav nav-tabs" id="myTab" role="tablist">
         <li class="nav-item"><a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home"aria-selected="True" >Home</a> </li>
         <li class="nav-item"><a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false"  >Profile</a></li>
@@ -32,11 +34,14 @@
 
     <div class="tab-content" id="myTabContent">
         <div class="tab-pane fade" id="home" role="tabpanel" aria-labelledby="home-tab">home</div>
+
+    <!--
         <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">home</div>
+
+    -->
         <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">prof</div>
         <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">cont</div>
     </div>
-    -->
     <div class="container">
         <div class="slidecontainer">
             <p>slider for the value of the radius</p>
@@ -55,9 +60,16 @@
                 }
             </script>
         </div>
+        <!-- Add a slider -->
+        <input type="range" name="mySlider" id=mySlider min="10" max="100" value="50">
+
+        <!-- Create a div where the graph will take place -->
+        <div id="my_dataviz"></div>
+        <!--                                                    <script src="https://d3js.org/d3.v5.min.js"></script>-->
+        <script src="https://d3js.org/d3.v4.js"></script>
+        <script type="text/javascript" src="{% static "js/graph.js" %}"> </script>
 
     </div>
-
 
         <script type="text/javascript">
             $(document).ready(function(){
