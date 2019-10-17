@@ -35,5 +35,5 @@ dependencies:
     - gunicorn==19.9.0
     - psycopg2==2.8.3
     - whitenoise==4.1.3
-prefix: D:\Miniconda\envs\sparclab
+prefix: E:\Miniconda\envs\sparclab
 
