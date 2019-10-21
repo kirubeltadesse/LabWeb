@@ -5,9 +5,9 @@ from Radiosim import views
 urlpatterns=[
     path('', views.IndexView.as_view(), name='index'),
     path('home', views.HomeView.as_view(), name='Home'),
-    path('research', views.ResearchView.as_view(), name='Research'),
+    path('Research', views.ResearchView.as_view(), name='Research'),
     path('media', views.MediaView.as_view(), name='Media'),
-    path('news', views.NewsView.as_view(), name='News'),
+    path('News', views.NewsView.as_view(), name='News'),
     path('awards', views.AwardView.as_view(), name='Award'),
     path('team', views.TeamView.as_view(), name='Team'),
     path('publications', views.PublicationsView.as_view(), name='Publications'),
