@@ -6,9 +6,6 @@
     <meta charset="utf-8">
 
     {% block head %}
-<!--    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">-->
-<!--    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>-->
-
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
@@ -37,45 +34,45 @@
 <!--          <span class="sr-only">(current)</span>-->
       </li>
        <li class="nav-item">
-        <a class="nav-link" href="#">Research</a>
+        <a class="nav-link" href="{% url 'Radiosim:Research' %}">Research</a>
       </li>
 <!--        dropdown -->
     <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Highlights</a>
         <div class="dropdown-menu" aria-labelledby="dropdown01">
-          <a class="dropdown-item" href="#">Media</a>
-          <a class="dropdown-item" href="#">News</a>
+          <a class="dropdown-item" href="{% url 'Radiosim:Media' %}">Media</a>
+          <a class="dropdown-item" href="{% url 'Radiosim:News' %}">News</a>
         </div>
       </li>
        <li class="nav-item">
-        <a class="nav-link" href="#">Awards and Honors</a>
+        <a class="nav-link" href="{% url 'Radiosim:Award' %}">Awards and Honors</a>
       </li>
        <li class="nav-item">
-        <a class="nav-link" href="#">Team</a>
+        <a class="nav-link" href="{% url 'Radiosim:Team' %}">Team</a>
       </li>
        <li class="nav-item">
-        <a class="nav-link" href="#">Publications</a>
+        <a class="nav-link" href="{% url 'Radiosim:Publications' %}">Publications</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Teaching</a>
+        <a class="nav-link" href="{% url 'Radiosim:Teach' %}">Teaching</a>
       </li>
         <li class="nav-item">
-        <a class="nav-link" href="#">Service</a>
+        <a class="nav-link" href="{% url 'Radiosim:Service' %}">Service</a>
       </li>
          <li class="nav-item">
-        <a class="nav-link" href="#">Contact</a>
+        <a class="nav-link" href="{% url 'Radiosim:Contact' %}">Contact</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Chip Gallery</a>
+        <a class="nav-link" href="{% url 'Radiosim:Chip' %}">Chip Gallery</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">GRA + Post-Doc Openings</a>
+        <a class="nav-link" href="{% url 'Radiosim:Open' %}">GRA + Post-Doc Openings</a>
       </li>
     <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Simulation</a>
         <div class="dropdown-menu" aria-labelledby="dropdown01">
-          <a class="dropdown-item" href="#">HBC</a>
-          <a class="dropdown-item" href="#">Downloads</a>
+          <a class="dropdown-item" href="{% url 'Radiosim:Hbc' %}">HBC</a>
+          <a class="dropdown-item" href="{% url 'Radiosim:Download' %}">Downloads</a>
         </div>
       </li>
 <!--      <li class="nav-item">-->
