@@ -27,8 +27,8 @@ SECRET_KEY = '#fyg%zqn+9$!@+=&5$ftbna86hujql_^7m@g2f@n0iw(d7j1!)'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
-# ALLOWED_HOSTS = ['sparchbcsim.herokuapp.com']
+# ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['sparchbcsim.herokuapp.com']
 #
 
 # Application definition
