@@ -32,9 +32,18 @@
        <li class="nav-item">
        <a class="nav-link" href="{% url 'Radiosim:Home' %}">Home</a>
 <!--          <span class="sr-only">(current)</span>-->
-      </li>
-       <li class="nav-item">
-        <a class="nav-link" href="{% url 'Radiosim:Research' %}">Research</a>
+{#      </li>#}
+{#       <li class="nav-item">#}
+{#        <a class="nav-link" href="{% url 'Radiosim:Research' %}">Research</a>#}
+{#      </li>#}
+        <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="{% url 'Radiosim:Research' %}#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Research Areas</a>
+        <div class="dropdown-menu" aria-labelledby="dropdown01">
+          <a class="dropdown-item" href="{% url 'Radiosim:Research' %}">High Speed IO</a>
+          <a class="dropdown-item" href="{% url 'Radiosim:Research' %}">Low-Power</a>
+          <a class="dropdown-item" href="{% url 'Radiosim:Research' %}">RF Test</a>
+          <a class="dropdown-item" href="{% url 'Radiosim:Research' %}">Species Identification</a>
+        </div>
       </li>
 <!--        dropdown -->
     <li class="nav-item dropdown">

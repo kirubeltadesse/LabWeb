@@ -2,8 +2,8 @@
 
 .img__wrap {
   position: relative;
-  height: 367px;
-  width: 354px;
+  height: 369px;
+  width: 356px;
 }
 
 .img__description {
@@ -25,3 +25,4 @@
   visibility: visible;
   opacity: 1;
 }
+
