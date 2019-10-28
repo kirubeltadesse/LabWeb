@@ -2,10 +2,10 @@
 {% block title %} Team {% endblock %}
 {% load static %}
 {% block content %}
-<div class="jumbotron container">
-    <p> Our group is broadly interested in the research of circuits/systems that interface between the physical world and digital information. More specifically we focus on fundamental improvements in sensing and communication circuits/systems. This research has applications in the areas of Biomedical, Internet of Things (IoT), and Security, among others.
-</p>
-</div>
+    <div class="jumbotron container">
+        <p> Our group is broadly interested in the research of circuits/systems that interface between the physical world and digital information. More specifically we focus on fundamental improvements in sensing and communication circuits/systems. This research has applications in the areas of Biomedical, Internet of Things (IoT), and Security, among others.
+        </p>
+    </div>
     <div class="container marketing">
 
         <hr class="featurette-divider">
@@ -14,10 +14,11 @@
             <div class="col-md-7">
                 <h2 class="featurette-heading">Secure and Efficient Internet of Body using Electro-Quasistatic Human Body Communication  <span class="text-muted"></span></h2>
                 <p class="lead"> Radiative communication using electro-magnetic (EM) fields amongst the wearable and implantable devices act as the backbone for information exchange around a human body, thereby enabling prime applications in the fields of connected healthcare, electroceuticals, neuroscience, augmented and virtual reality. However, owing to such radiative nature of the traditional wireless communication, EM signals propagate in all directions, inadvertently allowing an eavesdropper to intercept the information. In this context, the human body, primarily due to its high water content, has emerged as a medium for low-loss transmission, termed human body communication (HBC), enabling energy-efficient means for wearable communication. However, conventional HBC implementations suffer from significant radiation which also compromises security. In this work, we develop Electro-Quasistatic Human Body Communication (EQS-HBC), a method for localizing signals within the body using low-frequency carrier-less (broadband) transmission, thereby making it extremely difficult for a nearby eavesdropper to intercept critical private data, thus producing a covert communication channel, i.e. the human body. This work, for the first time, demonstrates and analyzes the improvement in private space enabled by EQS-HBC. Detailed experiments, supported by theoretical modeling and analysis, reveal that the quasi-static (QS) leakage due to the on-body EQS-HBC transmitter-human body interface is detectable up to <0.15 m, whereas the human body alone leaks only up to ~0.01 m, compared to >5 m detection range for on-body EM wireless communication, highlighting the underlying advantage of EQS-HBC to enable covert communication.
-Prof. Shreyas Sen explaining Physical Security of BAN</p>
+                    Prof. Shreyas Sen explaining Physical Security of BAN</p>
             </div>
             <div class="col-md-5">
-                <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 500x500"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/NHqfT1vIe6E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <img src="{% static "img/news/EQS_HBC (Small).png" %}"  width="450" height="400"  alt="Lights" >
             </div>
         </div>
 
@@ -29,7 +30,8 @@ Prof. Shreyas Sen explaining Physical Security of BAN</p>
                 <p class="lead">The human body could be used as a very good conductor because of its high water content, allowing low-loss broadband communication. However, it picks up interference from the world around it, such as FM radio signals. The Purdue technology suppresses those interfering signals to allow for improved communication between devices. Our technology uses the human body as a ‘wire’ and demonstrated greater than an order of magnitude lower-energy per communicated bit compared to the state-of-the-art design and about 100 times lower energy compared to today’s wireless BAN. </p>
             </div>
             <div class="col-md-5 order-md-1">
-                <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="499" height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 500x500"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
+                <img src="{% static "img/research/sen-wireLO.jpg" %}"  width="450" height="250"  alt="Lights" >
+                <img src="{% static "img/research/human-wireLO.jpg" %}"  width="450" height="250"  alt="Lights" >
             </div>
         </div>
 
@@ -41,7 +43,7 @@ Prof. Shreyas Sen explaining Physical Security of BAN</p>
                 <p class="lead">When ‘mathematically secure’ cryptographic cores are implemented on physical substrates they leak correlated information through unintended physical ‘side-channels’, such as power, electromagnetic(EM) radiation, acoustic, temperature etc. Side-channel attack (SCA) using electromagnetic (EM) radiation is a prominent tool to extract the secret key of an encryption device. This work investigates the root-cause behind the genesis of this EM leakage, presents the first ‘White-Box Model’ of EM Side-Channel Leakage and leverages it to develop an energy-efficient countermeasure using a signature attenuation hardware (SAH) to prevent such attacks on cryptographic ICs. More details can be found in the paper below:</p>
             </div>
             <div class="col-md-5">
-                <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 500x500"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
+                <img src="{% static "img/research/host2_2019 (Small).png" %}"  width="500" height="350"  alt="Lights" >
             </div>
         </div>
 
@@ -51,13 +53,11 @@ Prof. Shreyas Sen explaining Physical Security of BAN</p>
             <div class="col-md-7 order-md-2">
                 <h2 class="featurette-heading">Time-Based High-Resolution Energy-Resolution Scalable Biosensing <span class="text-muted"></span></h2>
                 <p class="lead">In this work, we are developing the first monolithic CMOS radiation to digital converter, which consists of a floating-gate radiation sensor and a time-based resistance-to-digital-converter (RDC). The time-based RDC exhibits in-field resolution-energy scalability by controlling the total integrated time for measurement. Time-based sensing provides high-resolution (18 bit) by utilizing the availability of time, for extra low-frequency (ELF) application with ultra-low power (861nW). This research will enable wearable devices for real-time sensing of radiation exposure, for example in scenarios involving healthcare workers in a hospital setting during medical procedures (e.g. Chest CT-SCAN).
- </p>
+                </p>
             </div>
             <div class="col-md-5 order-md-1">
-                <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="499" height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 500x500"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
+                <img src="{% static "img/research/sen.png" %}"  width="450" height="250"  alt="Lights" >
             </div>
         </div>
-
-
     </div>
 {% endblock %}
