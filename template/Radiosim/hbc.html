@@ -1,10 +1,85 @@
 {% extends "Radiosim/base.html" %}
 {% block title %} Team {% endblock %}
-{% load static %}
+{% block head %}
+{{block.super}}
+    {% load static %}
+{#<link rel="stylesheet" href="{% static 'css/footersilder.css' %}" type="text/css" xmlns="http://www.w3.org/1999/html">#}
+{#<link rel="stylesheet" href="{% static 'js/footersilder.js' %}" type="text/css" xmlns="http://www.w3.org/1999/html">#}
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script type="text/javascript" src="{% static 'js/graphs/graphrad.js' %}"></script>
+{% endblock %}
 {% block content %}
-<div class="jumbotron">
-    <p> This is underdevelopment page</p>
-</div>
+
+    <div class="container">
+    <div class="jumbotron">
+        <p> This is underdevelopment page</p>
+    </div>
+        <img src="{% static 'img/HBC.PNG' %}" alt="">
+
+
+        <script>
+            <datalist id="tickmarks">
+                <option value="100" label="0%"></option>
+                <option value="200"></option>
+                <option value="250" label="50%"></option>
+                <option value="300"></option>
+                <option value="400"></option>
+                <option value="500" label="100%"></option>
+                </datalist>
+        </script>
+        <p>Radius <b>1</b>  <input type="range" id="radius" min="100" max="500" value="50" list="tickmarks" class="radslider"><b> 5</b> </p>
+        <p>radius value: <span id="rad"></span></p>
+        <script>
+            // slider
+            var radslider = document.getElementById("radius");
+            var radoutput = document.getElementById("rad");
+            radoutput.innerHTML = radslider.value/100; // Display the default slider value
+
+
+            // Update the current slider value (each time you drag the slider handle)
+            radslider.oninput = function() {
+                radoutput.innerHTML = (this.value/100);
+            }
+        </script>
+        <div>
+            <svg> </svg>
+            <!--                                                            <svg width="300px" height="300px"></svg>-->
+        </div>
+         <script type="text/javascript" src="{% static 'js/graphs/graphrad.js' %}"></script>
+        <!--                                                    <div class="container">-->
+        <script>
+            <datalist id="ticks">
+                <option value="1" label="0%"></option>
+                <option value="10" ></option>
+                <option value="15" label="50%"></option>
+                <option value="20" ></option>
+                <option value="25" ></option>
+                <option value="30" label="100%"></option>
+                </datalist>
+        </script>
+        <!-- Add a slider -->
+        <p>Bandwidth <b>1</b> <input type="range" name="mySlider" id=bandwidthSider min="1" max="30" value="15" list="ticks" class="tickmarks"><b>30</b> </p>
+        <p>bandwidth value: <span id="band"></span></p>
+        <script>
+            // slider
+            var sliderband = document.getElementById("bandwidthSider");
+            var output = document.getElementById("band");
+            output.innerHTML = sliderband.value; // Display the default slider value
+
+            // Update the current slider value (each time you drag the slider handle)
+            sliderband.oninput = function() {
+                output.innerHTML = (this.value);
+            }
+        </script>
+        <!-- Create a div where the graph will take place -->
+        <div id="bandwidth"></div>
+
+        <!--                                                     <script src="https://d3js.org/d3.v5.min.js"></script>-->
+         <script type="text/javascript" src="{% static 'js/graphs/graphband.js' %}"></script>
+
+        <!--                                                    <script src="https://d3js.org/d3.v5.min.js"></script>-->
+        <!--                                                    <script src="https://d3js.org/d3.v4.js"></script>-->
+    </div>
 
 
 {% endblock %}
