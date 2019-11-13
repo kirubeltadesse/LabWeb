@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<opml version="2.0">
+    <head>
+        <title>FetchRSS.com OPML</title>
+        <dateCreated>Wed, 13 Nov 2019 18:31:00 +0000</dateCreated>
+    </head>
+    <body>
+        <outline title="News" text="News" description="News" xmlUrl="http://fetchrss.com/rss/5dcc4bd08a93f8c4618b45675dcc4b958a93f8cc608b4567.xml" type="rss"/>
+
+    </body>
+</opml>
