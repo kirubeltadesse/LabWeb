@@ -1,31 +1,42 @@
 {% extends "Radiosim/base.html" %}
 {% block title %} SPARC Lab {% endblock %}
 {% block head %}
-{{block.super}}
+    {{block.super}}
     {% load static %}
-<link rel="stylesheet" href="{% static 'css/footersilder.css' %}" type="text/css" xmlns="http://www.w3.org/1999/html">
-<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+    <link rel="stylesheet" href="{% static 'css/footersilder.css' %}" type="text/css" xmlns="http://www.w3.org/1999/html">
+    {#<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">#}
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+
+
 
 <link rel="stylesheet" href="{% static 'js/footersilder.js' %}" type="text/css" xmlns="http://www.w3.org/1999/html">
 {% endblock %}
 {% block content %}
-<main role="main">
+    <main role="main">
 
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="1"></li>
-            <li data-target="#myCarousel" data-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-<!--                <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img">-->
-                    <img class="first-slide" src="{% static "img/team.jpg" %}" alt="Team picture">
-<!--                width="80%" class="d-block">-->
-<!--                    w-100" alt="...">&ndash;&gt;-->
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+                <li data-target="#myCarousel" data-slide-to="3"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+
+                    <!--Video source-->
+                    <video class="video-fluid" autoplay loop muted>
+                        <source src="https://mdbootstrap.com/img/video/Lines.mp4" type="video/mp4" />
+                    </video>
+                    <div class="mask rgba-indigo-light"></div>
+                </div>
+                <div class="carousel-item">
+                    <!--                <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img">-->
+                    <img class="first-slide" src="{% static "img/gateway-arch.png" %}" alt="Team picture">
+                    <!--                width="80%" class="d-block">-->
+                    <!--                    w-100" alt="...">&ndash;&gt;-->
                     <!--          <rect width="100%" height="100%" fill="#777"/></svg>-->
                     <div class="container">
                         <div class="carousel-caption text-left">
@@ -34,11 +45,11 @@
                             <!--            <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>-->
                         </div>
                     </div>
-            </div>
-            <div class="carousel-item">
-<!--                <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img">-->
+                </div>
+                <div class="carousel-item">
+                    <!--                <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img">-->
                     <!--          <rect width="100%" height="100%" fill="#777"/></svg>-->
-                    <img src="{% static "img/about-banner.jpg" %}" class="d-block w-100" alt="...">
+                    <img src="{% static "img/hovde-belltower-sculpture-blossoms.jpg" %}" class="d-block w-100" alt="...">
                     <div class="container">
                         <div class="carousel-caption">
                             <!--            <h1>Another example headline.</h1>-->
@@ -46,139 +57,409 @@
                             <!--            <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>-->
                         </div>
                     </div>
-            </div>
-            <div class="carousel-item">
-<!--                <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"/></svg>-->
-                 <img class="three-slide" src="{% static "img/team3x9.jpg" %}" alt="Team picture">
-                <div class="container">
-                    <div class="carousel-caption text-right">
-                        <!--            <h1>One more for good measure.</h1>-->
-                        <!--            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>-->
-                        <!--            <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>-->
+                </div>
+                <div class="carousel-item">
+                    <!--                <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"/></svg>-->
+                    <img class="three-slide" src="{% static "img/team3x9.jpg" %}" class="d-block w-100" alt="Team picture">
+                    <div class="container">
+                        <div class="carousel-caption text-right">
+                            <!--            <h1>One more for good measure.</h1>-->
+                            <!--            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>-->
+                            <!--            <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>-->
+                        </div>
                     </div>
                 </div>
+
+
             </div>
+            <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
         </div>
-        <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>
-    </div>
-    <!-- START THE FEATURETTES -->
-    <div class ="container marketing">
-        <!--  Short Bio-->
-        <div class ="row">
-            <div class="col-lg-5">
-                <img src="{% static "img/profile_shreyas_sen.jpg" %}" class="rounded-circle" width=350 height = 350 alt="...">
-                <div>
-                    <p> <span>Dr. Shreyas Sen </span> </p>
-                    <p><a class="btn btn-lg btn-primary" href="https://onedrive.live.com/?authkey=%21ALONXmWk6Z4LKmQ&cid=0C4047BEE49DDCD2&id=C4047BEE49DDCD2%211566&parId=C4047BEE49DDCD2%211563&o=OneUp" role="button">Full CV</a></p>
+        <!-- START THE FEATURETTES -->
+        <div class ="container marketing">
+            <!--  Short Bio-->
+            <div class ="row">
+                <div class="col-lg-5">
+                    <img src="{% static "img/profile_shreyas_sen.jpg" %}" class="rounded-circle" width=350 height = 350 alt="...">
+                    <div>
+                        <p> <span>Dr. Shreyas Sen </span> </p>
+                        <p><a class="btn btn-lg btn-primary" href="https://onedrive.live.com/?authkey=%21ALONXmWk6Z4LKmQ&cid=0C4047BEE49DDCD2&id=C4047BEE49DDCD2%211566&parId=C4047BEE49DDCD2%211563&o=OneUp" role="button">Full CV</a></p>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <p align="justify">
+                        Short Bio: Dr. Sen received   his   Ph.D.    degree    in    Electrical    and    Computer    Engineering
+                        from Georgia Tech, Atlanta, USA, in 2011.  He  is  currently  an  Assistant  Professor  in  School  of  Electrical
+                        and  Computer  Engineering,  Purdue University. He has over 5 years of industry research  experience  at  Intel  Labs,
+                        Qualcomm  and  Rambus.  His  research  interests  include  mixed-signal circuits/systems for Internet of Things (IoT),
+                        Biomedical   and   Security. He   has   authored/co-authored 2 book chapters, over 100 conference and journal papers
+                        and has 13 patents granted/pending. In 2018, Dr. Sen was chosen by MIT Technology Review as one of the top 10 Indian
+                        Inventors  Worldwide  under  35  (MIT  TR35  India  Award),  for  the  invention  of  using  the  Human  Body  as  a
+                        Wire,  which  has  the  potential  to  transform healthcare, neuroscience and human-computer interaction. Dr. Sen
+                        is a  recipient  of  the  AFOSR  Young  Investigator Award  2017,  NSF  CISE  CRII  Award  2017,  Google  Faculty
+                        Research  Award  2017,  Intel  Labs  Divisional  Recognition Award 2014 for industry-wide impact on USB-C type, Intel
+                        PhD Fellowship 2010, IEEE Microwave Fellowship 2008, GSRC Margarida Jacome Best  Research  Award  2007,  Best  Paper
+                        Awards  at  HOST  2017  and  2018,  ICCAD  Best-in-Track  Award  2014,  VTS  Honorable  Mention  Award  2014,  RWS Best
+                        Paper Award 2008, Intel Labs Quality Award 2012, SRC Inventor Recognition  Award  2008  and  Young  Engineering  Fellowship  2005.
+                        He  serves/has  served  as  an  Associate  Editor  for  IEEE  Design  &  Test,  Executive  Committee  member  of
+                        IEEE  Central  Indiana  Section,  ETS  and  Technical  Program Committee member of DAC, CICC, DATE, ISLPED, ICCAD,
+                        ITC, VLSI Design, IMSTW and VDAT. Dr. Sen is a Senior Member of IEEE.
+                    </p>
                 </div>
             </div>
-            <div class="col-lg-7">
-                <p>
-                    Short Bio: Dr. Sen received   his   Ph.D.    degree    in    Electrical    and    Computer    Engineering
-                    from Georgia Tech, Atlanta, USA, in 2011.  He  is  currently  an  Assistant  Professor  in  School  of  Electrical
-                    and  Computer  Engineering,  Purdue University. He has over 5 years of industry research  experience  at  Intel  Labs,
-                    Qualcomm  and  Rambus.  His  research  interests  include  mixed-signal circuits/systems for Internet of Things (IoT),
-                    Biomedical   and   Security. He   has   authored/co-authored 2 book chapters, over 100 conference and journal papers
-                    and has 13 patents granted/pending. In 2018, Dr. Sen was chosen by MIT Technology Review as one of the top 10 Indian
-                    Inventors  Worldwide  under  35  (MIT  TR35  India  Award),  for  the  invention  of  using  the  Human  Body  as  a
-                    Wire,  which  has  the  potential  to  transform healthcare, neuroscience and human-computer interaction. Dr. Sen
-                    is a  recipient  of  the  AFOSR  Young  Investigator Award  2017,  NSF  CISE  CRII  Award  2017,  Google  Faculty
-                    Research  Award  2017,  Intel  Labs  Divisional  Recognition Award 2014 for industry-wide impact on USB-C type, Intel
-                    PhD Fellowship 2010, IEEE Microwave Fellowship 2008, GSRC Margarida Jacome Best  Research  Award  2007,  Best  Paper
-                    Awards  at  HOST  2017  and  2018,  ICCAD  Best-in-Track  Award  2014,  VTS  Honorable  Mention  Award  2014,  RWS Best
-                    Paper Award 2008, Intel Labs Quality Award 2012, SRC Inventor Recognition  Award  2008  and  Young  Engineering  Fellowship  2005.
-                    He  serves/has  served  as  an  Associate  Editor  for  IEEE  Design  &  Test,  Executive  Committee  member  of
-                    IEEE  Central  Indiana  Section,  ETS  and  Technical  Program Committee member of DAC, CICC, DATE, ISLPED, ICCAD,
-                    ITC, VLSI Design, IMSTW and VDAT. Dr. Sen is a Senior Member of IEEE.
-                </p>
+            <!-- Research Area     -->
+            <hr>
+            <div class="row">
+                <h4 class="display-4"> Research Areas</h4>
+                <p classs="lead"> Our group is broadly interested in research of circuits/systems that interfaces between the
+                    physical world and digital information. More specifically we focus on fundamental improvements in sensing
+                    and communication circuits/systems. This research has applications in the areas of Internet of Things (IoT),
+                    Biomedical and Security, among others. </p>
+                <div class="col-lg-4">
+                    <a href="#"><img src="{% static "img/research/Display.PNG" %}" ></a>
+{#                    width="350" height="233"  alt="Lights" >#}
+                    <h2>Human Body Communication (Physics to IC) </h2>
+{#                    <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>#}
+                </div>
+                 <div class="col-lg-4">
+                     <a href="#"><img src="{% static "img/research/Display3.PNG" %}"></a>
+                    <h2> Hardware Security IC  </h2>
+                    <br>
+                    <br>
+{#                    <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>#}
+                </div>
+                <div class="col-lg-4">
+                    <a href="#"><img src="{% static "img/research/Display2.PNG" %}" ></a>
+                    <h2>Intelligent IoT Sensor Nodes  </h2>
+
+                    <br>
+{#                    <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>#}
+                </div>
+
+            </div>
+            <hr>
+
+        </div>
+{#        <div class="container">#}
+{##}
+{#            <hr>#}
+{#            <h3 class="text-xs-center">Sample Video Gallery</h3>#}
+{#            <!-- Grid row -->#}
+{#            <div class="row">#}
+{##}
+{#                <!-- Grid column -->#}
+{#                <div class="col-lg-4 col-md-12 mb-4">#}
+{##}
+{#                    <!--Modal: Name-->#}
+{#                    <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">#}
+{#                        <div class="modal-dialog modal-lg" role="document">#}
+{##}
+{#                            <!--Content-->#}
+{#                            <div class="modal-content">#}
+{##}
+{#                                <!--Body-->#}
+{#                                <div class="modal-body mb-0 p-0">#}
+{##}
+{#                                    <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">#}
+{#                                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/NHqfT1vIe6E"#}
+{#                                                allowfullscreen></iframe>#}
+{#                                    </div>#}
+{##}
+{#                                </div>#}
+{##}
+{#                                <!--Footer-->#}
+{#                                <div class="modal-footer justify-content-center">#}
+{#                                    <span class="mr-4">Spread the word!</span>#}
+{#                                    <a type="button" class="btn-floating btn-sm btn-fb"><i class="fab fa-facebook-f"></i></a>#}
+{#                                    <!--Twitter-->#}
+{#                                    <a type="button" class="btn-floating btn-sm btn-tw"><i class="fab fa-twitter"></i></a>#}
+{#                                    <!--Google +-->#}
+{#                                    <a type="button" class="btn-floating btn-sm btn-gplus"><i class="fab fa-google-plus-g"></i></a>#}
+{#                                    <!--Linkedin-->#}
+{#                                    <a type="button" class="btn-floating btn-sm btn-ins"><i class="fab fa-linkedin-in"></i></a>#}
+{##}
+{#                                    <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4" data-dismiss="modal">Close</button>#}
+{##}
+{#                                </div>#}
+{##}
+{#                            </div>#}
+{#                            <!--/.Content-->#}
+{##}
+{#                        </div>#}
+{#                    </div>#}
+{#                    <!--Modal: Name-->#}
+{##}
+{#                    <a><img class="img-fluid z-depth-1" src="https://img.youtube.com/vi/NHqfT1vIe6E/0.jpg" alt="video"#}
+{#                            data-toggle="modal" data-target="#modal1"></a>#}
+{##}
+{#                </div>#}
+{#                <!-- Grid column -->#}
+{##}
+{#                <!-- Grid column -->#}
+{#                <div class="col-lg-4 col-md-6 mb-4">#}
+{##}
+{#                    <!--Modal: Name-->#}
+{#                    <div class="modal fade" id="modal6" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">#}
+{#                        <div class="modal-dialog modal-lg" role="document">#}
+{##}
+{#                            <!--Content-->#}
+{#                            <div class="modal-content">#}
+{##}
+{#                                <!--Body-->#}
+{#                                <div class="modal-body mb-0 p-0">#}
+{##}
+{#                                    <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">#}
+{#                                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/NHqfT1vIe6E"#}
+{#                                                allowfullscreen></iframe>#}
+{#                                    </div>#}
+{##}
+{#                                </div>#}
+{##}
+{#                                <!--Footer-->#}
+{#                                <div class="modal-footer justify-content-center">#}
+{#                                    <span class="mr-4">Spread the word!</span>#}
+{#                                    <a type="button" class="btn-floating btn-sm btn-fb"><i class="fab fa-facebook-f"></i></a>#}
+{#                                    <!--Twitter-->#}
+{#                                    <a type="button" class="btn-floating btn-sm btn-tw"><i class="fab fa-twitter"></i></a>#}
+{#                                    <!--Google +-->#}
+{#                                    <a type="button" class="btn-floating btn-sm btn-gplus"><i class="fab fa-google-plus-g"></i></a>#}
+{#                                    <!--Linkedin-->#}
+{#                                    <a type="button" class="btn-floating btn-sm btn-ins"><i class="fab fa-linkedin-in"></i></a>#}
+{##}
+{#                                    <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4" data-dismiss="modal">Close</button>#}
+{##}
+{#                                </div>#}
+{##}
+{#                            </div>#}
+{#                            <!--/.Content-->#}
+{##}
+{#                        </div>#}
+{#                    </div>#}
+{#                    <!--Modal: Name-->#}
+{##}
+{#                    <a><img class="img-fluid z-depth-1" src="https://img.youtube.com/vi/NHqfT1vIe6E/0.jpg" alt="video"#}
+{#                            data-toggle="modal" data-target="#modal6"></a>#}
+{##}
+{#                </div>#}
+{#                <!-- Grid column -->#}
+{##}
+{#                <!-- Grid column -->#}
+{#                <div class="col-lg-4 col-md-6 mb-4">#}
+{##}
+{#                    <!--Modal: Name-->#}
+{#                    <div class="modal fade" id="modal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">#}
+{#                        <div class="modal-dialog modal-lg" role="document">#}
+{##}
+{#                            <!--Content-->#}
+{#                            <div class="modal-content">#}
+{##}
+{#                                <!--Body-->#}
+{#                                <div class="modal-body mb-0 p-0">#}
+{##}
+{#                                    <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">#}
+{#                                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/NHqfT1vIe6E"#}
+{#                                                allowfullscreen></iframe>#}
+{#                                    </div>#}
+{##}
+{#                                </div>#}
+{##}
+{#                                <!--Footer-->#}
+{#                                <div class="modal-footer justify-content-center">#}
+{#                                    <span class="mr-4">Spread the word!</span>#}
+{#                                    <a type="button" class="btn-floating btn-sm btn-fb"><i class="fab fa-facebook-f"></i></a>#}
+{#                                    <!--Twitter-->#}
+{#                                    <a type="button" class="btn-floating btn-sm btn-tw"><i class="fab fa-twitter"></i></a>#}
+{#                                    <!--Google +-->#}
+{#                                    <a type="button" class="btn-floating btn-sm btn-gplus"><i class="fab fa-google-plus-g"></i></a>#}
+{#                                    <!--Linkedin-->#}
+{#                                    <a type="button" class="btn-floating btn-sm btn-ins"><i class="fab fa-linkedin-in"></i></a>#}
+{##}
+{#                                    <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4" data-dismiss="modal">Close</button>#}
+{##}
+{#                                </div>#}
+{##}
+{#                            </div>#}
+{#                            <!--/.Content-->#}
+{##}
+{#                        </div>#}
+{#                    </div>#}
+{#                    <!--Modal: Name-->#}
+{##}
+{#                    <a><img class="img-fluid z-depth-1" src="https://img.youtube.com/vi/NHqfT1vIe6E/0.jpg" alt="video"#}
+{#                            data-toggle="modal" data-target="#modal4"></a>#}
+{##}
+{#                </div>#}
+{#                <!-- Grid column -->#}
+{##}
+{#            </div>#}
+{#            <!-- Grid row -->#}
+{#        </div>#}
+{#        <script>#}
+{#            $('#modal1').on('hidden.bs.modal', function (e) {#}
+{#                // do something...#}
+{#                $('#modal1 iframe').attr("src", $("#modal1 iframe").attr("src"));#}
+{#            });#}
+{##}
+{#            $('#modal6').on('hidden.bs.modal', function (e) {#}
+{#                // do something...#}
+{#                $('#modal6 iframe').attr("src", $("#modal6 iframe").attr("src"));#}
+{#            });#}
+{##}
+{#            $('#modal4').on('hidden.bs.modal', function (e) {#}
+{#                // do something...#}
+{#                $('#modal4 iframe').attr("src", $("#modal4 iframe").attr("src"));#}
+{#            });#}
+{#        </script>#}
+        <!------ Include the above in your HEAD tag ---------->
+        <div class="container pb-video-container">
+            <divo class="col-md-10 offset-md-1">
+                <h3 class="text-xs-center">Sample Video Gallery</h3>
+                <div class="row pb-row">
+                    <div class="col-md-4 pb-video">
+                        <iframe class="pb-video-frame" width="100%" height="230" src="https://www.youtube.com/embed/NHqfT1vIe6E" frameborder="0" allowfullscreen></iframe>
+{#                        <label class="form-control label-warning text-xs-center">Securing the Internet of Body</label>#}
+                    </div>
+                    <div class="col-md-4 pb-video">
+                        <iframe class="pb-video-frame" width="100%" height="230" src="https://www.youtube.com/embed/nWEhU6EX0R8" frameborder="0" allowfullscreen></iframe>
+{#                        <label class="form-control label-warning text-xs-center">Human Body Communication </label>#}
+                    </div>
+                    <div class="col-md-4 pb-video">
+                        <iframe class="pb-video-frame " width="100%" height="230" src="https://www.youtube.com/embed/QFSlZ4X3CwQ" frameborder="0" allowfullscreen></iframe>
+{#                        <label class="form-control label-warning text-xs-center">BodyWire Demonstration</label>#}
+                    </div>
+{#                    <div class="col-md-3 pb-video">#}
+{#                        <iframe class="pb-video-frame" width="100%" height="230" src="https://www.youtube.com/embed/NHqfT1vIe6E" frameborder="0" allowfullscreen></iframe>#}
+{#                        <label class="form-control label-warning text-xs-center">Securing the Internet of Body</label>#}
+{#                    </div>#}
+
+                </div>
+{#                <divo class="row pb-row">#}
+{#                    <div class="col-md-4 pb-video">#}
+{#                        <iframe class="pb-video-frame" width="100%" height="230" src="https://www.youtube.com/embed/Uwrig2XQIH8" frameborder="0" allowfullscreen></iframe>#}
+{#                        <label class="form-control label-warning text-xs-center">BodyWire Video Showcase</label>#}
+{#                    </div>#}
+{#                    <div class="col-md-4 pb-video">#}
+{#                        <iframe class="pb-video-frame" width="100%" height="230" src="https://www.youtube.com/embed/BsUlWuFapoM" frameborder="0" allowfullscreen></iframe>#}
+{#                        <label class="form-control label-warning text-xs-center">Host 2019 Best Student Paper</label>#}
+{#                    </div>#}
+{#                    <div class="col-md-4 pb-video">#}
+{#                        <iframe class="pb-video-frame" width="100%" height="230" src="https://www.youtube.com/embed/4qTSHRRbOGs" frameborder="0" allowfullscreen></iframe>#}
+{#                        <label class="form-control label-warning text-xs-center">SMART Whin BNC Video</label>#}
+{#                    </div>#}
+{#                </divo>#}
+{#                <divo class="row pb-row">#}
+{#                    <div class="col-md-4 pb-video">#}
+{#                        <iframe class="pb-video-frame" width="100%" height="230" src="https://www.youtube.com/embed/tjCQyrbAvqU" frameborder="0" allowfullscreen></iframe>#}
+{#                        <label class="form-control label-warning text-xs-center">SparcLab at Purdue Nanodays</label>#}
+{#                    </div>#}
+{#                </div>#}
+                     <div class="col-md-5">
+                        <p>
+                        <a class="btn btn-lg btn-primary" href="https://www.youtube.com/channel/UCuTN3cRziL9VQeGJRNTOv4g/videos" role="button"><i class="fa fa-video"></i> Moder Videos</a>
+                        </p>
+                     </div>
             </div>
         </div>
-        <!-- Research Area     -->
-        <div class="row jumbotron">
-            <h4 class="display-4"> Research Areas</h4>
-            <p classs="lead"> Our group is broadly interested in research of circuits/systems that interfaces between the
-                physical world and digital information. More specifically we focus on fundamental improvements in sensing
-                and communication circuits/systems. This research has applications in the areas of Internet of Things (IoT),
-                Biomedical and Security, among others. </p>
-            <div class="col-lg-4">
-                <h2>Channel Models, Circuits/Systems and Applications for </h2>
-                Human Body Communication (HBC)
-                Brain Machine Interface IC (BMIC)
-                <br>
-                <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+        >
+        <style>
+            .pb-video-container {
+                padding-top: 20px;
+                background: #18171C;
+                color: whitesmoke;
+                {#font-family: Lato;#}
+            }
+
+            .pb-video {
+                border: 1px solid #e6e6e6;
+                padding: 5px;
+            }
+
+            .pb-video:hover {
+                background: #2c3e50;
+            }
+
+            .pb-video-frame {
+                transition: width 2s, height 2s;
+            }
+
+            .pb-video-frame:hover {
+                height: 300px;
+            }
+
+            .pb-row {
+                margin-bottom: 10px;
+            }
+        </style>
+        <div class="container">
+
+            <hr>
+            <div class="row">
+                <h1> <b class="accent"> We are hiring! </b> Prospective PhD students and Post-Doctoral researchers may apply. For details  <b>
+                    <a href="{% url 'Radiosim:Open' %}">Click here</a> </b>.</h1>
+
             </div>
-            <div class="col-lg-4">
-                <h2>IoT Sensor Nodes </h2>
-                In-Sensor Analytics
-                Ultra-Low Power (ULP)/Energy-harvested Radios
-                mm-wave Radios (5G and Beyond)
-                <br>
-                <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+            <hr>
+            <div class="align-content-center" >
+                <a class="twitter-timeline"  data-height="500" href="https://twitter.com/SPARCLab_Purdue?ref_src=twsrc%5Etfw">Tweets by SPARCLab_Purdue</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
             </div>
-            <div class="col-lg-4">
-                <h2> Hardware Security</h2>
-                Side-Channel Attacks, RF-PUF
-                <br>
-                <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+            <hr>
+            <div class="col-lg-6">
+                {#                <a href="{% static 'data/FetchRss.opml' %}">RSS</a>#}
             </div>
         </div>
 
 
 
-    </div>
+        <script>
+            $(document).ready(function(){
+                $('.customer-logos').slick({
+                    slidesToShow: 6,
+                    slidesToScroll: 1,
+                    autoplay: true,
+                    autoplaySpeed: 1500,
+                    arrows: false,
+                    dots: false,
+                    pauseOnHover: false,
+                    responsive: [{
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 4
+                        }
+                    }, {
+                        breakpoint: 520,
+                        settings: {
+                            slidesToShow: 3
+                        }
+                    }]
+                });
+            });
+        </script>
 
-<!------ Include the above in your HEAD tag ---------->
-<script>
-  $(document).ready(function(){
-    $('.customer-logos').slick({
-        slidesToShow: 6,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 1500,
-        arrows: false,
-        dots: false,
-        pauseOnHover: false,
-        responsive: [{
-            breakpoint: 768,
-            settings: {
-                slidesToShow: 4
-            }
-        }, {
-            breakpoint: 520,
-            settings: {
-                slidesToShow: 3
-            }
-        }]
-    });
-});
-</script>
-
-<div class="container">
-    <h2>Sparc Lab Research Sponsors</h2>
-  <div class="customer-logos slider">
-    <div class="slide"><img src="{% static "img/logo/1200px-Eli_Lilly_and_Company.svg.png" %}"></div>
-    <div class="slide"><img src="{% static "img/logo/1200px-Google_2015_logo.svg1dc31dc3.png" %}"></div>
-    <div class="slide"><img src="{% static "img/logo/b3bc6e49212072a7b2638c22511a7604_400x400f852f852.jpg" %}"></div>
-    <div class="slide"><img src="{% static "img/logo/cropped-ctsi-logo-horizontal.png" %}"></div>
-    <div class="slide"><img src="{% static "img/logo/DARPA_logo_(current).png" %}"></div>
-    <div class="slide"><img src="{% static "img/logo/nsf-logo.png" %}"></div>
-    <div class="slide"><img src="{% static "img/logo/printlogo.png" %}"></div>
-    <div class="slide"><img src="{% static "img/logo/smartfilms.jpg" %}"></div>
-    <div class="slide"><img src="{% static "img/logo/src-logo-print.png" %}"></div>
-  </div>
-</div>
-
-{% block tail %}
-    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+        <div class="container">
+            <h2>Sparc Lab Research Sponsors</h2>
+            <hr>
+            <div class="customer-logos slider">
+                <div class="slide"><img src="{% static "img/logo/1200px-Eli_Lilly_and_Company.svg.png" %}"></div>
+                <div class="slide"><img src="{% static "img/logo/1200px-Google_2015_logo.svg1dc31dc3.png" %}"></div>
+                <div class="slide"><img src="{% static "img/logo/b3bc6e49212072a7b2638c22511a7604_400x400f852f852.jpg" %}"></div>
+                <div class="slide"><img src="{% static "img/logo/cropped-ctsi-logo-horizontal.png" %}"></div>
+                <div class="slide"><img src="{% static "img/logo/DARPA_logo_(current).png" %}"></div>
+                <div class="slide"><img src="{% static "img/logo/nsf-logo.png" %}"></div>
+                <div class="slide"><img src="{% static "img/logo/printlogo.png" %}"></div>
+                <div class="slide"><img src="{% static "img/logo/smartfilms.jpg" %}"></div>
+                <div class="slide"><img src="{% static "img/logo/src-logo-print.png" %}"></div>
+            </div>
+        </div>
+    </main>
+    {% block tail %}
+        {#    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">#}
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+    {% endblock %}
 {% endblock %}
-{% endblock %}
-

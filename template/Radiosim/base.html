@@ -9,8 +9,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
         <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
         <link rel="stylesheet" href="{% static 'css/main.css' %}" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="{% static 'css/bootstrap/bootstrap.css' %}" type="text/css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+
+{#        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">#}
         <title>{% block title %} SPARC {% endblock %}  </title>
         <script>
             .dropdown-submenu {
@@ -43,7 +48,10 @@
 <body>
 
 {% block nav %}
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <div class="container-fluid">
+
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top navbar-custom">
+{#    bg-dark">#}
         <a class="navbar-brand" href="#">SPARC Lab</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -59,18 +67,44 @@
                     {#       <li class="nav-item">#}
                     {#        <a class="nav-link" href="{% url 'Radiosim:Research' %}">Research</a>#}
                     {#      </li>#}
+{#                <li class="nav-item dropdown">#}
+{#                <a class="nav-link dropdown-toggle" href="{% url 'Radiosim:Research' %}#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Research Areas</a>#}
+{#                <div class="dropdown-menu" aria-labelledby="dropdown01">#}
+{##}
+                    {#                    <div class="dropdown-menu">#}
+{#                    <a class="dropdown-item" href="{% url 'Radiosim:Research' %}">High Speed IO</a>#}
+{#                    <a class="dropdown-item" href="{% url 'Radiosim:Research' %}">Low-Power</a>#}
+{#                    <a class="dropdown-item" href="{% url 'Radiosim:Research' %}">RF Test</a>#}
+{#                    <a class="dropdown-item" href="{% url 'Radiosim:Research' %}">Species Identification</a>#}
+                    {#                    </div>#}
+{##}
+{#                </div>#}
                 <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="{% url 'Radiosim:Research' %}#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Research Areas</a>
-                <div class="dropdown-menu" aria-labelledby="dropdown01">
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <li><a class="dropdown-item" href="#">Ongoing Research Area</a></li>
+                    <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="{% url 'Radiosim:Research' %}">Completed Research Area</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="{% url 'Radiosim:Research' %}">High Speed IO</a></li>
+                            <li><a class="dropdown-item" href="{% url 'Radiosim:Research' %}">Low-Power</a></li>
+                            <li><a class="dropdown-item" href="{% url 'Radiosim:Research' %}">RF Test</a></li>
+                            <li><a class="dropdown-item" href="{% url 'Radiosim:Research' %}">Species Identification</a></li>
+{#                            <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Submenu 1</a>#}
+{#                                <ul class="dropdown-menu">#}
+{#                                    <li><a class="dropdown-item" href="#">Subsubmenu1</a></li>#}
+{#                                    <li><a class="dropdown-item" href="#">Subsubmenu1</a></li>#}
+{#                                </ul>#}
+{#                            </li>#}
+{#                            <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Submenu 2</a>#}
+{#                                <ul class="dropdown-menu">#}
+{#                                    <li><a class="dropdown-item" href="#">Subsubmenu2</a></li>#}
+{#                                    <li><a class="dropdown-item" href="#">Subsubmenu2</a></li>#}
+{#                                </ul>#}
+{#                            </li>#}
+                        </ul>
+                    </li>
+                </ul>
 
-                    {#                    <div class="dropdown-menu">#}
-                    <a class="dropdown-item" href="{% url 'Radiosim:Research' %}">High Speed IO</a>
-                    <a class="dropdown-item" href="{% url 'Radiosim:Research' %}">Low-Power</a>
-                    <a class="dropdown-item" href="{% url 'Radiosim:Research' %}">RF Test</a>
-                    <a class="dropdown-item" href="{% url 'Radiosim:Research' %}">Species Identification</a>
-                    {#                    </div>#}
-
-                </div>
                 <!--        dropdown -->
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Highlights</a>
@@ -80,7 +114,7 @@
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{% url 'Radiosim:Award' %}">Awards and Honors</a>
+                    <a class="nav-link" href="{% url 'Radiosim:Award' %}">Awards</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="{% url 'Radiosim:Team' %}">Team</a>
@@ -101,7 +135,7 @@
                     <a class="nav-link" href="{% url 'Radiosim:Chip' %}">Chip Gallery</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{% url 'Radiosim:Open' %}">GRA + Post-Doc Openings</a>
+                    <a class="nav-link" href="{% url 'Radiosim:Open' %}">Openings</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Simulation</a>
@@ -121,13 +155,32 @@
             </form>
         </div>
     </nav>
+    <script>
+        .navbar-nav li:hover > ul.dropdown-menu {
+            display: block;
+        }
+        .dropdown-submenu {
+            position:relative;
+        }
+        .dropdown-submenu>.dropdown-menu {
+            top: 0;
+            left: 100%;
+            margin-top:-6px;
+        }
 
+/* rotate caret on hover */
+        .dropdown-menu > li > a:hover:after {
+            text-decoration: underline;
+            transform: rotate(-90deg);
+        }
+
+    </script>
+    </div>
 {% endblock %}
 {#<div class="container">#}
 {% block content %}
 
     <!--contain goes here-->
-
 {% endblock %}
 {#</div>#}
 
@@ -143,11 +196,35 @@
 {% endblock %}
 
 
-{% block footer %}
-    <footer class="footer">
-        <div class="container"> <p class="text-muted">&copy; Copyright 2019 by <a href="https://engineering.purdue.edu/~shreyas/SparcLab/sparc-lab-people.html">SPARC</a> </p> </div>
-    </footer>
-{% endblock %}
 
 </body>
+{% block footer %}
+    <footer class="text-white mt-4">
+
+        <div class="container-fluid py-3">
+            <div class="row">
+                <div class="col-md-3">
+                                    <h5>Social Media</h5></div>
+
+                                <!--Twitter-->
+{#                                <a type="button" class="btn-floating btn-sm btn-tw"><i class="fab fa-twitter"></i></a>#}
+{#                                <!--Google +-->#}
+{#                                <a type="button" class="btn-floating btn-sm btn-gplus"><i class="fab fa-google-plus-g"></i></a>#}
+{#                                <!--Linkedin-->#}
+{#                                <a type="button" class="btn-floating btn-sm btn-ins"><i class="fab fa-linkedin-in"></i></a>#}
+                    <div class="col-md-3"></div>
+                </div>
+                <div class="row">
+{#                                <div class="col-md-6">I stay at the bottom of the viewport! <span class="small"><br>Unless the page content pushes me further.</span></div>#}
+                    <div class="col-md-3"> <a type="button" href="#" class="btn-floating btn-sm btn-fb"><i class="fab fa-facebook-f"></i></a>
+                    <a type="button" href="#" class="btn-floating btn-sm btn-gplus"><i class="fab fa-google-plus-g"></i></a>
+                    <a type="button" href="https://twitter.com/SPARCLab_Purdue" class="btn-floating btn-sm btn-tw"><i class="fab fa-twitter"></i></a>
+                    <a type="button" href="https://www.linkedin.com/in/shreyassen/" class="btn-floating btn-sm btn-ins"><i class="fab fa-linkedin-in"></i></a>
+
+                    </div>
+                    <div class="col-md-3 text-right small align-self-end">&copy; Copyright 2019 by <a href="https://engineering.purdue.edu/~shreyas/SparcLab/sparc-lab-people.html">SPARC</a> </p></div>
+                </div>
+            </div>
+    </footer>
+{% endblock %}
 </html>
