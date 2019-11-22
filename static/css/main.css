@@ -34,8 +34,21 @@ body {
 color: #FF0000;
 }
 
+.bg-custom-dark{
+    background-color: #18171C;
+    color: white;
+}
 
-
+.bg-custom {
+    /*position: absolute;*/
+    background: rgba(34, 34, 34, 0.8);
+    color: whitesmoke;
+    /*content: " ";*/
+    /*height: 100%;*/
+    width: 100%;
+    /*left: 0;*/
+    top: 10%;
+}
 /************************** Font ****************************************/
 /*h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {*/
 /*margin-bottom: 0.5rem;*/
