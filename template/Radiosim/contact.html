@@ -3,33 +3,34 @@
 {% load static %}
 
 {% block content %}
-    <div class="container">
+    <div style="max-width: 90%; margin: 0 auto; padding: 10px">
+        <div class="container-fluid">
 
-        <div class="jumbotron">
-            <h1>Office</h1>
-            <b>MSEE 226:</b>
-            <p>
-                Materials and Electrical Engineering Bldg (MSEE)
-                501 Purdue Mall West Lafayette, IN 47907
-            </p>
-             <div>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.0754452955384!2d-86.91483738431396!3d40.42932827936366!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8812e2b29955be3f%3A0x4a6a9bfd8bc0f7b5!2sPurdue%20Material%20Sciences%20and%20Electrical%20Engineering%20Building!5e0!3m2!1sen!2sus!4v1572122721960!5m2!1sen!2sus" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+            <div class="jumbotron">
+                <h1>Office</h1>
+                <b>MSEE 226:</b>
+                <p>
+                    Materials and Electrical Engineering Bldg (MSEE)
+                    501 Purdue Mall West Lafayette, IN 47907
+                </p>
+                <div>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.0754452955384!2d-86.91483738431396!3d40.42932827936366!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8812e2b29955be3f%3A0x4a6a9bfd8bc0f7b5!2sPurdue%20Material%20Sciences%20and%20Electrical%20Engineering%20Building!5e0!3m2!1sen!2sus!4v1572122721960!5m2!1sen!2sus" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                </div>
+                <b>Email:</b>
+                <p>
+                    shreyas [at] purdue.edu
+                    shreyas.sen [at] gatech.edu
+                </p>
+                <p> Calendar: </p>
+                <div>
+                    {#                <iframe src="https://calendar.google.com/calendar/embed?src=kirubel.m.tadesse%40gmail.com&ctz=America%2FNew_York" style="border: 0" width="100%" height="600" frameborder="0" scrolling="no"></iframe>#}
+                    <!-- Calendly inline widget begin -->
+                    <div class="calendly-inline-widget" data-url="https://calendly.com/kirubeltadesse" style="min-width:320px;height:630px;"></div>
+                    <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"></script>
+                    <!-- Calendly inline widget end -->
+                </div>
             </div>
-            <b>Email:</b>
-            <p>
-                shreyas [at] purdue.edu
-                shreyas.sen [at] gatech.edu
-            </p>
-            <p> Calendar: </p>
-            <div>
-{#                <iframe src="https://calendar.google.com/calendar/embed?src=kirubel.m.tadesse%40gmail.com&ctz=America%2FNew_York" style="border: 0" width="100%" height="600" frameborder="0" scrolling="no"></iframe>#}
-                <!-- Calendly inline widget begin -->
-                <div class="calendly-inline-widget" data-url="https://calendly.com/kirubeltadesse" style="min-width:320px;height:630px;"></div>
-                <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"></script>
-<!-- Calendly inline widget end -->
-            </div>
+
         </div>
-
     </div>
-
 {% endblock %}
