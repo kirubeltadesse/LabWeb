@@ -6,8 +6,38 @@
     <link rel="stylesheet" href="{% static 'css/footersilder.css' %}" type="text/css" xmlns="http://www.w3.org/1999/html">
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+<!------ Include the above in your HEAD tag ---------->
 
+{#<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>#}
+{#    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>#}
+{#    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>#}
+{#    <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>#}
+{#    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>#}
+    <!------ Include the above in your HEAD tag ---------->
+    <script>
+        $(document).ready(function(){
+            $('.customer-logos').slick({
+                slidesToShow: 6,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 1500,
+                arrows: false,
+                dots: false,
+                pauseOnHover: false,
+                responsive: [{
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 4
+                    }
+                }, {
+                    breakpoint: 520,
+                    settings: {
+                        slidesToShow: 3
+                    }
+                }]
+            });
+        });
+    </script>
     <link rel="stylesheet" href="{% static 'js/footersilder.js' %}" type="text/css" xmlns="http://www.w3.org/1999/html">
 {% endblock %}
 
@@ -16,7 +46,6 @@
         <div class="container-fluid" style="margin-top:30px">
 {#            <div class="col-sm-8">#}
                 <h2 class="accent">SPARC Lab in the News and Media:</h2>
-
             <div class="row">
                 <div class="col">
                     <h5 class="accent">Apr 2019: IEEE Spectrum suggests SparcLab work as a solution of US Department of Homeland Security advisory</h5>
@@ -109,31 +138,7 @@
 
 
 
-<!------ Include the above in your HEAD tag ---------->
-        <script>
-            $(document).ready(function(){
-                $('.customer-logos').slick({
-                    slidesToShow: 6,
-                    slidesToScroll: 1,
-                    autoplay: true,
-                    autoplaySpeed: 1500,
-                    arrows: false,
-                    dots: false,
-                    pauseOnHover: false,
-                    responsive: [{
-                        breakpoint: 768,
-                        settings: {
-                            slidesToShow: 4
-                        }
-                    }, {
-                        breakpoint: 520,
-                        settings: {
-                            slidesToShow: 3
-                        }
-                    }]
-                });
-            });
-        </script>
+
 
         <div class="container">
             <h2></h2>
