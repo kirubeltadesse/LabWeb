@@ -1,196 +1,217 @@
 {% extends "Radiosim/base.html" %}
 {% block title %} News {% endblock %}
-{% load static %}
+{% block head %}
+    {{block.super}}
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/mediaimage.css' %}" type="text/css" xmlns="http://www.w3.org/1999/html">
+{% endblock %}
 {% block content %}
 {#<div class="jumbotron">#}
 {#    <p> This is underdevelopment page</p>#}
 {#</div>#}
-    <div style="max-width: 90%; margin: 0 auto; padding: 10px">
-        <div class="container-fluid marketing">
-
-{#            <hr class="">#}
-
-            <div class="row featurette">
-                <div class="col-md-7">
-                    <h2 class="featurette-heading">The U.S. Department of Homeland Security  <span class="text-muted">(Mar-May 19)</span></h2>
-                    <p class="lead"> recently warned that numerous medical devices made by Medtronic are vulnerable to cyber attack. A solution to which is the EQS-HBC recently published by our group. IEEE Spectrum covered our work saying "Medtronic discloses medical device vulnerabilities, while Purdue University scientists propose countermeasure to block attacks".  IEEE Spectrum Article.</p>
-                </div>
-                <div class="col-md-5">
-                    <img src="{% static "img/news/DHS advisory.png" %}" alt="Lights" >
-                    <img src="{% static "img/news/IEEE_Spectrum (Small)976f.png" %}" alt="Lights" >
-                    <img src="{% static "img/news/Seal_of_the_United_States_Department_of_Homeland_Security.svg" %}" alt="Lights" >
-                </div>
+    <div style="max-width: 80%; margin: 0 auto; padding: 10px">
+        {#        <div class="row featurette">#}
+        {#            <div class="col-md-7">#}
+        <h2 class="accent">The U.S. Department of Homeland Security  <span class="text-muted">(Mar-May 19)</span></h2>
+        <p class="lead"> recently warned that numerous medical devices made by Medtronic are vulnerable to cyber attack.
+            A solution to which is the EQS-HBC recently published by our group. IEEE Spectrum covered our work saying "Medtronic discloses medical device vulnerabilities,
+            while Purdue University scientists propose countermeasure to block attacks".  IEEE Spectrum Article.</p>
+        {#            </div>#}
+        {#            <div class="col-md-5">#}
+        {#        <div class="img"><img src="{% static "img/news/DHS advisory.png" %}" alt="Lights" ></div>#}
+{#        <div class="flex-container">#}
+{#            <div> <img src="{% static "img/news/IEEE_Spectrum (Small)976f.png" %}" class="rounded float-left" alt="..."></div>#}
+{#            <div> <img src="{% static "img/news/DHS advisory.png" %}" class="rounded mx-auto d-block" alt="..."></div>#}
+{#            <div> <img src="{% static "img/news/Seal_of_the_United_States_Department_of_Homeland_Security.svg" %}" class="rounded float-right" alt="..."></div>#}
+{#        </div>#}
+            <div class="row">
+                <a href="#" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
+                   <img src="{% static "img/news/IEEE_Spectrum (Small)976f.png" %}" class="img-fluid rounded"
+                </a>
+                <a href="#" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
+                    <img src="{% static "img/news/DHS advisory.png" %}" class="img-fluid rounded">
+                </a>
+                <a href="#" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
+                   <img src="{% static "img/news/Seal_of_the_United_States_Department_of_Homeland_Security.svg" %}" class="img-fluid rounded">
+                </a>
             </div>
+{#            <div class="row">#}
+{#                <a href="https://unsplash.it/1200/768.jpg?image=254" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">#}
+{#                    <img src="https://unsplash.it/600.jpg?image=254" class="img-fluid rounded">#}
+{#                </a>#}
+{#                <a href="https://unsplash.it/1200/768.jpg?image=255" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">#}
+{#                    <img src="https://unsplash.it/600.jpg?image=255" class="img-fluid rounded">#}
+{#                </a>#}
+{#                <a href="https://unsplash.it/1200/768.jpg?image=256" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">#}
+{#                    <img src="https://unsplash.it/600.jpg?image=256" class="img-fluid rounded">#}
+{#                </a>#}
+{#            </div>#}
 
-            <hr>
 
-            <div class="row featurette">
-                <div class="col-md-7 order-md-2">
-                    <h2 class="featurette-heading">Best Student Paper Award at HOST 2019. <span class="text-muted">(May 19)</span></h2>
-                    <p class="lead">Congratulations Debayan and co-authors. Purdue Announcement. This work presents a a white-box model for electromagnetic signal leakage and low-overhead countermeasure for EM Side-Channel Attack. Paper Link.
-                        This is also the third succesive year that SparcLab has received Best paper/poster Award at HOST (2017, 2018 and 2019). Congratulations to all the co-authors for this series of fantastic work on IoT Security over past 3 years. Also, a big Thank You to our collaborators from Intel, especially Santosh Ghosh, the whole Intel Labs team, Arijit Raychowdhury and National Science Foundation (NSF)
-                        for the constant support, funding, and encouragement. </p>
-                </div>
-                <div class="col-md-5 order-md-1">
-                    <img src="{% static "img/news/host1_2019.jpg" %}" width=450 height=250 alt="Lights" >
-                    <img src="{% static "img/news/host2_2019 (Small).png" %}" width=450 height=250 alt="Lights" >
-                </div>
-            </div>
+        {#           </div>#}
+        {#        </div>#}
 
-            <hr>
 
-            <div class="row featurette">
-                <div class="col-md-7">
-                    <h2 class="featurette-heading">Best Paper Award (Ovearll) <span class="text-muted">in Apr 19 CICC 2019.</span></h2>
-                    <p class="lead">The paper presented the first monolithic CMOS radiation to digital converter, which consists of a floating-gate radiation sensor and a time-based resistance-to-digital-converter (RDC).
-                        Congratulations to Baibhab Chatterjee, Shovan Maity, Prof. Dimitrios Peroulis' team, and our LANDAUER collaborators Daniel J. Valentino, Ph.D., and Sean Scott on this award. Great industry-academia collaboration. Thank you all!
-                        Purdue News Release</p>
-                </div>
-                <div class="col-md-5">
-                    <img src="{% static "img/news/Shreyas_Sen_CICC_Best_Paper_2019_Monolithic_Radiation_Dosimeter_Time_Based_Sensing (Small).png" %}" width=450 height=200 alt="Lights" >
-                    <img src="{% static "img/news/CICC_2019 (Small).jpg" %}" width=450 height=250 alt="Lights" >
-                </div>
-            </div>
+{#        <div class="container-fluid marketing">#}
 
-            <hr>
+        {#            <div class="row featurette">#}
+        {#                <div class="col-md-7 order-md-2">#}
+        <h2 class="accent">Best Student Paper Award at HOST 2019. <span class="text-muted">(May 19)</span></h2>
+        <p class="lead">Congratulations Debayan and co-authors. Purdue Announcement. This work presents a a white-box model for electromagnetic signal leakage and low-overhead countermeasure for EM Side-Channel Attack. Paper Link.
+            This is also the third succesive year that SparcLab has received Best paper/poster Award at HOST (2017, 2018 and 2019). Congratulations to all the co-authors for this series of fantastic work on IoT Security over past 3 years. Also, a big Thank You to our collaborators from Intel, especially Santosh Ghosh, the whole Intel Labs team, Arijit Raychowdhury and National Science Foundation (NSF)
+            for the constant support, funding, and encouragement. </p>
+        {#                </div>#}
+        {#         width=450 height=250       <div class="col-md-5 order-md-1">#}
+          <div class="row">
+                <a href="#" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
+                   <img src="{% static "img/news/host1_2019.jpg" %}" class="img-fluid rounded">
+                </a>
+              <a href="#" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
+                  <img src="{% static "img/news/host2_2019 (Small).png" %}" class="img-fluid rounded">
+              </a>
+          </div>
 
-            <div class="row featurette">
-                <div class="col-md-7 order-md-2">
-                    <h2 class="featurette-heading"> Security of Internet of Body: <span class="text-muted"> Mar 19</span></h2>
-                    <p class="lead">Our work on EQS-HBC is covered by 50+ news sites. More details here. This paper in Scientific Reports (Nature) demonstrated Physical Security of HBC for the first time. Congratulations Debayan and co-authors.:w
-                    </p>
-                </div>
-                <div class="col-md-5 order-md-1">
-                    <img src="{% static "img/news/EQS_HBC (Small).png" %}"  width="450" height="400"  alt="Lights" >
-                </div>
-            </div>
+        {#                </div>#}
+        {#            </div>#}
 
-            <hr>
 
-            <div class="row featurette">
-                <div class="col-md-7">
-                    <h2 class="featurette-heading">Paper accepted <span class="text-muted">in DAC 19 and CICC 19 Jan 19</span></h2>
-                    <p class="lead">Congratulations Debayan and Baibhab and co-authors.</p>
-                </div>
-                <div class="col-md-5">
-                    {#                <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 500x500"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>#}
-                </div>
-            </div>
-            <hr>
+{#            <div class="row featurette">#}
+        {#                <div class="col-md-7">#}
+        <h2 class="accent">Best Paper Award (Ovearll) <span class="text-muted">in Apr 19 CICC 2019.</span></h2>
+        <p class="lead">The paper presented the first monolithic CMOS radiation to digital converter, which consists of a floating-gate radiation sensor and a time-based resistance-to-digital-converter (RDC).
+            Congratulations to Baibhab Chatterjee, Shovan Maity, Prof. Dimitrios Peroulis' team, and our LANDAUER collaborators Daniel J. Valentino, Ph.D., and Sean Scott on this award. Great industry-academia collaboration. Thank you all!
+            Purdue News Release</p>
+        <div class="row">
+            <a href="#" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
+                <img src="{% static "img/news/CICC_2019 (Small).jpg" %}" class="img-fluid rounded">
+            </a>
+            <a href="#" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
+                <img src="{% static "img/news/Shreyas_Sen_CICC_Best_Paper_2019_Monolithic_Radiation_Dosimeter_Time_Based_Sensing (Small).png" %}" class="img-fluid rounded">
+            </a>
+        </div>
 
-            <div class="row featurette">
-                <div class="col-md-7 order-md-2">
-                    <h2 class="featurette-heading"> HKN Beta Chapter 'Outstanding Professor Award<span class="text-muted"> Dec 19</span></h2>
-                    <p class="lead">
-                        Prof. Sen is recognized with the HKN Beta Chapter 'Outstanding Professor Award' and Purdue EVPRP Acorn Award
-                    </p>
-                </div>
-                <div class="col-md-5 order-md-1">
-                    <img src="{% static "img/news/HKN_F18_Sen.jpg" %}" width=450 height=250 alt="Lights" >
-                    <img src="{% static "img/news/Shreyas_Sen_Award_Fall_2018.jpg" %}" width=450 height=250 alt="Lights" >
-                </div>
-            </div>
 
-            <hr>
 
-            <div class="row featurette">
-                <div class="col-md-7">
-                    <h2 class="featurette-heading"> Landauer supports SPARC Lab Research on Efficient BioSensing <span class="text-muted"> Dec 18</span></h2>
-                    {#                <p class="lead">Congratulations Debayan and Baibhab and co-authors.</p>#}
-                </div>
-                <div class="col-md-5">
-                    <div class="slide"><img src="{% static "img/logo/landauer_416x416.jpg" %}"></div>
-                </div>
-            </div>
-            <hr>
-            <div class="row featurette">
-                <div class="col-md-7 order-md-2">
-                    <h2 class="featurette-heading"> CTSI supports Sparc Lab researh on Biomedical Devices<span class="text-muted">(Nov 18)</span></h2>
-                </div>
-                <div class="col-md-5 order-md-1">
-                    <img src="{% static "img/news/cropped-ctsi-logo-horizontal.png" %}" width=100%  alt="Lights" >
-                </div>
-            </div>
+{#            <div class="row featurette">#}
+        {#                <div class="col-md-7 order-md-2">#}
+        <h2 class="accent"> Security of Internet of Body: <span class="text-muted"> Mar 19</span></h2>
+        <p class="lead">Our work on EQS-HBC is covered by 50+ news sites. More details here. This paper in Scientific Reports (Nature) demonstrated Physical Security of HBC for the first time. Congratulations Debayan and co-authors.:w
+        </p>
 
-            <hr>
+        <div class="row">
+            <a href="#" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
+              <img src="{% static "img/news/EQS_HBC (Small).png" %}" class="img-fluid rounded">
+            </a>
+        </div>
 
-            <div class="row featurette">
-                <div class="col-md-7">
-                    <h2 class="featurette-heading"> Intel Corporation supports SPARC Lab Research <span class="text-muted"> (Oct 18)</span></h2>
-                    {#                <p class="lead">Congratulations Debayan and Baibhab and co-authors.</p>#}
-                </div>
-                <div class="col-md-5">
-                    <div class="slide"><img src="{% static "img/logo/printlogo.png" %}"></div>
-                </div>
-            </div>
-            <hr >
 
-            <div class="row featurette">
-                <div class="col-md-7 order-md-2">
-                    <h2 class="featurette-heading"> SPARC Lab is supported by <a href="https://www.purdue.edu/discoverypark/birck/research/smart-films.php" target="_blank">SMART Films Consortium</a>, Purdue University to develop ULP Sensor Nodes<span class="text-muted">Aug 18</span></h2>
-                </div>
-                <div class="col-md-5 order-md-1 ">
-                    <img src="{% static "img/news/smartfilms.jpg" %}" width=100%  alt="Lights" >
-                </div>
-            </div>
+{#            <div class="row featurette">#}
+        <h2 class="accent">Paper accepted <span class="text-muted">in DAC 19 and CICC 19 Jan 19</span></h2>
+        <p class="lead">Congratulations Debayan and Baibhab and co-authors.</p>
+        {#            </div>#}
 
-            <hr >
+        {#            <div class="row featurette">#}
+        {#                <div class="col-md-7 order-md-2">#}
+        <h2 class="accent"> HKN Beta Chapter 'Outstanding Professor Award<span class="text-muted"> Dec 19</span></h2>
+        <p class="lead">
+            Prof. Sen is recognized with the HKN Beta Chapter 'Outstanding Professor Award' and Purdue EVPRP Acorn Award
+        </p>
+         <div class="row">
+            <a href="#" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
+                <img src="{% static "img/news/HKN_F18_Sen.jpg" %}" class="img-fluid rounded">
+            </a>
+            <a href="#" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
+               <img src="{% static "img/news/Shreyas_Sen_Award_Fall_2018.jpg" %}" class="img-fluid rounded">
+            </a>
+        </div>
 
-            <div class="row featurette">
-                <div class="col-md-7">
-                    <h2 class="featurette-heading">SPARC Lab is going to lead and perform on the DARPA MIDAS program to design mm-wave oscillators. <span class="text-muted"> Jul 18</span></h2>
-                    {#                <p class="lead">Congratulations Debayan and Baibhab and co-authors.</p>#}
-                </div>
-                <div class="col-md-5">
-                    <div class="slide"><img src="{% static "img/news/DARPA_logo_(current).png" %}"></div>
-                </div>
-            </div>
-            <hr>
-            <div class="row featurette">
-                <div class="col-md-7 order-md-2">
-                    <h2 class="featurette-heading"> SPARC Lab is part of a <a href="https://www.purdue.edu/newsroom/releases/2017/Q3/lilly-and-purdue-university-announce-strategic-research-collaboration.html" target="_blank">$52m grant</a> from Eli Lilly and Company to explore Securely Connected BioMedical Devices.
-                        <a href="https://www.usnews.com/news/best-states/indiana/articles/2017-07-06/eli-lilly-to-fund-up-to-52m-in-purdue-life-science-research" target="_blank">USNews Report.</a> <span class="text-muted">Jun 18</span></h2>
-                </div>
-                <div class="col-md-5 order-md-1 ">
-                    <img src="{% static "img/news/1200px-Eli_Lilly_and_Company.svg.png" %}" width=100%  alt="Lights" >
-                </div>
-            </div>
 
-            <hr>
 
-            <div class="row featurette">
-                <div class="col-md-7">
-                    <h2 class="featurette-heading">AFRL 2030: Prof. Sen was invited to speak at <a href="https://afresearchlab.com/" target="_blank">IU-AFRL 2030</a>, that aims to help define the Science and Technology vision for 2030. Discussions with
-                        <a href="https://www.af.mil/About-Us/Biographies/Display/Article/579032/brigadier-general-william-t-bill-cooley/" target="_blank">Major General Bill Cooley</a>, Commander of Air Force Research Laboratory, during this event was really inspiring.
-<span class="text-muted"> May 18</span></h2>
-                    {#                <p class="lead">Congratulations Debayan and Baibhab and co-authors.</p>#}
-                </div>
-                <div class="col-md-5">
-                    <div class="slide"><img src="{% static "img/news/IU_AFRL_2030e1f7.jpg" %}" width="100%"></div>
-                </div>
-            </div>
-            <hr>
-            <div class="row featurette">
-                <div class="col-md-7 order-md-2">
-                    <h2 class="featurette-heading"> <b class="accent">>Best Poster Award:</b> Baibhab Chatterjee and co-authors received 3rd Best Poster Award for paper titled "RF-PUF: IoT Security Enhancement through Authentication of Wireless Nodes using In-situ Machine Learning," at premier <b>Hardware Security</b> Conference
-                        <a href="http://www.hostsymposium.org/host_2018awards.php">HOST 2018</a>. Congratulations to <b>Baibhab</b> and co-authors. This work shows how <b>In-situ Machine Learning could Secure Radio Communication.</b>  <span class="text-muted">May 18</span></h2>
-                </div>
-                <div class="col-md-5 order-md-1 ">
-                    <img src="{% static "img/news/Baibhab_Shreyas_HOST_17_RF_PUF (Small).jpg" %}" width=100%  alt="Lights" >
-                </div>
-            </div>
 
-            <hr>
+            <h2 class="accent"> Landauer supports SPARC Lab Research on Efficient BioSensing <span class="text-muted"> Dec 18</span></h2>
 
-            <div class="row featurette">
-                <div class="col-md-7">
-                    <h2 class="featurette-heading">MIT TR35 India Award: Prof. Sen has been named one of India’s top innovators under 35 by MIT Technology Review and Mint.  Mint Newspaper, Purdue News Release<span class="text-muted"> May 18</span></h2>
-                    {#                <p class="lead">Congratulations Debayan and Baibhab and co-authors.</p>#}
-                </div>
-                <div class="col-md-5">
-                    <div class="slide"><img src="{% static "img/news/tr35_in_logo_x350.png" %}" width="100%"></div>
-                </div>
-            </div>
+        {#                <p class="lead">Congratulations Debayan and Baibhab and co-authors.</p>#}
+         <div class="row">
+            <a href="#" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
+               <img src="{% static "img/logo/landauer_416x416.jpg" %}" class="img-fluid rounded">
+            </a>
+        </div>
+
+        <h2 class="accent"> CTSI supports Sparc Lab researh on Biomedical Devices<span class="text-muted">(Nov 18)</span></h2>
+         <div class="row">
+            <a href="#" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
+               <img src="{% static "img/news/cropped-ctsi-logo-horizontal.png" %}" class="img-fluid rounded">
+            </a>
+        </div>
+
+
+
+        <h2 class="accent"> Intel Corporation supports SPARC Lab Research <span class="text-muted"> (Oct 18)</span></h2>
+        {#                <p class="lead">Congratulations Debayan and Baibhab and co-authors.</p>#}
+         <div class="row">
+            <a href="#" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
+               <img src="{% static "img/logo/printlogo.png" %}" class="img-fluid rounded">
+            </a>
+        </div>
+
+
+        <h2 class="accent"> SPARC Lab is supported by <a href="https://www.purdue.edu/discoverypark/birck/research/smart-films.php" target="_blank">SMART Films Consortium</a>, Purdue University to develop ULP Sensor Nodes<span class="text-muted">Aug 18</span></h2>
+        <div class="row">
+            <a href="#" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
+                <img src="{% static "img/news/smartfilms.jpg" %}" class="img-fluid rounded">
+            </a>
+        </div>
+
+
+        <h2 class="accent">SPARC Lab is going to lead and perform on the DARPA MIDAS program to design mm-wave oscillators. <span class="text-muted"> Jul 18</span></h2>
+        {#                <p class="lead">Congratulations Debayan and Baibhab and co-authors.</p>#}
+        <div class="row">
+            <a href="#" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
+                <img src="{% static "img/news/DARPA_logo_(current).png" %}" class="img-fluid rounded">
+            </a>
+        </div>
+
+        <h2 class="accent"> SPARC Lab is part of a <a href="https://www.purdue.edu/newsroom/releases/2017/Q3/lilly-and-purdue-university-announce-strategic-research-collaboration.html" target="_blank">$52m grant</a> from Eli Lilly and Company to explore Securely Connected BioMedical Devices.
+            <a href="https://www.usnews.com/news/best-states/indiana/articles/2017-07-06/eli-lilly-to-fund-up-to-52m-in-purdue-life-science-research" target="_blank">USNews Report.</a> <span class="text-muted">Jun 18</span></h2>
+
+        <div class="row">
+            <a href="#" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
+                <img src="{% static "img/news/1200px-Eli_Lilly_and_Company.svg.png" %}" class="img-fluid rounded">
+            </a>
+        </div>
+
+
+
+        <h2 class="accent">AFRL 2030: <span class="text-muted"> May 18</span> </h2>
+        <p class="lead">Prof. Sen was invited to speak at <a href="https://afresearchlab.com/" target="_blank">IU-AFRL 2030</a>, that aims to help define the Science and Technology vision for 2030. Discussions with
+            <a href="https://www.af.mil/About-Us/Biographies/Display/Article/579032/brigadier-general-william-t-bill-cooley/" target="_blank">Major General Bill Cooley</a>, Commander of Air Force Research Laboratory, during this event was really inspiring.
+           </p>
+        {#                <p class="lead">Congratulations Debayan and Baibhab and co-authors.</p>#}
+        <div class="row">
+            <a href="#" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
+                 <img src="{% static "img/news/IU_AFRL_2030e1f7.jpg" %}" class="img-fluid rounded">
+            </a>
+        </div>
+
+        <h2 class="accent"> Best Poster Award: <span class="text-muted">May 18</span></h2>
+            <p class="lead">Baibhab Chatterjee and co-authors received 3rd Best Poster Award for paper titled "RF-PUF: IoT Security Enhancement through Authentication of Wireless Nodes using In-situ Machine Learning," at premier <b>Hardware Security</b> Conference
+            <a href="http://www.hostsymposium.org/host_2018awards.php">HOST 2018</a>. Congratulations to <b>Baibhab</b> and co-authors. This work shows how <b>In-situ Machine Learning could Secure Radio Communication.</b> </p>
+         <div class="row">
+            <a href="#" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
+                  <img src="{% static "img/news/Baibhab_Shreyas_HOST_17_RF_PUF (Small).jpg" %}" class="img-fluid rounded">
+            </a>
+        </div>
+
+
+        <h2 class="accent">MIT TR35 India Award: <span class="text-muted"> May 18</span> </h2>
+        <p class="lead">Prof. Sen has been named one of India’s top innovators under 35 by MIT Technology Review and Mint.  Mint Newspaper, Purdue News Release</p>
+        {#                <p class="lead">Congratulations Debayan and Baibhab and co-authors.</p>#}
+         <div class="row">
+            <a href="#" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
+                  <img src="{% static "img/news/tr35_in_logo_x350.png" %}" class="img-fluid rounded">
+            </a>
+        </div>
+
            <div>
                (Jan 18) Our HOST 18 paper is going to present a RF-PUF for IoT Security Enhancement using Machine Learning in Radio baseband.  Congratulations Baibhab and co-authors.
            </div>
@@ -202,6 +223,8 @@
                 (Jan 18) Paper in CICC 2018 demonstrating World's Lowest Energy HBC Transceiver, improving the state-of-the-art by 18X. Congratulations Shovan and co-authors.
                 Title: A 6.3pJ/b 30Mbps -30dB SIR-tolerant Broadband Interference-Robust Human Body Communication Transceiver using Time Domain Signal-Interference Separation
             </div>
+
+        <!--
             <div>
 
                 (Dec 17) Radio Interview on HBC: NPR subsidiary Lakeshore Public Radio  published excerpts of Radio Interview on Purdue Human Body Communication Technology.  Listen Here.
@@ -369,5 +392,6 @@
 
 
         </div>
+        -->
     </div>
 {% endblock %}
