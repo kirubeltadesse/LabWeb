@@ -1,0 +1,13 @@
+/* Custom Styling */
+p{
+    justify-self: normal;
+    text-align:justify;
+}
+.row {
+  margin: 15px;
+}
+
+/* accent mark*/
+.accent {
+color: #FF0000;
+}
