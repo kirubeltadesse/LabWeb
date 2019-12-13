@@ -4,10 +4,20 @@ p{
     text-align:justify;
 }
 .row {
-  margin: 15px;
+    margin: 15px;
 }
 
 /* accent mark*/
 .accent {
-color: #FF0000;
+    color: #FF0000;
+}
+
+@media only screen and (max-width: 995px) {
+    .carousel-inner{
+        display: none;
+    }
+    p{
+        text-align: left;
+        font-size: inherit;
+    }
 }

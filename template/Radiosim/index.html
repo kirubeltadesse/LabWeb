@@ -90,12 +90,17 @@
                     <p></p>
                 </div>
                 <div class = "row">
+
                     <div class="col-lg-4">
-                        <img src="{% static "img/profile_shreyas_sen.jpg" %}" class="rounded-circle" width=350 height = 350 alt="...">
-                        <div>
-                            <h3>Dr. Shreyas Sen </h3>
-                            <a class="btn btn-lg btn-primary" href="https://onedrive.live.com/?authkey=%21ALONXmWk6Z4LKmQ&cid=0C4047BEE49DDCD2&id=C4047BEE49DDCD2%211566&parId=C4047BEE49DDCD2%211563&o=OneUp" role="button">Full CV</a>
-                        </div>
+                        <a href="{% static "img/profile_shreyas_sen.jpg" %}" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
+                            <img src="{% static "img/profile_shreyas_sen.jpg" %}" class="img-fluid rounded-circle">
+
+                        </a>
+                        {#                        <img src="{% static "img/profile_shreyas_sen.jpg" %}" class="rounded-circle" width=350 height = 350 alt="...">#}
+                        {#                        <div>#}
+                        <h3>Dr. Shreyas Sen </h3>
+                        <a class="btn btn-lg btn-primary" href="https://onedrive.live.com/?authkey=%21ALONXmWk6Z4LKmQ&cid=0C4047BEE49DDCD2&id=C4047BEE49DDCD2%211566&parId=C4047BEE49DDCD2%211563&o=OneUp" role="button">Full CV</a>
+                        {#                        </div>#}
                     </div>
                     <div class="col-lg-8">
                         <p class="lead">
@@ -129,7 +134,7 @@
             <div class="row" align="center" >
 
                 <h4 class="display-4"> Research Areas</h4>
-                <p class="lead" > Our group is broadly interested in research of circuits/systems that interfaces between the
+                <p class="lead"> Our group is broadly interested in research of circuits/systems that interfaces between the
                     physical world and digital information. More specifically we focus on fundamental improvements in sensing
                     and communication circuits/systems. This research has applications in the areas of Internet of Things (IoT),
                     Biomedical and Security, among others. </p>
