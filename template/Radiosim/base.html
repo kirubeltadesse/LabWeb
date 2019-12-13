@@ -9,7 +9,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
         <!-- Bootstrap CSS -->
-
         <link rel="stylesheet" href="{% static 'css/main.css' %}" type="text/css">
         <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="{% static 'css/bootstrap/bootstrap.css' %}" type="text/css">
@@ -80,15 +79,15 @@
 {##}
 {#                </div>#}
                 <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="{% url 'Radiosim:Research' %}#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Research Areas</a>
+                <a class="nav-link dropdown-toggle" href="{% url 'Radiosim:Research' %}" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Research Areas</a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <li><a class="dropdown-item" href="#">Ongoing Research Area</a></li>
-                    <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="{% url 'Radiosim:Research' %}">Completed Research Area</a>
+                    <li><a class="dropdown-item" href="{% url 'Radiosim:Research' %}">Ongoing Research Area</a></li>
+                    <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="{% url 'Radiosim:High' %}">Completed Research Area</a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="{% url 'Radiosim:Research' %}">High Speed IO</a></li>
-                            <li><a class="dropdown-item" href="{% url 'Radiosim:Research' %}">Low-Power</a></li>
-                            <li><a class="dropdown-item" href="{% url 'Radiosim:Research' %}">RF Test</a></li>
-                            <li><a class="dropdown-item" href="{% url 'Radiosim:Research' %}">Species Identification</a></li>
+                            <li><a class="dropdown-item" href="{% url 'Radiosim:High' %}">High Speed IO</a></li>
+                            <li><a class="dropdown-item" href="{% url 'Radiosim:Low' %}">Low-Power</a></li>
+                            <li><a class="dropdown-item" href="{% url 'Radiosim:Rf' %}">RF Test</a></li>
+                            <li><a class="dropdown-item" href="{% url 'Radiosim:Species' %}">Species Identification</a></li>
 {#                            <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Submenu 1</a>#}
 {#                                <ul class="dropdown-menu">#}
 {#                                    <li><a class="dropdown-item" href="#">Subsubmenu1</a></li>#}
