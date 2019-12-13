@@ -11,32 +11,33 @@
 <link rel="stylesheet" href="{% static 'js/footersilder.js' %}" type="text/css" xmlns="http://www.w3.org/1999/html">
 {% endblock %}
 {% block content %}
-<div class="container">
-  <div class="jumbotron">
-    <h1>Multiple Graduate Research Assistant (GRA) + Post-Doc openings in SparcLab, ECE, Purdue University</h1>
-    <p>Prof. Shreyas Sen's group, SparcLab at ECE, Purdue has multiple GRA for PhD students and Post-Doc positions open,
-        starting Fall 2019, Spring 2020 or anytime in-between, in the following areas: Connected BioMedical Sensors, Stimulators
-        and Devices: Crosscutting with all 4 areas below Human Body Communication: Example Paper: ISLPED 16, EMBC 17, ISLPED 17,
-        DATE 17, MWCL 18, CICC 18, EMBC 18, BioPhysical Modeling, Nature Scientific Reports 19 Radio Design: (a) Energy Harvested
-        IoT (b) mm-wave (5G+): Example Paper: CICC 19, TCAS-1, VLSI Design, JSSC, TCAS-II, TIE Hardware Security: Side-Channel
-        Attack/PUF: Example Paper: HOST17 (Best Student Paper), TCAS-1, HOST 18 (Best Poster Award), JIoT, ElectroMagnetic Side-Channel,
-        Machine Learning Side-Channel Attack Efficient Machine-Learning Circuits/Systems: Example Paper: TCAS-1, TCAS-1, ICRC, EMBC,
-        Mixed-Signal NN(TVLSI) Students with high GPA or previous research experience will get preference. Interested and motivated
-        students, seriously committed about a PhD, should contact Prof. Sen directly at shreyas [at] purdue [dot] edu with your CV, a
-        brief description of your research interests and relevant experience (e.g. research/work experience, courses taken, etc.).
-        More information about Prof. Sen’s Research can be found at http://www.shreyassen.info/research and recent news about the lab
-        can be found at http://www.shreyassen.info/news. We continue to publish in top forums and work on transformative technologies
-        with strong societal impact. We are strongly connected to industry research labs, academia government and multiple startups ecosystems.
-        Students are mentored to be prepared for academia, startups, industry research among other options, post PhD. </p>
-  </div>
-    <img src="{% static "img/gateway-arch.png" %}" class="d-block w-100" alt="...">
-    <br>
-    <div>
-        <img src="{% static "img/hovde-belltower-sculpture-blossoms.jpg" %}" class="d-block w-100" alt="...">
+    <div style="max-width: 80%; margin: 0 auto; padding: 10px">
+        <div class="container-fluid">
+            <div class="jumbotron" style="background-color:dodgerblue; color: whitesmoke">
+                <h1>Multiple Graduate Research Assistant (GRA) + Post-Doc openings in SparcLab, ECE, Purdue University</h1>
+                <p>Prof. Shreyas Sen's group, SparcLab at ECE, Purdue has multiple GRA for PhD students and Post-Doc positions open,
+                    starting Fall 2019, Spring 2020 or anytime in-between, in the following areas: Connected BioMedical Sensors, Stimulators
+                    and Devices: Crosscutting with all 4 areas below Human Body Communication: Example Paper: ISLPED 16, EMBC 17, ISLPED 17,
+                    DATE 17, MWCL 18, CICC 18, EMBC 18, BioPhysical Modeling, Nature Scientific Reports 19 Radio Design: (a) Energy Harvested
+                    IoT (b) mm-wave (5G+): Example Paper: CICC 19, TCAS-1, VLSI Design, JSSC, TCAS-II, TIE Hardware Security: Side-Channel
+                    Attack/PUF: Example Paper: HOST17 (Best Student Paper), TCAS-1, HOST 18 (Best Poster Award), JIoT, ElectroMagnetic Side-Channel,
+                    Machine Learning Side-Channel Attack Efficient Machine-Learning Circuits/Systems: Example Paper: TCAS-1, TCAS-1, ICRC, EMBC,
+                    Mixed-Signal NN(TVLSI) Students with high GPA or previous research experience will get preference. Interested and motivated
+                    students, seriously committed about a PhD, should contact Prof. Sen directly at shreyas [at] purdue [dot] edu with your CV, a
+                    brief description of your research interests and relevant experience (e.g. research/work experience, courses taken, etc.).
+                    More information about Prof. Sen’s Research can be found at http://www.shreyassen.info/research and recent news about the lab
+                    can be found at http://www.shreyassen.info/news. We continue to publish in top forums and work on transformative technologies
+                    with strong societal impact. We are strongly connected to industry research labs, academia government and multiple startups ecosystems.
+                    Students are mentored to be prepared for academia, startups, industry research among other options, post PhD. </p>
+            </div>
+            <img src="{% static "img/gateway-arch.png" %}" class="d-block w-100" alt="...">
+            <br>
+            <div>
+                <img src="{% static "img/hovde-belltower-sculpture-blossoms.jpg" %}" class="d-block w-100" alt="...">
+            </div>
+        </div>
     </div>
-</div>
-
-<!------ Include the above in your HEAD tag ---------->
+        <!------ Include the above in your HEAD tag ---------->
 <script>
   $(document).ready(function(){
     $('.customer-logos').slick({

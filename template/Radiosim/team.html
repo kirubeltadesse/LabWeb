@@ -11,900 +11,1176 @@
 
 {% block content %}
 
-    <div class="container " style="margin-top:30px">
+    <div style="max-width: 80%; margin: 0 auto; padding: 10px">
+        <div class="container-fluid">
+            <div class="container" style="padding: 5px auto">
 
-        {#            <section class="jumbotron text-center">#}
-        {#                <div class="container">#}
-        {#                    <h1 class="jumbotron-heading">SPARC Lab Team Members</h1>#}
-        {#                </div>#}
-        {#            </section>#}
-        {#                <div class="container">#}
-        <div class="card-body bg-primary text-white flex-column" align="center">
-            <span class=""> Post-Doctoral Candidates/Visiting Scholars</span>
-        </div>
-        <div class="row">
-            <div class="col-md-3">
-                <div class="card mb-3 box-shadow">
-                    <div class = 'img__wrap'>
-                        <img src="{% static "img/team/AS.png" %}"  class="card-img-top" alt="Lights"  >
-                        <divo class="card-body">
-                            <p class="img__description">Abhishek did his B.Tech in ECE (2004) from Madan Mohan Malaviya Engineering
-                                College, Gorakhpur, M.Tech in VLSI and Embedded Systems (2007) from IIIT Hyderabad and Ph.D. in Electrical
-                                Engineering (2018) from IIT Bombay, India. He is an Assistant Professor at IIIT Hyderabad and joined the SPARC lab in December 2018.
-                                His research interests are in RF and analog ICs and systems for wireless sensor nodes based applications.</p>
-                        </divo>
+            <ul class="nav nav-tabs" id="myTab" style="justify-content: center" center" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">All</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Current Students</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Alumni</a>
+                </li>
+            </ul>
+            </div>
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+
+                    <div class="card bg-primary text-white flex-column" align="center" >
+                        <span class=""> Post-Doctoral Candidates/Visiting Scholars</span>
                     </div>
-                    <div  class="card-body">
-                        <!--                        class="caption">-->
-                        <p class="card-title"> <b> Abhishek Srivastava MD. </b></p>
-{#                          <p class="card-text">  Date: Dec 2018 - present Research Focus: mm-wave Digital Arrays</p>#}
-                        <div class="card-text">
-                                <a href="#" role="button"><i style="font-size:24px" class="fa">&#xf0e1;</i></a>
-                                <a href="mailto:srivas71@purdue.edu" role="button"><i style="font-size:24px" class="fa">&#xf003;</i></a>
-                            <a href="#"><i style="font-size:24px" class="fa">&#xf0ac;</i></a>
+                    <div class="row"style="margin-left: 50px">
+                        <div class="card" style="width: 18rem;">
+                            <div class = 'img__wrap'>
+                                <img src="{% static "img/team/AS.png" %}"  class="card-img-top" alt="Lights"  >
+                                <divo class="card-body">
+                                    <p class="img__description">Abhishek did his B.Tech in ECE (2004) from Madan Mohan Malaviya Engineering
+                                        College, Gorakhpur, M.Tech in VLSI and Embedded Systems (2007) from IIIT Hyderabad and Ph.D. in Electrical
+                                        Engineering (2018) from IIT Bombay, India. He is an Assistant Professor at IIIT Hyderabad and joined the SPARC lab in December 2018.
+                                        His research interests are in RF and analog ICs and systems for wireless sensor nodes based applications.</p>
+                                </divo>
+                            </div>
+                            <div  class="card-body">
+                                <!--                        class="caption">-->
+                                <p class="card-title"> <b> Abhishek Srivastava MD. </b>
+                                    {#                          <p class="card-text">  Date: Dec 2018 - present Research Focus: mm-wave Digital Arrays</p>#}
+                                    <a href="#" role="button"><i style="font-size:24px" class="fa">&#xf0e1;</i></a>
+                                    <a href="mailto:srivas71@purdue.edu" role="button"><i style="font-size:24px" class="fa">&#xf003;</i></a>
+                                    <a href="#"><i style="font-size:24px" class="fa">&#xf0ac;</i></a></p>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 18rem">
+                            <div class = 'img__wrap'>
+                                <img src="{% static "img/team/GB.jpg" %}" alt="Lights"  >
+                                <divo class="card-body">
+                                    <p class="img__description">Gargi graduated from Asia's oldest and one of the most prestigious
+                                        Medical Colleges, Calcutta Medical College (CMC) in 2011, with several distinctions. She has
+                                        been practicing Clinical Medicine in top Hospitals in India, such as Apollo and AMRI Hospitals
+                                        for past 7 years and has been providing extensive voluntary healthcare to disadvantaged children
+                                        through Rotary International. She has special interest in Psychiatry and interned at the Cleveland
+                                        Clinic and University of Toledo Medical Center. She is focused on improving Mental and Behavioral Healthcare,
+                                        through the application of cutting-edge technological improvements, such as Human Body Communication.</p>
+                                </divo>
+                            </div>
+                            <div class="card-body" >
+                                <!--                        class="caption">-->
+                                <p class="card-title"><b> Gargi Bhattachryya, MD. </b>
+                                    {#                            Date: Aug 2018 - present Research Focus: <span> Connected Healthcare</span></p>#}
+                                    {#                        <div class="card-text">#}
+                                    <a href="#" role="button"><i style="font-size:24px" class="fa">&#xf0e1;</i></a>
+                                    <a href="mailto:gbhatta@purdue.edu" role="button"><i style="font-size:24px" class="fa">&#xf003;</i></a>
+                                    <a href="#" role="button"><i style="font-size:24px" class="fa">&#xf0ac;</i></a></p>
+                                {#                        </div>#}
+                            </div>
+
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card mb-3 box-shadow">
-                    <div class = 'img__wrap'>
-                        <img src="{% static "img/team/GB.jpg" %}" alt="Lights"  >
-                        <divo class="card-body">
-                            <p class="img__description">Gargi graduated from Asia's oldest and one of the most prestigious
-                                Medical Colleges, Calcutta Medical College (CMC) in 2011, with several distinctions. She has
-                                been practicing Clinical Medicine in top Hospitals in India, such as Apollo and AMRI Hospitals
-                                for past 7 years and has been providing extensive voluntary healthcare to disadvantaged children
-                                through Rotary International. She has special interest in Psychiatry and interned at the Cleveland
-                                Clinic and University of Toledo Medical Center. She is focused on improving Mental and Behavioral Healthcare,
-                                through the application of cutting-edge technological improvements, such as Human Body Communication.</p>
-                        </divo>
+                    <div class="card bg-primary text-white flex-column " align="center">
+                        <span > PhD and Maters Thesis Students</span>
                     </div>
-                    <div class="card-body" >
-                        <!--                        class="caption">-->
-                        <p class="card-title"><b> Gargi Bhattachryya, MD. </b></p>
-{#                            Date: Aug 2018 - present Research Focus: <span> Connected Healthcare</span></p>#}
-                        <div class="card-text">
-                               <a href="#" role="button"><i style="font-size:24px" class="fa">&#xf0e1;</i></a>
-                                <a href="mailto:gbhatta@purdue.edu" role="button"><i style="font-size:24px" class="fa">&#xf003;</i></a>
-                                <a href="#" role="button"><i style="font-size:24px" class="fa">&#xf0ac;</i></a>
+                    <div class="row" style="margin-left: 50px">
+                        <div class="card" style="width: 18rem;">
+                            <div class = 'img__wrap'>
+                                <img src="{% static "img/team/DD.jpg" %}" alt="Lights"  >
+                                <divo class="card-body">
+                                    <p class="img__description"> Debayan received his B.E. in Electronics and Telecommunication
+                                        Engineering from Jadavpur University, India in 2015. He worked as an Analog Design Engineer
+                                        in xSi Semiconductors (start-up) for a year. In fall 2016, he started his doctoral studies at
+                                        the Purdue University, USA and joined the SPARC Lab. His research interests include hardware
+                                        security and mixed-signal IC design.</p>
+                                </divo>
+                            </div>
+                            <div class="card-body" >
+                                <!--                        class="caption">-->
+                                <p class="card-title"> <b>Debayan Des </b>
+                                    {#                            Aug 2016 - present Research Focus: Hardware Security </p>#}
+                                    <a href="https://www.linkedin.com/in/dasdebayan/" role="button"><i style="font-size:24px" class="fa">&#xf0e1;</i></a>
+                                    <a href="mailto:das60@purdue.edu" role="button"><i style="font-size:24px" class="fa">&#xf003;</i></a>
+                                    <a href="#"><i style="font-size:24px" class="fa">&#xf0ac;</i></a></p>
+
+                            </div>
                         </div>
-                    </div>
-                </div>
-            </div>
+                        <div class="card" style="width: 18rem;">
+                            <div class = 'img__wrap'>
+                                <img src="{% static "img/team/BC.jpg" %}" alt="Lights"  >
+                                <divo class="card-body">
+                                    <p class="img__description"> Baibhab believes that robotic AI will never take over mankind, but
+                                        cyborgs definitely can - and that's why it's a big deal to make the low-power neuromorphic
+                                        systems work (or not to, just to avoid the possible doomsday). Before joining Ph.D., he worked
+                                        for 2 years in the industry (2 years in Intel as a Digital Design Engineer, and 1 year in Tejas
+                                        Networks as an R&D Engineer), but also had his fair share of academic fun at National Institute of
+                                        Technology Durgapur, India (B.Tech., Electronics and Communication Engineering, 2011) and Indian
+                                        Institute of Technology Bombay, India (M.Tech., Electrical Engineering, 2015). His research interests
+                                        include intelligent mixed-signal circuits and systems for HBC/IoT/RF and of course, to keep away from
+                                        plunging into another Age of Ultron in the process.
 
-        </div>
-        <div class="card bg-primary text-white flex-column" align="center">
-            <span > PhD and Maters Thesis Students</span>
-        </div>
-        <div class="row">
-
-            <div class="col-md-3">
-                <div class="card mb-3 box-shadow">
-                    <div class = 'img__wrap'>
-                        <img src="{% static "img/team/DD.jpg" %}" alt="Lights"  >
-                        <divo class="card-body">
-                            <p class="img__description"> Debayan received his B.E. in Electronics and Telecommunication
-                                Engineering from Jadavpur University, India in 2015. He worked as an Analog Design Engineer
-                                in xSi Semiconductors (start-up) for a year. In fall 2016, he started his doctoral studies at
-                                the Purdue University, USA and joined the SPARC Lab. His research interests include hardware
-                                security and mixed-signal IC design.</p>
-                    </div>
-                    <div class="card-body" >
-                        <!--                        class="caption">-->
-                        <p class="card-title"> <b>Debayan Des </b></p>
-{#                            Aug 2016 - present Research Focus: Hardware Security </p>#}
-                        <div class="card-text">
-                                <a href="https://www.linkedin.com/in/dasdebayan/" role="button"><i style="font-size:24px" class="fa">&#xf0e1;</i></a>
-                                <a href="mailto:das60@purdue.edu" role="button"><i style="font-size:24px" class="fa">&#xf003;</i></a>
-                                <a href="#"><i style="font-size:24px" class="fa">&#xf0ac;</i></a>
+                                        Baibhab has been the recipient of the NIT Durgapur Institute Gold Medal (B.Tech., 2011), IIT Bombay Institute Silver Medal (M.Tech., 2015),
+                                        Intel India Customer Orientation and Results Orientation Awards (2016), Purdue University Ross and Andrews'
+                                        Fellowships (2017-3019), HOST 2018 Best Student Poster (2rd) Award and CICC 2019 Best Paper (overall) Award.</p>
+                                </divo>
+                            </div>
+                            <div class="card-body" >
+                                <!--                        class="caption">-->
+                                <p class="card-title"> <b>Baibhab Chatterjee </b>
+                                    {#                            Jun 2017 - present Research Focus: Hardware Security </p>#}
+                                    <a href="https://www.linkedin.com/in/baibhabchatterjee/" role="button"><i style="font-size:24px" class="fa">&#xf0e1;</i></a>
+                                    <a href="mailto:bchatte@purdue.edu" role="button"><i style="font-size:24px" class="fa">&#xf003;</i></a>
+                                    <a href="#"><i style="font-size:24px" class="fa">&#xf0ac;</i></a></p>
+                            </div>
                         </div>
-
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card mb-4 box-shadow">
-                    <div class = 'img__wrap'>
-                        <img src="{% static "img/team/BC.jpg" %}" alt="Lights"  >
-                        <divo class="card-body">
-                            <p class="img__description"> Baibhab believes that robotic AI will never take over mankind, but
-                                cyborgs definitely can - and that's why it's a big deal to make the low-power neuromorphic
-                                systems work (or not to, just to avoid the possible doomsday). Before joining Ph.D., he worked
-                                for 2 years in the industry (2 years in Intel as a Digital Design Engineer, and 1 year in Tejas
-                                Networks as an R&D Engineer), but also had his fair share of academic fun at National Institute of
-                                Technology Durgapur, India (B.Tech., Electronics and Communication Engineering, 2011) and Indian
-                                Institute of Technology Bombay, India (M.Tech., Electrical Engineering, 2015). His research interests
-                                include intelligent mixed-signal circuits and systems for HBC/IoT/RF and of course, to keep away from
-                                plunging into another Age of Ultron in the process.
-
-                                Baibhab has been the recipient of the NIT Durgapur Institute Gold Medal (B.Tech., 2011), IIT Bombay Institute Silver Medal (M.Tech., 2015),
-                                Intel India Customer Orientation and Results Orientation Awards (2016), Purdue University Ross and Andrews'
-                                Fellowships (2017-3019), HOST 2018 Best Student Poster (2rd) Award and CICC 2019 Best Paper (overall) Award.</p>
-                    </div>
-                    <div class="card-body" >
-                        <!--                        class="caption">-->
-                        <p class="card-title"> <b>Baibhab Chatterjee </b></p>
-{#                            Jun 2017 - present Research Focus: Hardware Security </p>#}
-                        <div class="card-text">
-                                <a href="https://www.linkedin.com/in/baibhabchatterjee/" role="button"><i style="font-size:24px" class="fa">&#xf0e1;</i></a>
-                                <a href="mailto:bchatte@purdue.edu" role="button"><i style="font-size:24px" class="fa">&#xf003;</i></a>
-                                <a href="#"><i style="font-size:24px" class="fa">&#xf0ac;</i></a>
+                        <div class="card" style="width: 18rem">
+                            <div class = 'img__wrap'>
+                                <img src="{% static "img/team/DS.jpg" %}" alt="Lights"  >
+                                <divo class="card-body">
+                                    <p class="img__description">Donghyun is an ex-marine corps. who is interested in mm-wave and RF design.</p>
+                                </divo>
+                            </div>
+                            <div class="card-body" >
+                                <!--                        class="caption">-->
+                                <p class="card-title"> <b>Donghyun Seo </b>
+                                    {#                            Aug 2017 - present Research Focus: <b> Low-Power Transceiver Design </b></p>#}
+                                    <a href="#" role="button"><i style="font-size:24px" class="fa">&#xf0e1;</i></a>
+                                    <a href="mailto:seo60@purdue.edu" role="button"><i style="font-size:24px" class="fa">&#xf003;</i></a>
+                                    <a href="#" role="button"><i style="font-size:24px" class="fa">&#xf0ac;</i></a></p>
+                            </div>
                         </div>
-
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card mb-3 box-shadow">
-                    <div class = 'img__wrap'>
-                        <img src="{% static "img/team/DS.jpg" %}" alt="Lights"  >
-                        <divo class="card-body">
-                            <p class="img__description">Donghyun is an ex-marine corps. who is interested in mm-wave and RF design.</p>
-                        </divo>
-                    </div>
-                    <div class="card-body" >
-                        <!--                        class="caption">-->
-                        <p class="card-title"> <b>Donghyun Seo </b> </p>
-{#                            Aug 2017 - present Research Focus: <b> Low-Power Transceiver Design </b></p>#}
-                        <div class="card-text">
-                        <a href="#" role="button"><i style="font-size:24px" class="fa">&#xf0e1;</i></a>
-                        <a href="mailto:seo60@purdue.edu" role="button"><i style="font-size:24px" class="fa">&#xf003;</i></a>
-                        <a href="#" role="button"><i style="font-size:24px" class="fa">&#xf0ac;</i></a>
+                        <div class="card" style="width: 18rem;">
+                            <div class = 'img__wrap'>
+                                <img src="{% static "img/team/MN.jpg" %}" alt="Lights"  >
+                                <divo class="card-body">
+                                    <p class="img__description"></p>
+                                </divo>
+                            </div>
+                            <div class="card-body"  >
+                                <!--                        class="caption">-->
+                                <p class="card-title"> <b>Mayukh Nath </b>
+                                    {#                            Dec 2017 - present Research Focus: <b>ElectroMagnetic Analysis of HBC and EM Side-Channel Attacks </b></p>#}
+                                    <a href="#" role="button"><i style="font-size:24px" class="fa">&#xf0e1;</i></a>
+                                    <a href="mailto:nathm@purdue.edu" role="button"><i style="font-size:24px" class="fa">&#xf003;</i></a>
+                                    <a href="#"><i style="font-size:24px" class="fa">&#xf0ac;</i></a></p>
+                            </div>
                         </div>
-
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card mb-3 box-shadow">
-                    <div class = 'img__wrap'>
-                        <img src="{% static "img/team/MN.jpg" %}" alt="Lights"  >
-                        <divo class="card-body">
-                            <p class="img__description"></p>
-                        </divo>
-                    </div>
-                    <div class="card-body"  >
-                        <!--                        class="caption">-->
-                        <p class="card-title"> <b>Mayukh Nath </b> </p>
-{#                            Dec 2017 - present Research Focus: <b>ElectroMagnetic Analysis of HBC and EM Side-Channel Attacks </b></p>#}
-                        <div class="card-text">
-                            <a href="#" role="button"><i style="font-size:24px" class="fa">&#xf0e1;</i></a>
-                            <a href="mailto:nathm@purdue.edu" role="button"><i style="font-size:24px" class="fa">&#xf003;</i></a>
-                            <a href="#"><i style="font-size:24px" class="fa">&#xf0ac;</i></a>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card mb-3 box-shadow">
-                    <div class = 'img__wrap'>
-                        <img src="{% static "img/team/NM.jpg" %}" alt="Lights" >
-                        <divo class="card-body">
-                            <p class="img__description">Nirmoy is a First year PhD student who believes, Medical Applications
-                                in future are likely to benefit greatly from ultra-low power energy efficient wearable electronics
-                                especially in implanted, surgical, and emergency monitoring. Before joining PhD, he was working as
-                                a Design Engineer (July 2015-Dec 2015) in Cypress Semiconductor Pvt. Ltd., Bengaluru, India and as an
-                                Assistant Professor (from Jan 2016 and currently on Study Leave) in Jadavpur University, Kolkata, India.
-                                He received his B.E.(2012) from the Dept. of Electronics and Telecommunication Engineering, Jadavpur University,
-                                India and M.Tech on VLSI and Microelectronics (2015) from the Dept. of Electrical Engineering, IIT Bombay, India.
-                                His research interests include Analog and mixed-signal circuits and systems for Human Body Communication(HBC).</p>
-                        </divo>
-                    </div>
-                    <div class="card-body" >
-                        <!--                        class="caption">-->
-                        <p class="card-title"> <b>Nirmoy Modak </b></p>
-{#                            Feb 2019 - present Research Focus: <b> Human Body Communication </b></p>#}
-                        <div class="card-text">
-                            <a href="#" role="button"><i style="font-size:24px" class="fa">&#xf0e1;</i></a>
-                            <a href="mailto:nmodak@purdue.edu" role="button"><i style="font-size:24px" class="fa">&#xf003;</i></a>
-                            <a href="#" role="button"><i style="font-size:24px" class="fa">&#xf0ac;</i></a>
-                            <!--                                 <i style="font-size:24px" class="fa">&#xf003;</i>-->
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card mb-3 box-shadow">
-                    <div class = 'img__wrap'>
-                        <img src="{% static "img/team/PM.jpg" %}" alt="Lights"  >
-                        <divo class="card-body">
-                            <p class="img__description">Parikha is a first-year Ph.D. student interested in exploring
-                                the mysteries behind human body communication and employing them in diverse application areas.
-                                Born in the land of spices, India and brought up by a family of doctors she developed an early love
-                                for science and spicy food. She is a part of the Women in Engineering group at Purdue and is a role
-                                model for young girls aspiring to be engineers. Parikha believes that with her creativity and perseverance
-                                she can surmount the inevitable challenges faced by all researchers on their journey towards success. </p>
-                        </divo>
-                    </div>
-                    <div  class="card-body">
-                        <!--                        class="caption">-->
-                        <p class="card-title"> <b>Parikha Mehrotra </b> </p>
-{#                            May 2018 - present Research Focus: <b>High-Speed Wireline HBC</b></p>#}
-                        <div class="card-text">
-                            <a href="#" role="button"><i style="font-size:24px" class="fa">&#xf0e1;</i></a>
-                            <a href="mailto:pmehrot@purdue.edu" role="button"><i style="font-size:24px" class="fa">&#xf003;</i></a>
-                            <a href="#" role="button"><i style="font-size:24px" class="fa">&#xf0ac;</i></a>
-                            <!--                                 <i style="font-size:24px" class="fa">&#xf003;</i>-->
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card mb-3 box-shadow">
-                    <div class = 'img__wrap'>
-                        <img src="{% static "img/team/PH.png" %}" alt="Lights"  >
-                        <divo class="card-body">
-                            <p class="img__description"></p>
-                        </divo>
-                    </div>
-                    <div class="card-body" >
-                        <!--                        class="caption">-->
-                        <p class="card-title"> <b>Shitij Avlani </b></p>
-                        {#                            May 2018 - present Research Focus: <b>Embedded Connected BioSensors</b></p>#}
-                        <div class="card-body">
-                            <a href="https://www.linkedin.com/in/shitijavlani/" role="button"><i style="font-size:24px" class="fa">&#xf0e1;</i></a>
-
-                            <a href="mailto:avlani@purdue.edu" role="button"><i style="font-size:24px" class="fa">&#xf003;</i></a>
-                            <a href="#" role="button"><i style="font-size:24px" class="fa">&#xf0ac;</i></a>
+                        <div class="card" style="width: 18rem;">
+                            <div class = 'img__wrap'>
+                                <img src="{% static "img/team/NM.jpg" %}" alt="Lights" >
+                                <divo class="card-body">
+                                    <p class="img__description">Nirmoy is a First year PhD student who believes, Medical Applications
+                                        in future are likely to benefit greatly from ultra-low power energy efficient wearable electronics
+                                        especially in implanted, surgical, and emergency monitoring. Before joining PhD, he was working as
+                                        a Design Engineer (July 2015-Dec 2015) in Cypress Semiconductor Pvt. Ltd., Bengaluru, India and as an
+                                        Assistant Professor (from Jan 2016 and currently on Study Leave) in Jadavpur University, Kolkata, India.
+                                        He received his B.E.(2012) from the Dept. of Electronics and Telecommunication Engineering, Jadavpur University,
+                                        India and M.Tech on VLSI and Microelectronics (2015) from the Dept. of Electrical Engineering, IIT Bombay, India.
+                                        His research interests include Analog and mixed-signal circuits and systems for Human Body Communication(HBC).</p>
+                                </divo>
+                            </div>
+                            <div class="card-body" >
+                                <!--                        class="caption">-->
+                                <p class="card-title"> <b>Nirmoy Modak </b>
+                                    {#                            Feb 2019 - present Research Focus: <b> Human Body Communication </b></p>#}
+                                    <a href="#" role="button"><i style="font-size:24px" class="fa">&#xf0e1;</i></a>
+                                    <a href="mailto:nmodak@purdue.edu" role="button"><i style="font-size:24px" class="fa">&#xf003;</i></a>
+                                    <a href="#" role="button"><i style="font-size:24px" class="fa">&#xf0ac;</i></a></p>
                                 <!--                                 <i style="font-size:24px" class="fa">&#xf003;</i>-->
+
+                            </div>
                         </div>
-
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card mb-3 box-shadow">
-                    <div class = 'img__wrap'>
-                        <img src="{% static "img/team/JD.png" %}" alt="Lights"  >
-                        <divo class="card-body">
-                            <p class="img__description">Josef received his B.Sc. in Computer Engineering from Purdue
-                                University 2018. He has two years of industry experience, in automotive (Fiat Chrysler Automobiles)
-                                and IOT (Cisco Jasper) companies. He is now pursuing his Master's degree in the SPARC Lab, again at
-                                Purdue University. His research interests include machine learning, hardware security. </p>
-                    </div>
-                    <div class="card-body" >
-                        <!--                        class="caption">-->
-                        <p class="card-title"> <b>Josef Danial </b></p>
-{#                            Aug 2018 - present Research Focus: <b>Machine Learning and Electromagnetic Side Channel Attack</b></p>#}
-                        <div class="card-text">
-                                <a href="https://www.linkedin.com/in/josefdanial/" role="button"><i style="font-size:24px" class="fa">&#xf0e1;</i></a>
-
-                                <a href="mailto:jdanial@purdue.edu" role="button"><i style="font-size:24px" class="fa">&#xf003;</i></a>
-                            <a href="#" role="button"><i style="font-size:24px" class="fa">&#xf0ac;</i></a>
-                            <!--                                 <i style="font-size:24px" class="fa">&#xf003;</i>-->
+                        <div class="card" style="width: 18rem;">
+                            <div class = 'img__wrap'>
+                                <img src="{% static "img/team/PM.jpg" %}" alt="Lights"  >
+                                <divo class="card-body">
+                                    <p class="img__description">Parikha is a first-year Ph.D. student interested in exploring
+                                        the mysteries behind human body communication and employing them in diverse application areas.
+                                        Born in the land of spices, India and brought up by a family of doctors she developed an early love
+                                        for science and spicy food. She is a part of the Women in Engineering group at Purdue and is a role
+                                        model for young girls aspiring to be engineers. Parikha believes that with her creativity and perseverance
+                                        she can surmount the inevitable challenges faced by all researchers on their journey towards success. </p>
+                                </divo>
+                            </div>
+                            <div  class="card-body">
+                                <!--                        class="caption">-->
+                                <p class="card-title"> <b>Parikha Mehrotra </b>
+                                    {#                            May 2018 - present Research Focus: <b>High-Speed Wireline HBC</b></p>#}
+                                    <a href="#" role="button"><i style="font-size:24px" class="fa">&#xf0e1;</i></a>
+                                    <a href="mailto:pmehrot@purdue.edu" role="button"><i style="font-size:24px" class="fa">&#xf003;</i></a>
+                                    <a href="#" role="button"><i style="font-size:24px" class="fa">&#xf0ac;</i></a></p>
+                                <!--                                 <i style="font-size:24px" class="fa">&#xf003;</i>-->
+                            </div>
                         </div>
+                        <div class="card" style="width: 18rem;">
+                            <div class = 'img__wrap'>
+                                <img src="{% static "img/team/SA.jpg" %}" alt="Lights"  >
+                                <divo class="card-body">
+                                    <p class="img__description">
+                                        Shitij received his Bachelor of Engineering in Electronics Engineering from University of Mumbai,
+                                        India in 2017. He worked at IIT-Bombay for three years on point of care medical devices and fabrication
+                                        of MEMS sensors. In fall 2018, he started his masters in Electrical Engineering at Purdue University and
+                                        has been a part of SPARC lab ever since. His research interests include analog circuit design, signal
+                                        processing, and embedded systems.
+                                    </p>
+                                </divo>
+                            </div>
+                            <div class="card-body" >
+                                <!--                        class="caption">-->
+                                <p class="card-title"> <b>Shitij Avlani </b>
+                                    {#                            May 2018 - present Research Focus: <b>Embedded Connected BioSensors</b></p>#}
+                                    <a href="https://www.linkedin.com/in/shitijavlani/" role="button"><i style="font-size:24px" class="fa">&#xf0e1;</i></a>
 
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card mb-3 box-shadow">
-                    <div class = 'img__wrap'>
-                        <img src="{% static "img/team/SS.jpg" %}" alt="Lights"  >
-                        <divo class="card-body">
-                            <p class="img__description">Shreeya is master’s student and continuing to pursue her Ph.D. in SparcLab,
-                                who has a passion for combining the fields of electrical engineering and medicine. She received her Bachelor’s
-                                degree from Ramaiah Institute of Technology in India graduating top of her class with an honorary gold medal. Her
-                                interests lie in biomedical device technologies and algorithms for the better detection and treatment of
-                                various medical conditions. She has a background in signal processing and is currently working on algorithms
-                                that could help improve the general quality of life of people ” </p>
-                    </div>
-                    <div class="card-body" >
-                        <!--                        class="caption">-->
-                        <p class="card-title"> <b>Shreeya Sriram  </b></p>
-{#                            Sep 2018 - present Research Focus: <b>Connected Biomedical Devices</b></p>#}
-                        <div class="card-text">
-                            <a href="#" role="button"><i style="font-size:24px" class="fa">&#xf0e1;</i></a>
-                            <a href="mailto:sriram11@purdue.edu" role="button"><i style="font-size:24px" class="fa">&#xf003;</i></a>
-                            <a href="#" role="button"><i style="font-size:24px" class="fa">&#xf0ac;</i></a>
-                            <!--                                 <i style="font-size:24px" class="fa">&#xf003;</i>-->
+                                    <a href="mailto:avlani@purdue.edu" role="button"><i style="font-size:24px" class="fa">&#xf003;</i></a>
+                                    <a href="#" role="button"><i style="font-size:24px" class="fa">&#xf0ac;</i></a></p>
+                                <!--                                 <i style="font-size:24px" class="fa">&#xf003;</i>-->
+
+                            </div>
                         </div>
+                        <div class="card" style="width: 18rem;">
+                            <div class = 'img__wrap'>
+                                <img src="{% static "img/team/JD.png" %}" alt="Lights"  >
+                                <divo class="card-body">
+                                    <p class="img__description">Josef received his B.Sc. in Computer Engineering from Purdue
+                                        University 2018. He has two years of industry experience, in automotive (Fiat Chrysler Automobiles)
+                                        and IOT (Cisco Jasper) companies. He is now pursuing his Master's degree in the SPARC Lab, again at
+                                        Purdue University. His research interests include machine learning, hardware security. </p>
+                                </divo>
+                            </div>
+                            <div class="card-body" >
+                                <!--                        class="caption">-->
+                                <p class="card-title"> <b>Josef Danial </b>
+                                    {#                            Aug 2018 - present Research Focus: <b>Machine Learning and Electromagnetic Side Channel Attack</b></p>#}
+                                    <a href="https://www.linkedin.com/in/josefdanial/" role="button"><i style="font-size:24px" class="fa">&#xf0e1;</i></a>
 
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card mb-3 box-shadow">
-                    <div class = 'img__wrap'>
-                        <img src="{% static "img/team/DY.jpg" %}" alt="Lights"  >
-                        <divo class="card-body">
-                            <p class="img__description">David completed his undergraduate at Purdue University while
-                                doing active research at SparcLab and is now pursuing his PhD in SPARC Lab. He is currently
-                                working on developing Human Body Communication applications and demonstrations to showcase the
-                                uses and benefits of this technology. David is a firm believer in improving the quality of life
-                                of others- both within his community and that of the broader world- and hopes to achieve this
-                                through his work and volunteering. He hails from Troy, Michigan and enjoys playing the violin
-                                and studying history.
-                            </p>
-                        </divo>
-                    </div>
-                    <div class="card-body" >
-                        <!--                        class="caption">-->
-                        <p class="card-title"> <b>David Yang  </b>
-                            {#                            May 2019-present (PhD) Research Focus: <b> Human Body Communication</b></p>#}
-                        <div class="card-text">
-                        <a href="https://www.linkedin.com/in/david-yang-b20521121/" role="button"><i style="font-size:24px" class="fa">&#xf0e1;</i></a>
+                                    <a href="mailto:jdanial@purdue.edu" role="button"><i style="font-size:24px" class="fa">&#xf003;</i></a>
+                                    <a href="#" role="button"><i style="font-size:24px" class="fa">&#xf0ac;</i></a></p>
+                                <!--                                 <i style="font-size:24px" class="fa">&#xf003;</i>-->
 
-                        <a href="mailto:yang996@purdue.edu" role="button"><i style="font-size:24px" class="fa">&#xf003;</i></a>
-                        <a href="#" role="button"> <i style="font-size:24px" class="fa">&#xf0ac;</i></a>
-                        <!--                                 <i style="font-size:24px" class="fa">&#xf003;</i>-->
-                    </div>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="layout bg-primary text-white flex-column" align="center">
-            <span> Graduated PhD Students:</span>
-        </div>
-        <div class="row">
-            <div class="col-md-3">
-                <div class="card mb-3 box-shadow">
-                    <div class = 'img__wrap'>
-                        <img src="{% static "img/team/SM.jpg" %}" alt="Lights"  >
-                        <divo class="card-body">
-                            <p class="img__description"> Shovan Maity received his B.E. degree from Jadavpur University
-                                in 2012 and MTech Degree in Electrical Engineering from IIT Bombay in 2014. He worked as an
-                                Analog Design Engineer at Intel from 2014-3016. Currently, he is pursuing his PhD degree at
-                                Purdue University in the area of mixed-signal design.</p>
-                        </divo>
-                    </div>
-                    <div class="card-body" >
-                        <!--                        class="caption">-->
-                        <p class="card-title"> <b>Shovan Maity</b></p>
-                        {#                            Date: Aug 2016 - June Research Focus: Human Body Communication </p>#}
-                        <div class="card-text">
-                            <a href="https://www.linkedin.com/in/shovan-maity/" role="button"><i style="font-size:24px" class="fa">&#xf0e1;</i></a>
-
-                            <a href="mailto:maity@purdue.edu" role="button"><i style="font-size:24px" class="fa">&#xf003;</i></a>
-                            <a href="#" role="button"> <i style="font-size:24px" class="fa">&#xf0ac;</i></a>
+                            </div>
                         </div>
+                        <div class="card" style="width: 18rem;">
+                            <div class = 'img__wrap'>
+                                <img src="{% static "img/team/SS.jpg" %}" alt="Lights"  >
+                                <divo class="card-body">
+                                    <p class="img__description">Shreeya is master’s student and continuing to pursue her Ph.D. in SparcLab,
+                                        who has a passion for combining the fields of electrical engineering and medicine. She received her Bachelor’s
+                                        degree from Ramaiah Institute of Technology in India graduating top of her class with an honorary gold medal. Her
+                                        interests lie in biomedical device technologies and algorithms for the better detection and treatment of
+                                        various medical conditions. She has a background in signal processing and is currently working on algorithms
+                                        that could help improve the general quality of life of people ” </p>
+                                </divo>
+                            </div>
+                            <div class="card-body" >
+                                <!--                        class="caption">-->
+                                <p class="card-title"> <b>Shreeya Sriram  </b>
+                                    {#                            Sep 2018 - present Research Focus: <b>Connected Biomedical Devices</b></p>#}
+                                    <a href="#" role="button"><i style="font-size:24px" class="fa">&#xf0e1;</i></a>
+                                    <a href="mailto:sriram11@purdue.edu" role="button"><i style="font-size:24px" class="fa">&#xf003;</i></a>
+                                    <a href="#" role="button"><i style="font-size:24px" class="fa">&#xf0ac;</i></a></p>
+                                <!--                                 <i style="font-size:24px" class="fa">&#xf003;</i>-->
+                            </div>
+                        </div>
+                        <div class="card" style="width: 18rem">
+                            <div class = 'img__wrap'>
+                                <img src="{% static "img/team/DY.jpg" %}" alt="Lights"  >
+                                <divo class="card-body">
+                                    <p class="img__description">David completed his undergraduate at Purdue University while
+                                        doing active research at SparcLab and is now pursuing his PhD in SPARC Lab. He is currently
+                                        working on developing Human Body Communication applications and demonstrations to showcase the
+                                        uses and benefits of this technology. David is a firm believer in improving the quality of life
+                                        of others- both within his community and that of the broader world- and hopes to achieve this
+                                        through his work and volunteering. He hails from Troy, Michigan and enjoys playing the violin
+                                        and studying history.
+                                    </p>
+                                </divo>
+                            </div>
+                            <div class="card-body" >
+                                <!--                        class="caption">-->
+                                <p class="card-title"> <b>David Yang  </b>
+                                    {#                            May 2019-present (PhD) Research Focus: <b> Human Body Communication</b></p>#}
+                                    <a href="https://www.linkedin.com/in/david-yang-b20521121/" role="button"><i style="font-size:24px" class="fa">&#xf0e1;</i></a>
 
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="card bg-primary text-white flex-column" align="center">
-            <span> Graduated UG and MS Students:</span>
-        </div>
-        <div class="row">
-            <div class="col-md-3">
-                <div class="card mb-3 box-shadow">
-                    <div class = 'img__wrap'>
-                        <img src="{% static "img/team/XJ.jpg" %}" alt="Lights" >
-                        <divo class="card-body">
-                            <p class="img__description">Xinyi Jiang received her undergraduate degree in
-                                Electrical Engineering at Purdue University in 2017. She joined the SPARC Lab in spring
-                                2016 and worked on Interference-Robust Human Body Communication. She will join University
-                                of California, Berkeley as a graduate student in Fall 2018. Her research interest is in VLSI and Circuit Design.</p>
-                        </divo>
-                    </div>
-                    <div class="card-body"  >
-                        <!--                        class="caption">-->
-                        <p class="card-title"> <b>Xinyi Jiang</b></p>
-{#                            Date: Feb 2016 - May 2017 Research Focus: <b>Interference-Robust HBC</b>#}
-                        <div class="card-text">
-                            <a href="#" role="button"><i style="font-size:24px" class="fa">&#xf0e1;</i></a>
+                                    <a href="mailto:yang996@purdue.edu" role="button"><i style="font-size:24px" class="fa">&#xf003;</i></a>
+                                    <a href="#" role="button"> <i style="font-size:24px" class="fa">&#xf0ac;</i></a></p>
+                                <!--                                 <i style="font-size:24px" class="fa">&#xf003;</i>-->
+                            </div>
+                        </div>
+                        <div class="card" style="width: 18rem">
+                            <div class = 'img__wrap'>
+                                <img src="{% static "img/team/FB.jpeg" %}" alt="Lights"  >
+                                <divo class="card-body">
+                                    <p class="img__description">Mr. Faizul Bari (Tanbin) has completed his B.Sc. Eng. From Bangladesh University
+                                        of Engineering and Technology in 2017. After graduation he joined Neural Semiconductor Limited as a Design
+                                        Engineer. His primary focus was on “Analog and Mixed Signal” design, but briefly worked on Physical Design and
+                                        DFT as well. He later joined as a lecturer in University of Asia Pacific. He started his PhD at Purdue in 2019 and
+                                        joined SPARC Lab at the same time. His research interest includes IoT security and RF-PUF.
+                                    </p>
+                                </divo>
+                            </div>
+                            <div class="card-body" >
+                                <!--                        class="caption">-->
+                                <p class="card-title"> <b>Faizul Bari  </b>
+                                    {#                            May 2019-present (PhD) Research Focus: <b> Human Body Communication</b></p>#}
+                                    <a href="https://www.linkedin.com/in/mdfaizulbari" role="button"><i style="font-size:24px" class="fa">&#xf0e1;</i></a>
 
-                            <a href="mailto:jiang220@purdue.edu" role="button"><i style="font-size:24px" class="fa">&#xf003;</i></a>
-                            <a href="#"> <i style="font-size:24px" class="fa">&#xf0ac;</i></a>
+                                    <a href="mailto:mbari@purdue.edu" role="button"><i style="font-size:24px" class="fa">&#xf003;</i></a>
+                                    <a href="https://faizul.webnode.com/" role="button"> <i style="font-size:24px" class="fa">&#xf0ac;</i></a></p>
+                                <!--                                 <i style="font-size:24px" class="fa">&#xf003;</i>-->
+                            </div>
+                        </div>
+                        <div class="card" style="width: 18rem">
+                            <div class = 'img__wrap'>
+                                <img src="{% static "img/team/KT.png" %}" alt="Lights"  >
+                                <divo class="card-body">
+                                    <p class="img__description">I am interested in data science, swarm robotics, and deep learning.
+                                        Master's focus area is Computer Engineering. I am currently working on topics like Artificial
+                                        Intelligence (AI), Deep Learning, Machine Language, and neural networks (CNN, RNN, and MLP) about irrigation models
+                                    </p>
+                                </divo>
+                            </div>
+                            <div class="card-body" >
+                                <!--                        class="caption">-->
+                                <p class="card-title"> <b>Kirubel Tadesse  </b>
+                                    {#                            May 2019-present (PhD) Research Focus: <b> Human Body Communication</b></p>#}
+                                    <a href="https://www.linkedin.com/in/kirubeltadesse" role="button"><i style="font-size:24px" class="fa">&#xf0e1;</i></a>
+
+                                    <a href="mailto:ktadesse@purdue.edu" role="button"><i style="font-size:24px" class="fa">&#xf003;</i></a>
+                                    <a href="https://kirubeltadesse.github.io/" role="button"> <i style="font-size:24px" class="fa">&#xf0ac;</i></a></p>
+                                <!--                                 <i style="font-size:24px" class="fa">&#xf003;</i>-->
+                            </div>
+                        </div>
+                        <div class="card" style="width: 18rem">
+                            <div class = 'img__wrap'>
+                                <img src="{% static "img/team/GK.jpeg" %}" alt="Lights"  >
+                                <divo class="card-body">
+                                    <p class="img__description">Gaurav received his Bachelor’s in Electronics and Telecommunications from Jadavpur University,
+                                        India in 2017. He has an industry experience as Assistant Manager at Bharti Airtel (2017-19), before starting his
+                                        doctoral degree at Purdue University in Fall 2019 and joined the SPARC Lab. His research interests include analog
+                                        and mixed-signal IC design for high speed applications.
+                                    </p>
+                                </divo>
+                            </div>
+                            <div class="card-body" >
+                                <!--                        class="caption">-->
+                                <p class="card-title"> <b>K Gaurav Kumar  </b>
+                                    {#                            May 2019-present (PhD) Research Focus: <b> Human Body Communication</b></p>#}
+                                    <a href="https://www.linkedin.com/in/gaurav-kumar-k-229258b7/" role="button"><i style="font-size:24px" class="fa">&#xf0e1;</i></a>
+
+                                    <a href="mailto:gauravk@purdue.edu" role="button"><i style="font-size:24px" class="fa">&#xf003;</i></a>
+                                    <a href="#" role="button"> <i style="font-size:24px" class="fa">&#xf0ac;</i></a></p>
+                                <!--                                 <i style="font-size:24px" class="fa">&#xf003;</i>-->
+                            </div>
+                        </div>
+                        <div class="card" style="width: 18rem">
+                            <div class = 'img__wrap'>
+                                <img src="{% static "img/team/AG.jpg" %}" alt="Lights"  >
+                                <divo class="card-body">
+                                    <p class="img__description">Archisman is a  First year PhD student who has completed his B.Tech. from Jadavpur university,
+                                        India in 2017. After graduating, he has worked as Hardware Engineer in Samsung Semiconductor India R &D to develop IPs
+                                        and Verification IPs for next-gen SSDs. Later on he has worked as Senior Engineer on PCIe subsystem verification in PCIe
+                                        based high speed NVMe SSD controller SOC design team before joining SPARC lab.  His research interests include Hardware
+                                        security, Mixed Signal IC design.
+                                    </p>
+                                </divo>
+                            </div>
+                            <div class="card-body" >
+                                <!--                        class="caption">-->
+                                <p class="card-title"> <b>Archisman Ghosh</b>
+                                    {#                            May 2019-present (PhD) Research Focus: <b> Human Body Communication</b></p>#}
+                                    <a href="https://www.linkedin.com/in/archisman-ghosh-8165abaa/" role="button"><i style="font-size:24px" class="fa">&#xf0e1;</i></a>
+
+                                    <a href="mailto:ghosh69@purdue.edu" role="button"><i style="font-size:24px" class="fa">&#xf003;</i></a>
+                                    <a href="#" role="button"> <i style="font-size:24px" class="fa">&#xf0ac;</i></a></p>
+                                <!--                                 <i style="font-size:24px" class="fa">&#xf003;</i>-->
+                            </div>
+                        </div>
+                        <div class="card" style="width: 18rem">
+                            <div class = 'img__wrap'>
+                                <img src="{% static "img/team/AD.jpg" %}" alt="Lights"  >
+                                <divo class="card-body">
+                                    <p class="img__description">Arunashish joined as a PhD student having received his BE degree from Jadavpur
+                                        University in 2019. He is passionate about working in new and exciting directions of communication technology
+                                        and is currently working on applications of Human Body Communication. Being a music enthusiast who loves playing
+                                        guitar and Tabla, he aims to bring the same creativity to his research work. He is also a massive soccer fan and
+                                        his favorite hobby is having a kickabout with friends.
+                                    </p>
+                                </divo>
+                            </div>
+                            <div class="card-body" >
+                                <!--                        class="caption">-->
+                                <p class="card-title"> <b>Arunashish Datta</b>
+                                    {#                            May 2019-present (PhD) Research Focus: <b> Human Body Communication</b></p>#}
+                                    <a href="https://in.linkedin.com/in/arunashish-datta-83684514a" role="button"><i style="font-size:24px" class="fa">&#xf0e1;</i></a>
+
+                                    <a href="mailto:datta30@purdue.edu" role="button"><i style="font-size:24px" class="fa">&#xf003;</i></a>
+                                    <a href="#" role="button"> <i style="font-size:24px" class="fa">&#xf0ac;</i></a></p>
+                                <!--                                 <i style="font-size:24px" class="fa">&#xf003;</i>-->
+                            </div>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card mb-3 box-shadow">
-                    <div class = 'img__wrap'>
-                        <img src="{% static "img/team/GC.jpg" %}" alt="Lights" >
-                        <divo class="card-body">
-                            <p class="img__description"></p>
-                        </divo>
+                    <div class="card bg-primary text-white flex-column" align="center">
+                        <span> Graduated PhD Students:</span>
                     </div>
-                    <div class="card-body" >
-                        <!--                        class="caption">-->
-                        <p class="card-title"> <b>Gregory Chang</b></p>
-                        {#                            Date: Aug 2016 - May 2018 Research Focus: <b>Transceiver for ULP IOT nodes</b>#}
-                        <div class="card-text">
-                            <a href="#" role="button"><i style="font-size:24px" class="fa">&#xf0e1;</i></a>
+                    <div class="row" style="margin-left: 50px">
+                        <div class="card" style="width: 18rem;">
+                            <div class = 'img__wrap'>
+                                <img src="{% static "img/team/SM.jpg" %}" width="191" height="188" alt="Lights"  >
+                                <divo class="card-body">
+                                    <p class="img__description"> Shovan Maity received his B.E. degree from Jadavpur University
+                                        in 2012 and MTech Degree in Electrical Engineering from IIT Bombay in 2014. He worked as an
+                                        Analog Design Engineer at Intel from 2014-3016. Currently, he is pursuing his PhD degree at
+                                        Purdue University in the area of mixed-signal design.</p>
+                                </divo>
+                            </div>
+                            <div class="card-body" >
+                                <!--                        class="caption">-->
+                                <p class="card-title"> <b>Shovan Maity</b>
+                                    {#                            Date: Aug 2016 - June Research Focus: Human Body Communication </p>#}
+                                    <a href="https://www.linkedin.com/in/shovan-maity/" role="button"><i style="font-size:24px" class="fa">&#xf0e1;</i></a>
 
-                            <a href="mailto:changg@purdue.edu" role="button"><i style="font-size:24px" class="fa">&#xf003;</i></a>
-                            <a href="#" role="button"><i style="font-size:24px" class="fa">&#xf0ac;</i></a>
-                            <!--                                 <i style="font-size:24px" class="fa">&#xf003;</i>-->
+                                    <a href="mailto:maity@purdue.edu" role="button"><i style="font-size:24px" class="fa">&#xf003;</i></a>
+                                    <a href="#" role="button"> <i style="font-size:24px" class="fa">&#xf0ac;</i></a></p>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card mb-3 box-shadow">
-                    <div class = 'img__wrap'>
-                        <img src="{% static "img/team/ST.jpg" %}"  alt="Lights" >
-                        <divo class="card-body">
-                            <p class="img__description"></p>
-                        </divo>
-                    </div>
-                    <div class="card-body" >
-                        <!--                        class="caption">-->
-                        <p class="card-title"> <b>Shuhui Tang</b></p>
-{#                            Date: Jan 2017 - Dec 2018 Research Focus: <b>ULP Oscillator and Injection Locking</b>#}
-                        <div class="card-text">
-                            <a href="#" role="button"><i style="font-size:24px" class="fa">&#xf0e1;</i></a>
 
-                            <a href="mailto:changg@purdue.edu" role="button"><i style="font-size:24px" class="fa">&#xf003;</i></a>
-                            <a href="#" role="button"><i style="font-size:24px" class="fa">&#xf0ac;</i></a>
-                            <!--                                 <i style="font-size:24px" class="fa">&#xf003;</i>-->
+
+                    <div class="card bg-primary text-white flex-column" align="center">
+                        <span>Masters  Students:</span>
+                    </div>
+                    <table class="table table-striped table-dark">
+                        <thead>
+                        <tr>
+                            <th scope="col">Full name</th>
+                            <th scope="col">Research Focus</th>
+                            <th scope="col">Contact info</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>Mananga Mutombo (Dec 2016 - Aug 2017) </td>
+                            <td>Human Body Communication</td>
+                            <td>mmutombo@purdue.edu</td>
+                        </tr>
+                        <tr>
+                            <td>Wei Jiang (May 2017 - Sept 2017)</td>
+                            <td> ULP IoT Transmitter</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Gonghao Sun (May 2017 - Sept 2017)</td>
+                            <td> ULP IoT Transmitter</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Piyush Agarwal (May 2018 - present)</td>
+                            <td> Neural Network Architectures</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Gregory Chang (Aug 2016 - May 2018)</td>
+                            <td>Transceiver for ULP IOT nodes</td>
+                            <td>changg@purdue.edu</td>
+                        </tr>
+                        <tr>
+                            <td>Shuhui Tang Jan 2017 - Dec 2018</td>
+                            <td> ULP Oscillator and Injection Locking</td>
+                            <td>tang143@purdue.edu</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <div class="card bg-primary text-white flex-column" align="center">
+                        <span>Undergraduate Students:</span>
+                    </div>
+                    <table class="table table-striped table-dark">
+                        <thead>
+                        <tr>
+                            <th scope="col">Full name</th>
+                            <th scope="col">Research Focus</th>
+                            <th scope="col">Contact info</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>Tania Chakraborty (May 2017 - Aug 2017)</td>
+                            <td>Human Body Communication Demo</td>
+                            <td>tchakrab@purdue.edu</td>
+                        </tr>
+                        <tr>
+                            <td>Siddharth Inani (May 2017 - Aug 2017)</td>
+                            <td> Human Body Communication Demo</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>David Yang (May 2017 - present)</td>
+                            <td> ULP IoT Transmitter</td>
+                            <td>yang996@purdue.edu</td>
+                        </tr>
+                        <tr>
+                            <td>Mingxuan He (May 2017 - present)</td>
+                            <td> Human Body Communication Channel-Models</td>
+                            <td>he238@purdue.edu</td>
+                        </tr>
+                        <tr>
+                            <td>Kavian Mojabe (Feb 2016 - May 2017)</td>
+                            <td>Human Body Communication Channel Measurements</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Shawn Nagar (May 2016 - May 2017)</td>
+                            <td> Electromagnetically Secure ICs</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Yousef Mahmoud Akbar (June 2016 - Dec 2016)</td>
+                            <td>  Secure NFC</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Ribhav Agarwal (June 2016 - May 2017)</td>
+                            <td> BMIC Classifier</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Xinyi Jiang Feb 2016 - May 2017</td>
+                            <td> Interference-Robust HBC</td>
+                            <td>jiang330@purdue.edu</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    {#                </div>#}
+
+                    {#    <hr class="featurette-divider">#}
+                    <div class="card bg-primary text-white flex-column" align="center">
+                        <span>Summer Interns:</span>
+                    </div>
+
+                    {#    </main>#}
+                    {#    </div>#}
+                    {##}
+                    <table class="table table-striped table-dark">
+                        <thead>
+                        <tr>
+                            <th scope="col">Full name</th>
+                            <th scope="col">Research Focus</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>Harideep Pradeep Kumar Nair (May 2016 - July 2016) </td>
+                            <td> Electromagnetically Secure ICs</td>
+                        </tr>
+                        <tr>
+                            <td>Yuyang Wang  (May 2016 - June 2016)</td>
+                            <td> Human Body Communication</td>
+                        </tr>
+                        <tr>
+                            <td>Rafael Neiva da Cunha (May 2016 - July 2016)</td>
+                            <td>BMIC Classifier</td>
+                        </tr>
+                        <tr>
+                            <td>Antroy Roy Chowdhury (May 2019 - July 2019)</td>
+                            <td>Low-Noise High-Speed Links</td>
+                        </tr>
+                        <tr>
+                            <td>Parv Agarwal (May 2016 - July 2016) </td>
+                            <td> RF-PUF</td>
+                        </tr>
+
+                        <td>Chun Tao (May 2019 - July 2019)</td>
+                        <td> Human Body Communication</td>
+                        </tr>
+                        <tr>
+                            <td>Vignesh Ramachandran (May 2019 - July 2019)</td>
+                            <td> Context-Aware Communication</td>
+                        </tr>
+                        <tr>
+                            <td>Alfred Krister (May 2019 - July 2019)</td>
+                            <td>Human Body Communication</td>
+                        </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                    <div class="card bg-primary text-white flex-column" align="center" >
+                        <span class=""> Post-Doctoral Candidates/Visiting Scholars</span>
+                    </div>
+                    <div class="row"style="margin-left: 50px">
+                        <div class="card" style="width: 18rem;">
+                            <div class = 'img__wrap'>
+                                <img src="{% static "img/team/AS.png" %}"  class="card-img-top" alt="Lights"  >
+                                <divo class="card-body">
+                                    <p class="img__description">Abhishek did his B.Tech in ECE (2004) from Madan Mohan Malaviya Engineering
+                                        College, Gorakhpur, M.Tech in VLSI and Embedded Systems (2007) from IIIT Hyderabad and Ph.D. in Electrical
+                                        Engineering (2018) from IIT Bombay, India. He is an Assistant Professor at IIIT Hyderabad and joined the SPARC lab in December 2018.
+                                        His research interests are in RF and analog ICs and systems for wireless sensor nodes based applications.</p>
+                                </divo>
+                            </div>
+                            <div  class="card-body">
+                                <!--                        class="caption">-->
+                                <p class="card-title"> <b> Abhishek Srivastava MD. </b>
+                                    {#                          <p class="card-text">  Date: Dec 2018 - present Research Focus: mm-wave Digital Arrays</p>#}
+                                    <a href="#" role="button"><i style="font-size:24px" class="fa">&#xf0e1;</i></a>
+                                    <a href="mailto:srivas71@purdue.edu" role="button"><i style="font-size:24px" class="fa">&#xf003;</i></a>
+                                    <a href="#"><i style="font-size:24px" class="fa">&#xf0ac;</i></a></p>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 18rem">
+                            <div class = 'img__wrap'>
+                                <img src="{% static "img/team/GB.jpg" %}" alt="Lights"  >
+                                <divo class="card-body">
+                                    <p class="img__description">Gargi graduated from Asia's oldest and one of the most prestigious
+                                        Medical Colleges, Calcutta Medical College (CMC) in 2011, with several distinctions. She has
+                                        been practicing Clinical Medicine in top Hospitals in India, such as Apollo and AMRI Hospitals
+                                        for past 7 years and has been providing extensive voluntary healthcare to disadvantaged children
+                                        through Rotary International. She has special interest in Psychiatry and interned at the Cleveland
+                                        Clinic and University of Toledo Medical Center. She is focused on improving Mental and Behavioral Healthcare,
+                                        through the application of cutting-edge technological improvements, such as Human Body Communication.</p>
+                                </divo>
+                            </div>
+                            <div class="card-body" >
+                                <!--                        class="caption">-->
+                                <p class="card-title"><b> Gargi Bhattachryya, MD. </b>
+                                    {#                            Date: Aug 2018 - present Research Focus: <span> Connected Healthcare</span></p>#}
+                                    {#                        <div class="card-text">#}
+                                    <a href="#" role="button"><i style="font-size:24px" class="fa">&#xf0e1;</i></a>
+                                    <a href="mailto:gbhatta@purdue.edu" role="button"><i style="font-size:24px" class="fa">&#xf003;</i></a>
+                                    <a href="#" role="button"><i style="font-size:24px" class="fa">&#xf0ac;</i></a></p>
+                                {#                        </div>#}
+                            </div>
+
                         </div>
                     </div>
+                    <div class="card bg-primary text-white flex-column " align="center">
+                        <span > PhD and Maters Thesis Students</span>
+                    </div>
+                    <div class="row" style="margin-left: 50px">
+                        <div class="card" style="width: 18rem;">
+                            <div class = 'img__wrap'>
+                                <img src="{% static "img/team/DD.jpg" %}" alt="Lights"  >
+                                <divo class="card-body">
+                                    <p class="img__description"> Debayan received his B.E. in Electronics and Telecommunication
+                                        Engineering from Jadavpur University, India in 2015. He worked as an Analog Design Engineer
+                                        in xSi Semiconductors (start-up) for a year. In fall 2016, he started his doctoral studies at
+                                        the Purdue University, USA and joined the SPARC Lab. His research interests include hardware
+                                        security and mixed-signal IC design.</p>
+                                </divo>
+                            </div>
+                            <div class="card-body" >
+                                <!--                        class="caption">-->
+                                <p class="card-title"> <b>Debayan Des </b>
+                                    {#                            Aug 2016 - present Research Focus: Hardware Security </p>#}
+                                    <a href="https://www.linkedin.com/in/dasdebayan/" role="button"><i style="font-size:24px" class="fa">&#xf0e1;</i></a>
+                                    <a href="mailto:das60@purdue.edu" role="button"><i style="font-size:24px" class="fa">&#xf003;</i></a>
+                                    <a href="#"><i style="font-size:24px" class="fa">&#xf0ac;</i></a></p>
+
+                            </div>
+                        </div>
+                        <div class="card" style="width: 18rem;">
+                            <div class = 'img__wrap'>
+                                <img src="{% static "img/team/BC.jpg" %}" alt="Lights"  >
+                                <divo class="card-body">
+                                    <p class="img__description"> Baibhab believes that robotic AI will never take over mankind, but
+                                        cyborgs definitely can - and that's why it's a big deal to make the low-power neuromorphic
+                                        systems work (or not to, just to avoid the possible doomsday). Before joining Ph.D., he worked
+                                        for 2 years in the industry (2 years in Intel as a Digital Design Engineer, and 1 year in Tejas
+                                        Networks as an R&D Engineer), but also had his fair share of academic fun at National Institute of
+                                        Technology Durgapur, India (B.Tech., Electronics and Communication Engineering, 2011) and Indian
+                                        Institute of Technology Bombay, India (M.Tech., Electrical Engineering, 2015). His research interests
+                                        include intelligent mixed-signal circuits and systems for HBC/IoT/RF and of course, to keep away from
+                                        plunging into another Age of Ultron in the process.
+
+                                        Baibhab has been the recipient of the NIT Durgapur Institute Gold Medal (B.Tech., 2011), IIT Bombay Institute Silver Medal (M.Tech., 2015),
+                                        Intel India Customer Orientation and Results Orientation Awards (2016), Purdue University Ross and Andrews'
+                                        Fellowships (2017-3019), HOST 2018 Best Student Poster (2rd) Award and CICC 2019 Best Paper (overall) Award.</p>
+                                </divo>
+                            </div>
+                            <div class="card-body" >
+                                <!--                        class="caption">-->
+                                <p class="card-title"> <b>Baibhab Chatterjee </b>
+                                    {#                            Jun 2017 - present Research Focus: Hardware Security </p>#}
+                                    <a href="https://www.linkedin.com/in/baibhabchatterjee/" role="button"><i style="font-size:24px" class="fa">&#xf0e1;</i></a>
+                                    <a href="mailto:bchatte@purdue.edu" role="button"><i style="font-size:24px" class="fa">&#xf003;</i></a>
+                                    <a href="#"><i style="font-size:24px" class="fa">&#xf0ac;</i></a></p>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 18rem">
+                            <div class = 'img__wrap'>
+                                <img src="{% static "img/team/DS.jpg" %}" alt="Lights"  >
+                                <divo class="card-body">
+                                    <p class="img__description">Donghyun is an ex-marine corps. who is interested in mm-wave and RF design.</p>
+                                </divo>
+                            </div>
+                            <div class="card-body" >
+                                <!--                        class="caption">-->
+                                <p class="card-title"> <b>Donghyun Seo </b>
+                                    {#                            Aug 2017 - present Research Focus: <b> Low-Power Transceiver Design </b></p>#}
+                                    <a href="#" role="button"><i style="font-size:24px" class="fa">&#xf0e1;</i></a>
+                                    <a href="mailto:seo60@purdue.edu" role="button"><i style="font-size:24px" class="fa">&#xf003;</i></a>
+                                    <a href="#" role="button"><i style="font-size:24px" class="fa">&#xf0ac;</i></a></p>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 18rem;">
+                            <div class = 'img__wrap'>
+                                <img src="{% static "img/team/MN.jpg" %}" alt="Lights"  >
+                                <divo class="card-body">
+                                    <p class="img__description"></p>
+                                </divo>
+                            </div>
+                            <div class="card-body"  >
+                                <!--                        class="caption">-->
+                                <p class="card-title"> <b>Mayukh Nath </b>
+                                    {#                            Dec 2017 - present Research Focus: <b>ElectroMagnetic Analysis of HBC and EM Side-Channel Attacks </b></p>#}
+                                    <a href="#" role="button"><i style="font-size:24px" class="fa">&#xf0e1;</i></a>
+                                    <a href="mailto:nathm@purdue.edu" role="button"><i style="font-size:24px" class="fa">&#xf003;</i></a>
+                                    <a href="#"><i style="font-size:24px" class="fa">&#xf0ac;</i></a></p>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 18rem;">
+                            <div class = 'img__wrap'>
+                                <img src="{% static "img/team/NM.jpg" %}" alt="Lights" >
+                                <divo class="card-body">
+                                    <p class="img__description">Nirmoy is a First year PhD student who believes, Medical Applications
+                                        in future are likely to benefit greatly from ultra-low power energy efficient wearable electronics
+                                        especially in implanted, surgical, and emergency monitoring. Before joining PhD, he was working as
+                                        a Design Engineer (July 2015-Dec 2015) in Cypress Semiconductor Pvt. Ltd., Bengaluru, India and as an
+                                        Assistant Professor (from Jan 2016 and currently on Study Leave) in Jadavpur University, Kolkata, India.
+                                        He received his B.E.(2012) from the Dept. of Electronics and Telecommunication Engineering, Jadavpur University,
+                                        India and M.Tech on VLSI and Microelectronics (2015) from the Dept. of Electrical Engineering, IIT Bombay, India.
+                                        His research interests include Analog and mixed-signal circuits and systems for Human Body Communication(HBC).</p>
+                                </divo>
+                            </div>
+                            <div class="card-body" >
+                                <!--                        class="caption">-->
+                                <p class="card-title"> <b>Nirmoy Modak </b>
+                                    {#                            Feb 2019 - present Research Focus: <b> Human Body Communication </b></p>#}
+                                    <a href="#" role="button"><i style="font-size:24px" class="fa">&#xf0e1;</i></a>
+                                    <a href="mailto:nmodak@purdue.edu" role="button"><i style="font-size:24px" class="fa">&#xf003;</i></a>
+                                    <a href="#" role="button"><i style="font-size:24px" class="fa">&#xf0ac;</i></a></p>
+                                <!--                                 <i style="font-size:24px" class="fa">&#xf003;</i>-->
+
+                            </div>
+                        </div>
+                        <div class="card" style="width: 18rem;">
+                            <div class = 'img__wrap'>
+                                <img src="{% static "img/team/PM.jpg" %}" alt="Lights"  >
+                                <divo class="card-body">
+                                    <p class="img__description">Parikha is a first-year Ph.D. student interested in exploring
+                                        the mysteries behind human body communication and employing them in diverse application areas.
+                                        Born in the land of spices, India and brought up by a family of doctors she developed an early love
+                                        for science and spicy food. She is a part of the Women in Engineering group at Purdue and is a role
+                                        model for young girls aspiring to be engineers. Parikha believes that with her creativity and perseverance
+                                        she can surmount the inevitable challenges faced by all researchers on their journey towards success. </p>
+                                </divo>
+                            </div>
+                            <div  class="card-body">
+                                <!--                        class="caption">-->
+                                <p class="card-title"> <b>Parikha Mehrotra </b>
+                                    {#                            May 2018 - present Research Focus: <b>High-Speed Wireline HBC</b></p>#}
+                                    <a href="#" role="button"><i style="font-size:24px" class="fa">&#xf0e1;</i></a>
+                                    <a href="mailto:pmehrot@purdue.edu" role="button"><i style="font-size:24px" class="fa">&#xf003;</i></a>
+                                    <a href="#" role="button"><i style="font-size:24px" class="fa">&#xf0ac;</i></a></p>
+                                <!--                                 <i style="font-size:24px" class="fa">&#xf003;</i>-->
+                            </div>
+                        </div>
+                        <div class="card" style="width: 18rem;">
+                            <div class = 'img__wrap'>
+                                <img src="{% static "img/team/SA.jpg" %}" alt="Lights"  >
+                                <divo class="card-body">
+                                    <p class="img__description">
+                                        Shitij received his Bachelor of Engineering in Electronics Engineering from University of Mumbai,
+                                        India in 2017. He worked at IIT-Bombay for three years on point of care medical devices and fabrication
+                                        of MEMS sensors. In fall 2018, he started his masters in Electrical Engineering at Purdue University and
+                                        has been a part of SPARC lab ever since. His research interests include analog circuit design, signal
+                                        processing, and embedded systems.
+                                    </p>
+                                </divo>
+                            </div>
+                            <div class="card-body" >
+                                <!--                        class="caption">-->
+                                <p class="card-title"> <b>Shitij Avlani </b>
+                                    {#                            May 2018 - present Research Focus: <b>Embedded Connected BioSensors</b></p>#}
+                                    <a href="https://www.linkedin.com/in/shitijavlani/" role="button"><i style="font-size:24px" class="fa">&#xf0e1;</i></a>
+
+                                    <a href="mailto:avlani@purdue.edu" role="button"><i style="font-size:24px" class="fa">&#xf003;</i></a>
+                                    <a href="#" role="button"><i style="font-size:24px" class="fa">&#xf0ac;</i></a></p>
+                                <!--                                 <i style="font-size:24px" class="fa">&#xf003;</i>-->
+
+                            </div>
+                        </div>
+                        <div class="card" style="width: 18rem;">
+                            <div class = 'img__wrap'>
+                                <img src="{% static "img/team/JD.png" %}" alt="Lights"  >
+                                <divo class="card-body">
+                                    <p class="img__description">Josef received his B.Sc. in Computer Engineering from Purdue
+                                        University 2018. He has two years of industry experience, in automotive (Fiat Chrysler Automobiles)
+                                        and IOT (Cisco Jasper) companies. He is now pursuing his Master's degree in the SPARC Lab, again at
+                                        Purdue University. His research interests include machine learning, hardware security. </p>
+                                </divo>
+                            </div>
+                            <div class="card-body" >
+                                <!--                        class="caption">-->
+                                <p class="card-title"> <b>Josef Danial </b>
+                                    {#                            Aug 2018 - present Research Focus: <b>Machine Learning and Electromagnetic Side Channel Attack</b></p>#}
+                                    <a href="https://www.linkedin.com/in/josefdanial/" role="button"><i style="font-size:24px" class="fa">&#xf0e1;</i></a>
+
+                                    <a href="mailto:jdanial@purdue.edu" role="button"><i style="font-size:24px" class="fa">&#xf003;</i></a>
+                                    <a href="#" role="button"><i style="font-size:24px" class="fa">&#xf0ac;</i></a></p>
+                                <!--                                 <i style="font-size:24px" class="fa">&#xf003;</i>-->
+
+                            </div>
+                        </div>
+                        <div class="card" style="width: 18rem;">
+                            <div class = 'img__wrap'>
+                                <img src="{% static "img/team/SS.jpg" %}" alt="Lights"  >
+                                <divo class="card-body">
+                                    <p class="img__description">Shreeya is master’s student and continuing to pursue her Ph.D. in SparcLab,
+                                        who has a passion for combining the fields of electrical engineering and medicine. She received her Bachelor’s
+                                        degree from Ramaiah Institute of Technology in India graduating top of her class with an honorary gold medal. Her
+                                        interests lie in biomedical device technologies and algorithms for the better detection and treatment of
+                                        various medical conditions. She has a background in signal processing and is currently working on algorithms
+                                        that could help improve the general quality of life of people ” </p>
+                                </divo>
+                            </div>
+                            <div class="card-body" >
+                                <!--                        class="caption">-->
+                                <p class="card-title"> <b>Shreeya Sriram  </b>
+                                    {#                            Sep 2018 - present Research Focus: <b>Connected Biomedical Devices</b></p>#}
+                                    <a href="#" role="button"><i style="font-size:24px" class="fa">&#xf0e1;</i></a>
+                                    <a href="mailto:sriram11@purdue.edu" role="button"><i style="font-size:24px" class="fa">&#xf003;</i></a>
+                                    <a href="#" role="button"><i style="font-size:24px" class="fa">&#xf0ac;</i></a></p>
+                                <!--                                 <i style="font-size:24px" class="fa">&#xf003;</i>-->
+                            </div>
+                        </div>
+                        <div class="card" style="width: 18rem">
+                            <div class = 'img__wrap'>
+                                <img src="{% static "img/team/DY.jpg" %}" alt="Lights"  >
+                                <divo class="card-body">
+                                    <p class="img__description">David completed his undergraduate at Purdue University while
+                                        doing active research at SparcLab and is now pursuing his PhD in SPARC Lab. He is currently
+                                        working on developing Human Body Communication applications and demonstrations to showcase the
+                                        uses and benefits of this technology. David is a firm believer in improving the quality of life
+                                        of others- both within his community and that of the broader world- and hopes to achieve this
+                                        through his work and volunteering. He hails from Troy, Michigan and enjoys playing the violin
+                                        and studying history.
+                                    </p>
+                                </divo>
+                            </div>
+                            <div class="card-body" >
+                                <!--                        class="caption">-->
+                                <p class="card-title"> <b>David Yang  </b>
+                                    {#                            May 2019-present (PhD) Research Focus: <b> Human Body Communication</b></p>#}
+                                    <a href="https://www.linkedin.com/in/david-yang-b20521121/" role="button"><i style="font-size:24px" class="fa">&#xf0e1;</i></a>
+
+                                    <a href="mailto:yang996@purdue.edu" role="button"><i style="font-size:24px" class="fa">&#xf003;</i></a>
+                                    <a href="#" role="button"> <i style="font-size:24px" class="fa">&#xf0ac;</i></a></p>
+                                <!--                                 <i style="font-size:24px" class="fa">&#xf003;</i>-->
+                            </div>
+
+                        </div>
+                        <div class="card" style="width: 18rem">
+                            <div class = 'img__wrap'>
+                                <img src="{% static "img/team/FB.jpeg" %}" alt="Lights"  >
+                                <divo class="card-body">
+                                    <p class="img__description">Mr. Faizul Bari (Tanbin) has completed his B.Sc. Eng. From Bangladesh University
+                                        of Engineering and Technology in 2017. After graduation he joined Neural Semiconductor Limited as a Design
+                                        Engineer. His primary focus was on “Analog and Mixed Signal” design, but briefly worked on Physical Design and
+                                        DFT as well. He later joined as a lecturer in University of Asia Pacific. He started his PhD at Purdue in 2019 and
+                                        joined SPARC Lab at the same time. His research interest includes IoT security and RF-PUF.
+                                    </p>
+                                </divo>
+                            </div>
+                            <div class="card-body" >
+                                <!--                        class="caption">-->
+                                <p class="card-title"> <b>Faizul Bari  </b>
+                                    {#                            May 2019-present (PhD) Research Focus: <b> Human Body Communication</b></p>#}
+                                    <a href="https://www.linkedin.com/in/mdfaizulbari" role="button"><i style="font-size:24px" class="fa">&#xf0e1;</i></a>
+
+                                    <a href="mailto:mbari@purdue.edu" role="button"><i style="font-size:24px" class="fa">&#xf003;</i></a>
+                                    <a href="#" role="button"> <i style="font-size:24px" class="fa">&#xf0ac;</i></a></p>
+                                <!--                                 <i style="font-size:24px" class="fa">&#xf003;</i>-->
+                            </div>
+                        </div>
+                        <div class="card" style="width: 18rem">
+                            <div class = 'img__wrap'>
+                                <img src="{% static "img/team/KT.png" %}" alt="Lights"  >
+                                <divo class="card-body">
+                                    <p class="img__description">I am interested in data science, swarm robotics, and deep learning.
+                                        Master's focus area is Computer Engineering. I am currently working on topics like Artificial
+                                        Intelligence (AI), Deep Learning, Machine Language, and neural networks (CNN, RNN, and MLP) about irrigation models
+                                    </p>
+                                </divo>
+                            </div>
+                            <div class="card-body" >
+                                <!--                        class="caption">-->
+                                <p class="card-title"> <b>Kirubel Tadesse  </b>
+                                    {#                            May 2019-present (PhD) Research Focus: <b> Human Body Communication</b></p>#}
+                                    <a href="https://www.linkedin.com/in/kirubeltadesse" role="button"><i style="font-size:24px" class="fa">&#xf0e1;</i></a>
+
+                                    <a href="mailto:ktadesse@purdue.edu" role="button"><i style="font-size:24px" class="fa">&#xf003;</i></a>
+                                    <a href="https://kirubeltadesse.github.io/" role="button"> <i style="font-size:24px" class="fa">&#xf0ac;</i></a></p>
+                                <!--                                 <i style="font-size:24px" class="fa">&#xf003;</i>-->
+                            </div>
+                        </div>
+                         <div class="card" style="width: 18rem">
+                            <div class = 'img__wrap'>
+                                <img src="{% static "img/team/GK.jpeg" %}" alt="Lights"  >
+                                <divo class="card-body">
+                                    <p class="img__description">Gaurav received his Bachelor’s in Electronics and Telecommunications from Jadavpur University,
+                                        India in 2017. He has an industry experience as Assistant Manager at Bharti Airtel (2017-19), before starting his
+                                        doctoral degree at Purdue University in Fall 2019 and joined the SPARC Lab. His research interests include analog
+                                        and mixed-signal IC design for high speed applications.
+                                    </p>
+                                </divo>
+                            </div>
+                            <div class="card-body" >
+                                <!--                        class="caption">-->
+                                <p class="card-title"> <b>K Gaurav Kumar  </b>
+                                    {#                            May 2019-present (PhD) Research Focus: <b> Human Body Communication</b></p>#}
+                                    <a href="https://www.linkedin.com/in/gaurav-kumar-k-229258b7/" role="button"><i style="font-size:24px" class="fa">&#xf0e1;</i></a>
+
+                                    <a href="mailto:gauravk@purdue.edu" role="button"><i style="font-size:24px" class="fa">&#xf003;</i></a>
+                                    <a href="#" role="button"> <i style="font-size:24px" class="fa">&#xf0ac;</i></a></p>
+                                <!--                                 <i style="font-size:24px" class="fa">&#xf003;</i>-->
+                            </div>
+                        </div>
+                        <div class="card" style="width: 18rem">
+                            <div class = 'img__wrap'>
+                                <img src="{% static "img/team/AG.jpg" %}" alt="Lights"  >
+                                <divo class="card-body">
+                                    <p class="img__description">Archisman is a  First year PhD student who has completed his B.Tech. from Jadavpur university,
+                                        India in 2017. After graduating, he has worked as Hardware Engineer in Samsung Semiconductor India R &D to develop IPs
+                                        and Verification IPs for next-gen SSDs. Later on he has worked as Senior Engineer on PCIe subsystem verification in PCIe
+                                        based high speed NVMe SSD controller SOC design team before joining SPARC lab.  His research interests include Hardware
+                                        security, Mixed Signal IC design.
+                                    </p>
+                                </divo>
+                            </div>
+                            <div class="card-body" >
+                                <!--                        class="caption">-->
+                                <p class="card-title"> <b>Archisman Ghosh</b>
+                                    {#                            May 2019-present (PhD) Research Focus: <b> Human Body Communication</b></p>#}
+                                    <a href="https://www.linkedin.com/in/archisman-ghosh-8165abaa/" role="button"><i style="font-size:24px" class="fa">&#xf0e1;</i></a>
+
+                                    <a href="mailto:ghosh69@purdue.edu" role="button"><i style="font-size:24px" class="fa">&#xf003;</i></a>
+                                    <a href="#" role="button"> <i style="font-size:24px" class="fa">&#xf0ac;</i></a></p>
+                                <!--                                 <i style="font-size:24px" class="fa">&#xf003;</i>-->
+                            </div>
+                        </div>
+                        <div class="card" style="width: 18rem">
+                            <div class = 'img__wrap'>
+                                <img src="{% static "img/team/AD.jpg" %}" alt="Lights"  >
+                                <divo class="card-body">
+                                    <p class="img__description">Arunashish joined as a PhD student having received his BE degree from Jadavpur
+                                        University in 2019. He is passionate about working in new and exciting directions of communication technology
+                                        and is currently working on applications of Human Body Communication. Being a music enthusiast who loves playing
+                                        guitar and Tabla, he aims to bring the same creativity to his research work. He is also a massive soccer fan and
+                                        his favorite hobby is having a kickabout with friends.
+                                    </p>
+                                </divo>
+                            </div>
+                            <div class="card-body" >
+                                <!--                        class="caption">-->
+                                <p class="card-title"> <b>Arunashish Datta</b>
+                                    {#                            May 2019-present (PhD) Research Focus: <b> Human Body Communication</b></p>#}
+                                    <a href="https://in.linkedin.com/in/arunashish-datta-83684514a" role="button"><i style="font-size:24px" class="fa">&#xf0e1;</i></a>
+
+                                    <a href="mailto:datta30@purdue.edu" role="button"><i style="font-size:24px" class="fa">&#xf003;</i></a>
+                                    <a href="#" role="button"> <i style="font-size:24px" class="fa">&#xf0ac;</i></a></p>
+                                <!--                                 <i style="font-size:24px" class="fa">&#xf003;</i>-->
+                            </div>
+                        </div>
+                    </div>
+
+                        {#                </div>#}
+
+                        {#    <hr class="featurette-divider">#}
+
+
+                </div>
+                <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                    <div class="card bg-primary text-white flex-column" align="center">
+                        <span> Graduated PhD Students:</span>
+                    </div>
+                    <div class="row" style="margin-left: 50px">
+                        <div class="card" style="width: 18rem;">
+                            <div class = 'img__wrap'>
+                                <img src="{% static "img/team/SM.jpg" %}" width="191" height="188" alt="Lights"  >
+                                <divo class="card-body">
+                                    <p class="img__description"> Shovan Maity received his B.E. degree from Jadavpur University
+                                        in 2012 and MTech Degree in Electrical Engineering from IIT Bombay in 2014. He worked as an
+                                        Analog Design Engineer at Intel from 2014-3016. Currently, he is pursuing his PhD degree at
+                                        Purdue University in the area of mixed-signal design.</p>
+                                </divo>
+                            </div>
+                            <div class="card-body" >
+                                <!--                        class="caption">-->
+                                <p class="card-title"> <b>Shovan Maity</b>
+                                    {#                            Date: Aug 2016 - June Research Focus: Human Body Communication </p>#}
+                                    <a href="https://www.linkedin.com/in/shovan-maity/" role="button"><i style="font-size:24px" class="fa">&#xf0e1;</i></a>
+
+                                    <a href="mailto:maity@purdue.edu" role="button"><i style="font-size:24px" class="fa">&#xf003;</i></a>
+                                    <a href="#" role="button"> <i style="font-size:24px" class="fa">&#xf0ac;</i></a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card bg-primary text-white flex-column" align="center">
+                        <span>Masters  Students:</span>
+                    </div>
+                    <table class="table table-striped table-dark">
+                        <thead>
+                        <tr>
+                            <th scope="col">Full name</th>
+                            <th scope="col">Research Focus</th>
+                            <th scope="col">Contact info</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>Mananga Mutombo (Dec 2016 - Aug 2017) </td>
+                            <td>Human Body Communication</td>
+                            <td>mmutombo@purdue.edu</td>
+                        </tr>
+                        <tr>
+                            <td>Wei Jiang (May 2017 - Sept 2017)</td>
+                            <td> ULP IoT Transmitter</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Gonghao Sun (May 2017 - Sept 2017)</td>
+                            <td> ULP IoT Transmitter</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Piyush Agarwal (May 2018 - present)</td>
+                            <td> Neural Network Architectures</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Gregory Chang (Aug 2016 - May 2018)</td>
+                            <td>Transceiver for ULP IOT nodes</td>
+                            <td>changg@purdue.edu</td>
+                        </tr>
+                        <tr>
+                            <td>Shuhui Tang Jan 2017 - Dec 2018</td>
+                            <td> ULP Oscillator and Injection Locking</td>
+                            <td>tang143@purdue.edu</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <div class="card bg-primary text-white flex-column" align="center">
+                        <span>Undergraduate Students:</span>
+                    </div>
+                    <table class="table table-striped table-dark">
+                        <thead>
+                        <tr>
+                            <th scope="col">Full name</th>
+                            <th scope="col">Research Focus</th>
+                            <th scope="col">Contact info</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>Tania Chakraborty (May 2017 - Aug 2017)</td>
+                            <td>Human Body Communication Demo</td>
+                            <td>tchakrab@purdue.edu</td>
+                        </tr>
+                        <tr>
+                            <td>Siddharth Inani (May 2017 - Aug 2017)</td>
+                            <td> Human Body Communication Demo</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>David Yang (May 2017 - present)</td>
+                            <td> ULP IoT Transmitter</td>
+                            <td>yang996@purdue.edu</td>
+                        </tr>
+                        <tr>
+                            <td>Mingxuan He (May 2017 - present)</td>
+                            <td> Human Body Communication Channel-Models</td>
+                            <td>he238@purdue.edu</td>
+                        </tr>
+                        <tr>
+                            <td>Kavian Mojabe (Feb 2016 - May 2017)</td>
+                            <td>Human Body Communication Channel Measurements</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Shawn Nagar (May 2016 - May 2017)</td>
+                            <td> Electromagnetically Secure ICs</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Yousef Mahmoud Akbar (June 2016 - Dec 2016)</td>
+                            <td>  Secure NFC</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Ribhav Agarwal (June 2016 - May 2017)</td>
+                            <td> BMIC Classifier</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Xinyi Jiang Feb 2016 - May 2017</td>
+                            <td> Interference-Robust HBC</td>
+                            <td>jiang330@purdue.edu</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <div class="card bg-primary text-white flex-column" align="center">
+                        <span>Summer Interns:</span>
+                    </div>
+
+                    {#    </main>#}
+                    {#    </div>#}
+                    {##}
+                    <table class="table table-striped table-dark">
+                        <thead>
+                        <tr>
+                            <th scope="col">Full name</th>
+                            <th scope="col">Research Focus</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>Harideep Pradeep Kumar Nair (May 2016 - July 2016) </td>
+                            <td> Electromagnetically Secure ICs</td>
+                        </tr>
+                        <tr>
+                            <td>Yuyang Wang  (May 2016 - June 2016)</td>
+                            <td> Human Body Communication</td>
+                        </tr>
+                        <tr>
+                            <td>Rafael Neiva da Cunha (May 2016 - July 2016)</td>
+                            <td>BMIC Classifier</td>
+                        </tr>
+                        <tr>
+                            <td>Antroy Roy Chowdhury (May 2019 - July 2019)</td>
+                            <td>Low-Noise High-Speed Links</td>
+                        </tr>
+                        <tr>
+                            <td>Parv Agarwal (May 2016 - July 2016) </td>
+                            <td> RF-PUF</td>
+                        </tr>
+
+                        <td>Chun Tao (May 2019 - July 2019)</td>
+                        <td> Human Body Communication</td>
+                        </tr>
+                        <tr>
+                            <td>Vignesh Ramachandran (May 2019 - July 2019)</td>
+                            <td> Context-Aware Communication</td>
+                        </tr>
+                        <tr>
+                            <td>Alfred Krister (May 2019 - July 2019)</td>
+                            <td>Human Body Communication</td>
+                        </tr>
+                        </tbody>
+                    </table>
+
                 </div>
             </div>
-        </div>
-        <div class="card bg-primary text-white flex-column" align="center">
-            <span>Masters  Students:</span>
-        </div>
-        <table class="table table-striped table-dark">
-            <thead>
-            <tr>
-                <th scope="col">Full name</th>
-                <th scope="col">Research Focus</th>
-                <th scope="col">Contact info</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-                <td>Mananga Mutombo (Dec 2016 - Aug 2017) </td>
-                <td>Human Body Communication</td>
-                <td>mmutombo@purdue.edu</td>
-            </tr>
-            <tr>
-                <td>Wei Jiang (May 2017 - Sept 2017)</td>
-                <td> ULP IoT Transmitter</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Gonghao Sun (May 2017 - Sept 2017)</td>
-                <td> ULP IoT Transmitter</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Piyush Agarwal (May 2018 - present)</td>
-                <td> Neural Network Architectures</td>
-                <td></td>
-            </tr>
-            </tbody>
-        </table>
-        <div id="accordion">
-            {#        <div class="card">#}
-            {#            <div class="card-header" id="headingOne">#}
-            {#                <h5 class="mb-0">#}
-            {#                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">#}
-            {#                        Mananga Mutombo (Dec 2016 - Aug 2017)#}
-            {#                    </button>#}
-            {#                </h5>#}
-            {#            </div>#}
-            {##}
-            {#            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">#}
-            {#                <div class="card-body">#}
-            {#                    Email: mmutombo@purdue.edu#}
-            {#                    Research Focus: Human Body Communication.#}
-            {#                </div>#}
-            {#            </div>#}
-            {#        </div>#}
-            {#        <div class="card">#}
-            {#            <div class="card-header" id="headingTwo">#}
-            {#                <h5 class="mb-0">#}
-            {#                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">#}
-            {#                        Wei Jiang (May 2017 - Sept 2017)#}
-            {#                    </button>#}
-            {#                </h5>#}
-            {#            </div>#}
-            {#            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">#}
-            {#                <div class="card-body">#}
-            {#                    Email:#}
-            {#                    Research Focus: ULP IoT Transmitter#}
-            {#                </div>#}
-            {#            </div>#}
-            {#        </div>#}
-            {#        <div class="card">#}
-            {#            <div class="card-header" id="headingThree">#}
-            {#                <h5 class="mb-0">#}
-            {#                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">#}
-            {#                        Gonghao Sun (May 2017 - Sept 2017)#}
-            {#                    </button>#}
-            {#                </h5>#}
-            {#            </div>#}
-            {#            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">#}
-            {#                <div class="card-body">#}
-            {#                    Email:#}
-            {#                    Research Focus: ULP IoT Transmitter#}
-            {#                </div>#}
-            {#            </div>#}
-            {#        </div>#}
-            {#        <div class="card">#}
-            {#            <div class="card-header" id="headingfour">#}
-            {#                <h5 class="mb-0">#}
-            {#                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapsefour" aria-expanded="false" aria-controls="collapsefour">#}
-            {#                        Piyush Agarwal (May 2018 - present)#}
-            {#                    </button>#}
-            {#                </h5>#}
-            {#            </div>#}
-            {#            <div id="collapsefour" class="collapse" aria-labelledby="headingfour" data-parent="#accordion">#}
-            {#                <div class="card-body">#}
-            {#                    Email:#}
-            {#                    Research Focus: Neural Network Architectures#}
-            {#                </div>#}
-            {#            </div>#}
-            {#        </div>#}
-        </div>
 
-        <div id="accordion">
-            {#        <div class="card">#}
-            {#            <div class="card-header" id="headingfive">#}
-            {#                <h5 class="mb-0">#}
-            {#                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapsefive" aria-expanded="false" aria-controls="collapsefive">#}
-            {#                        Tania Chakraborty (May 2017 - Aug 2017)#}
-            {#                    </button>#}
-            {#                </h5>#}
-            {#            </div>#}
-            {##}
-            {#            <div id="collapsefive" class="collapse" aria-labelledby="headingfive" data-parent="#accordion">#}
-            {#                <div class="card-body">#}
-            {#                    Email: tchakrab@purdue.edu#}
-            {#                    Research Focus: Human Body Communication Demo.#}
-            {#                </div>#}
-            {#            </div>#}
-            {#        </div>#}
-            {#        <div class="card">#}
-            {#            <div class="card-header" id="headingsix">#}
-            {#                <h5 class="mb-0">#}
-            {#                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapsesix" aria-expanded="false" aria-controls="collapsesix">#}
-            {#                        Siddharth Inani (May 2017 - Aug 2017)#}
-            {#                    </button>#}
-            {#                </h5>#}
-            {#            </div>#}
-            {#            <div id="collapsesix" class="collapse" aria-labelledby="headingsix" data-parent="#accordion">#}
-            {#                <div class="card-body">#}
-            {#                    Email:#}
-            {#                    Research Focus: Human Body Communication Demo.#}
-            {#                </div>#}
-            {#            </div>#}
-            {#        </div>#}
-            {#        <div class="card">#}
-            {#            <div class="card-header" id="headingSeven">#}
-            {#                <h5 class="mb-0">#}
-            {#                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">#}
-            {#                        David Yang (May 2017 - present)#}
-            {#                    </button>#}
-            {#                </h5>#}
-            {#            </div>#}
-            {#            <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordion">#}
-            {#                <div class="card-body">#}
-            {#                    Email: yang996@purdue.edu#}
-            {#                    Research Focus: ULP IoT Transmitter#}
-            {##}
-            {#                </div>#}
-            {#            </div>#}
-            {#        </div>#}
-            {#        <div class="card">#}
-            {#            <div class="card-header" id="headingEight">#}
-            {#                <h5 class="mb-0">#}
-            {#                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">#}
-            {#                        Mingxuan He (May 2017 - present)#}
-            {#                    </button>#}
-            {#                </h5>#}
-            {#            </div>#}
-            {#            <div id="collapseEight" class="collapse" aria-labelledby="headingEight" data-parent="#accordion">#}
-            {#                <div class="card-body">#}
-            {#                    Email: he228@purdue.edu#}
-            {#                    Research Focus: Human Body Communication Channel-Models#}
-            {#                </div>#}
-            {#            </div>#}
-            {#        </div>#}
-            {#        <div class="card">#}
-            {#            <div class="card-header" id="headingNine">#}
-            {#                <h5 class="mb-0">#}
-            {#                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">#}
-            {#                        Kavian Mojabe (Feb 2016 - May 2017)#}
-            {#                    </button>#}
-            {#                </h5>#}
-            {#            </div>#}
-            {#            <div id="collapseNine" class="collapse" aria-labelledby="headingNine" data-parent="#accordion">#}
-            {#                <div class="card-body">#}
-            {#                    Email:#}
-            {#                    Research Focus: Human Body Communication Channel Measurements#}
-            {#                </div>#}
-            {#            </div>#}
-            {#        </div>#}
-            {#        <div class="card">#}
-            {#            <div class="card-header" id="headingTen">#}
-            {#                <h5 class="mb-0">#}
-            {#                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">#}
-            {#                        Shawn Nagar (May 2016 - May 2017)#}
-            {#                    </button>#}
-            {#                </h5>#}
-            {#            </div>#}
-            {#            <div id="collapseTen" class="collapse" aria-labelledby="headingTen" data-parent="#accordion">#}
-            {#                <div class="card-body">#}
-            {#                    Email:#}
-            {#                    Research Focus: Electromagnetically Secure ICs#}
-            {#                </div>#}
-            {#            </div>#}
-            {#        </div>#}
-            {#        <div class="card">#}
-            {#            <div class="card-header" id="headingElven">#}
-            {#                <h5 class="mb-0">#}
-            {#                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseElven" aria-expanded="false" aria-controls="collapseElven">#}
-            {#                        Yousef Mahmoud Akbar (June 2016 - Dec 2016)#}
-            {#                    </button>#}
-            {#                </h5>#}
-            {#            </div>#}
-            {#            <div id="collapseElven" class="collapse" aria-labelledby="headingElven" data-parent="#accordion">#}
-            {#                <div class="card-body">#}
-            {#                    Email:#}
-            {#                    Research Focus: Secure NFC#}
-            {#                </div>#}
-            {#            </div>#}
-            {#        </div>#}
-            {#        <div class="card">#}
-            {#            <div class="card-header" id="headingTwelve">#}
-            {#                <h5 class="mb-0">#}
-            {#                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwelve" aria-expanded="false" aria-controls="collapseTwelve">#}
-            {#                        Ribhav Agarwal (June 2016 - May 2017)#}
-            {#                    </button>#}
-            {#                </h5>#}
-            {#            </div>#}
-            {#            <div id="collapseTwelve" class="collapse" aria-labelledby="headingTwelve" data-parent="#accordion">#}
-            {#                <div class="card-body">#}
-            {#                    Email:#}
-            {#                    Research Focus: BMIC Classifier#}
-            {#                </div>#}
-            {#            </div>#}
-            {#        </div>#}
-            {#        <div class="card">#}
-            {#            <div class="card-header" id="heading1">#}
-            {#                <h5 class="mb-0">#}
-            {#                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse1" aria-expanded="false" aria-controls="collapse1">#}
-            {#                        Alek V patel (June 2016 - Aug 2016)#}
-            {#                    </button>#}
-            {#                </h5>#}
-            {#            </div>#}
-            {#            <div id="collapse1" class="collapse" aria-labelledby="heading1" data-parent="#accordion">#}
-            {#                <div class="card-body">#}
-            {#                    Email:#}
-            {#                    Research Focus: Secure ICs#}
-            {#                </div>#}
-            {#            </div>#}
-            {#        </div>#}
         </div>
-        <div class="card bg-primary text-white flex-column" align="center">
-            <span>Undergraduate Students:</span>
-        </div>
-        <table class="table table-striped table-dark">
-            <thead>
-            <tr>
-                <th scope="col">Full name</th>
-                <th scope="col">Research Focus</th>
-                <th scope="col">Contact info</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-                <td>Tania Chakraborty (May 2017 - Aug 2017)</td>
-                <td>Human Body Communication Demo</td>
-                <td>tchakrab@purdue.edu</td>
-            </tr>
-            <tr>
-                <td>Siddharth Inani (May 2017 - Aug 2017)</td>
-                <td> Human Body Communication Demo</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>David Yang (May 2017 - present)</td>
-                <td> ULP IoT Transmitter</td>
-                <td>yang996@purdue.edu</td>
-            </tr>
-            <tr>
-                <td>Mingxuan He (May 2017 - present)</td>
-                <td> Human Body Communication Channel-Models</td>
-                <td>he238@purdue.edu</td>
-            </tr>
-            <tr>
-                <td>Kavian Mojabe (Feb 2016 - May 2017)</td>
-                <td>Human Body Communication Channel Measurements</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Shawn Nagar (May 2016 - May 2017)</td>
-                <td> Electromagnetically Secure ICs</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Yousef Mahmoud Akbar (June 2016 - Dec 2016)</td>
-                <td>  Secure NFC</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Ribhav Agarwal (June 2016 - May 2017)</td>
-                <td> BMIC Classifier</td>
-                <td></td>
-            </tr>
-            </tbody>
-        </table>
-        {#                </div>#}
-
-        {#    <hr class="featurette-divider">#}
-        <div class="card bg-primary text-white flex-column" align="center">
-            <span>Summer Interns:</span>
-        </div>
-        <div id="accordion">
-            {#        <div class="card">#}
-            {#            <div class="card-header" id="heading2">#}
-            {#                <h5 class="mb-0">#}
-            {#                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapse2">#}
-            {#                        Harideep Pradeep Kumar Nair (May 2016 - July 2016)#}
-            {#                    </button>#}
-            {#                </h5>#}
-            {#            </div>#}
-            {##}
-            {#            <div id="collapse2" class="collapse" aria-labelledby="heading2" data-parent="#accordion">#}
-            {#                <div class="card-body">#}
-            {#                    Research Focus: Electromagnetically Secure ICs#}
-            {#                </div>#}
-            {#            </div>#}
-            {#        </div>#}
-            {#        <div class="card">#}
-            {#            <div class="card-header" id="heading2">#}
-            {#                <h5 class="mb-0">#}
-            {#                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapse2">#}
-            {#                        Yuyang Wang  (May 2016 - June 2016)#}
-            {#                    </button>#}
-            {#                </h5>#}
-            {#            </div>#}
-            {##}
-            {#            <div id="collapse2" class="collapse" aria-labelledby="heading2" data-parent="#accordion">#}
-            {#                <div class="card-body">#}
-            {#                    Research Focus: Human Body Communication#}
-            {#                </div>#}
-            {#            </adiv>#}
-            {#        </div>#}
-            {#        <div class="card">#}
-            {#            <div class="card-header" id="heading4">#}
-            {#                <h5 class="mb-0">#}
-            {#                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapse4" aria-expanded="false" aria-controls="collapse4">#}
-            {#                        Rafael Neiva da Cunha (May 2016 - July 2016)#}
-            {#                    </button>#}
-            {#                </h5>#}
-            {#            </div>#}
-            {##}
-            {#            <div id="collapse4" class="collapse" aria-labelledby="heading4" data-parent="#accordion">#}
-            {#                <div class="card-body">#}
-            {#                    Research Focus: BMIC Classifier#}
-            {#                </div>#}
-            {#            </div>#}
-            {#        </div>#}
-            {#        <div class="card">#}
-            {#            <div class="card-header" id="heading5">#}
-            {#                <h5 class="mb-0">#}
-            {#                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapse5" aria-expanded="false" aria-controls="collapse5">#}
-            {#                        Antroy Roy Chowdhury (May 2019 - July 2019)#}
-            {#                    </button>#}
-            {#                </h5>#}
-            {#            </div>#}
-            {##}
-            {#            <div id="collapse5" class="collapse" aria-labelledby="heading5" data-parent="#accordion">#}
-            {#                <div class="card-body">#}
-            {#                    Research Focus: Low-Noise High-Speed Links#}
-            {#                </div>#}
-            {#            </div>#}
-            {#        </div>#}
-            {#        <div class="card">#}
-            {#            <div class="card-header" id="heading6">#}
-            {#                <h5 class="mb-0">#}
-            {#                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapse6" aria-expanded="false" aria-controls="collapse6">#}
-            {#                        Parv Agarwal (May 2016 - July 2016)#}
-            {#                    </button>#}
-            {#                </h5>#}
-            {#            </div>#}
-            {##}
-            {#            <div id="collapse6" class="collapse" aria-labelledby="heading6" data-parent="#accordion">#}
-            {#                <div class="card-body">#}
-            {#                    Research Focus: RF-PUF#}
-            {#                </div>#}
-            {#            </div>#}
-            {#        </div>#}
-            {#        <div class="card">#}
-            {#            <div class="card-header" id="heading7">#}
-            {#                <h5 class="mb-0">#}
-            {#                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapse7" aria-expanded="false" aria-controls="collapse7">#}
-            {#                        Chun Tao (May 2019 - July 2019)#}
-            {#                    </button>#}
-            {#                </h5>#}
-            {#            </div>#}
-            {##}
-            {#            <div id="collapse7" class="collapse" aria-labelledby="heading7" data-parent="#accordion">#}
-            {#                <div class="card-body">#}
-            {#                    Research Focus: Human Body Communication#}
-            {#                </div>#}
-            {#            </div>#}
-            {#        </div>#}
-            {#        <div class="card">#}
-            {#            <div class="card-header" id="heading8">#}
-            {#                <h5 class="mb-0">#}
-            {#                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapse8" aria-expanded="false" aria-controls="collapse8">#}
-            {#                        Vignesh Ramachandran (May 2019 - July 2019)#}
-            {#                    </button>#}
-            {#                </h5>#}
-            {#            </div>#}
-            {##}
-            {#            <div id="collapse8" class="collapse" aria-labelledby="heading8" data-parent="#accordion">#}
-            {#                <div class="card-body">#}
-            {#                    Research Focus: Context-Aware Communication#}
-            {#                </div>#}
-            {#            </div>#}
-            {#        </div>#}
-            {#        <div class="card">#}
-            {#            <div class="card-header" id="heading9">#}
-            {#                <h5 class="mb-0">#}
-            {#                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapse9" aria-expanded="false" aria-controls="collapse9">#}
-            {#                        Alfred Krister (May 2019 - July 2019)#}
-            {#                    </button>#}
-            {#                </h5>#}
-            {#            </div>#}
-            {##}
-            {#            <div id="collapse9" class="collapse" aria-labelledby="heading9" data-parent="#accordion">#}
-            {#                <div class="card-body">#}
-            {#                    Research Focus: Human Body Communication#}
-            {#                </div>#}
-            {#            </div>#}
-            {#        </div>#}
-        </div>
-        {#    </main>#}
-        {#    </div>#}
-        {##}
-        <table class="table table-striped table-dark">
-            <thead>
-            <tr>
-                <th scope="col">Full name</th>
-                <th scope="col">Research Focus</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-                <td>Harideep Pradeep Kumar Nair (May 2016 - July 2016) </td>
-                <td> Electromagnetically Secure ICs</td>
-            </tr>
-            <tr>
-                <td>Yuyang Wang  (May 2016 - June 2016)</td>
-                <td> Human Body Communication</td>
-            </tr>
-            <tr>
-                <td>Rafael Neiva da Cunha (May 2016 - July 2016)</td>
-                <td>BMIC Classifier</td>
-            </tr>
-            <tr>
-                <td>Antroy Roy Chowdhury (May 2019 - July 2019)</td>
-                <td>Low-Noise High-Speed Links</td>
-            </tr>
-            <tr>
-                <td>Parv Agarwal (May 2016 - July 2016) </td>
-                <td> RF-PUF</td>
-            </tr>
-
-            <td>Chun Tao (May 2019 - July 2019)</td>
-            <td> Human Body Communication</td>
-            </tr>
-            <tr>
-                <td>Vignesh Ramachandran (May 2019 - July 2019)</td>
-                <td> Context-Aware Communication</td>
-            </tr>
-            <tr>
-                <td>Alfred Krister (May 2019 - July 2019)</td>
-                <td>Human Body Communication</td>
-            </tr>
-            </tbody>
-        </table>
-    </div>
     </div>
 {% endblock %}

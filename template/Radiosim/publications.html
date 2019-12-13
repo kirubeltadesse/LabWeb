@@ -11,55 +11,57 @@
 
 {% block content %}
     <!-- style below blocks out the mobile nav toggle only when nav is loaded -->
-    <div class="container">
-        <h3 align="center">A list of Publications</h3>
-        <noscript>
-            <!-- bibtex source hidden by default, show it if JS disabled -->
-            <style>
-                #bibtex { display: block;}
-            </style>
-        </noscript>
 
-        <pre id="bibtex" style="display:none;">
+    <div style="max-width: 80%; margin: 0 auto; padding: 10px">
+        <div class="container-fluid">
+            <h3 align="center">A list of Publications</h3>
+            <noscript>
+                <!-- bibtex source hidden by default, show it if JS disabled -->
+                <style>
+                    #bibtex { display: block;}
+                </style>
+            </noscript>
 
-            @inbook{10.1007/11590316_96,
-            author={Sen, Shreyas, and Narasimhan, Seetharam, and Konar, Amit},
-            editor={Pal Sankar Bandyopadhyay Sanghamitra Biswas Sambhunath},
-            title={A Novel Algorithm for Automatic Species Identification Using Principal Component Analysis},
-            booktitle={Pattern Recognition and Machine Intelligence},
-            publisher={Springer Berlin Heidelberg},
-            address={Berlin, Heidelberg},
-            pages={605--610},
-            abstract={This paper describes a novel scheme for automatic identification of a species from its genomic data. Random samples of a given length (10,000 elements) are taken from a genome sequence of a particular species. A set of 64 keywords is generated using all possible 3-tuple combinations of the 4 letters: A (for Adenine), T (for Thymine), C (for Cytosine) and G (for Guanine) representing the four types of nucleotide bases in a DNA strand. These 43= 64 keywords are searched in a sample of the genome sequence and their corresponding frequencies of occurrence are determined. Upon repeating this process for N randomly selected samples taken from the genome sequence, an N {\texttimes} 64 matrix of frequency count data is obtained. Then Principal Component Analysis is employed on this data to obtain a Feature Descriptor of reduced dimension (1 {\texttimes} 64). On determining the feature descriptors of different species and also by taking different samples from the same species, it is found that they are unique for a particular species while wide differences exist between those of different species. The variance of the descriptors for a given genome sequence being negligible, the proposed scheme finds extensive applications in automatic species identification.},
-            isbn={978-3-540-32420-1},
-            year={2005},
-            }
+            <pre id="bibtex" style="display:none;">
 
-            @inbook{ShreyasSen2010,
-            author={Shreyas Sen, Vishwanath Natarajan and  Abhijit  Chatterjee},
-            editor={Swarup BhuniaSaibal Mukhopadhyay},
-            title={Low-Power Variation-Tolerant Design in Nanometer Silicon},
-            publisher={},
-            address={Berlin, Heidelberg},
-            pages={605--610},
-            isbn={9781441974174},
-            year={2010},
-            }
+                @inbook{10.1007/11590316_96,
+                author={Sen, Shreyas, and Narasimhan, Seetharam, and Konar, Amit},
+                editor={Pal Sankar Bandyopadhyay Sanghamitra Biswas Sambhunath},
+                title={A Novel Algorithm for Automatic Species Identification Using Principal Component Analysis},
+                booktitle={Pattern Recognition and Machine Intelligence},
+                publisher={Springer Berlin Heidelberg},
+                address={Berlin, Heidelberg},
+                pages={605--610},
+                abstract={This paper describes a novel scheme for automatic identification of a species from its genomic data. Random samples of a given length (10,000 elements) are taken from a genome sequence of a particular species. A set of 64 keywords is generated using all possible 3-tuple combinations of the 4 letters: A (for Adenine), T (for Thymine), C (for Cytosine) and G (for Guanine) representing the four types of nucleotide bases in a DNA strand. These 43= 64 keywords are searched in a sample of the genome sequence and their corresponding frequencies of occurrence are determined. Upon repeating this process for N randomly selected samples taken from the genome sequence, an N {\texttimes} 64 matrix of frequency count data is obtained. Then Principal Component Analysis is employed on this data to obtain a Feature Descriptor of reduced dimension (1 {\texttimes} 64). On determining the feature descriptors of different species and also by taking different samples from the same species, it is found that they are unique for a particular species while wide differences exist between those of different species. The variance of the descriptors for a given genome sequence being negligible, the proposed scheme finds extensive applications in automatic species identification.},
+                isbn={978-3-540-32420-1},
+                year={2005},
+                }
 
-            @inproceedings{Sen:2014:CZP:2691365.2691384,
-            author = {Sen, Shreyas},
-            title = {Channel-adaptive Zero-margin \&\#38; Process-adaptive Self-healing Communication Circuits/Systems},
-            booktitle = {Proceedings of the 2014 IEEE/ACM International Conference on Computer-Aided Design},
-            series = {ICCAD '14},
-            year = {2014},
-            isbn = {978-1-4799-6277-8},
-            location = {San Jose, California},
-            pages = {80--85},
-            numpages = {6},
-            url = {http://dl.acm.org/citation.cfm?id=2691365.2691384},
-            acmid = {2691384},
-            publisher = {IEEE Press},
-            address = {Piscataway, NJ, USA},
+                @inbook{ShreyasSen2010,
+                author={Shreyas Sen, Vishwanath Natarajan and  Abhijit  Chatterjee},
+                editor={Swarup BhuniaSaibal Mukhopadhyay},
+                title={Low-Power Variation-Tolerant Design in Nanometer Silicon},
+                publisher={},
+                address={Berlin, Heidelberg},
+                pages={605--610},
+                isbn={9781441974174},
+                year={2010},
+                }
+
+                @inproceedings{Sen:2014:CZP:2691365.2691384,
+                author = {Sen, Shreyas},
+                title = {Channel-adaptive Zero-margin \&\#38; Process-adaptive Self-healing Communication Circuits/Systems},
+                booktitle = {Proceedings of the 2014 IEEE/ACM International Conference on Computer-Aided Design},
+                series = {ICCAD '14},
+                year = {2014},
+                isbn = {978-1-4799-6277-8},
+                location = {San Jose, California},
+                pages = {80--85},
+                numpages = {6},
+                url = {http://dl.acm.org/citation.cfm?id=2691365.2691384},
+                acmid = {2691384},
+                publisher = {IEEE Press},
+                address = {Piscataway, NJ, USA},
             keywords = {BIST, MIMO, RF, adaptive, channel, circuit, communication, high-speed IO, low power, multi-standard, process variation, self-healing, system, wireless, yield, zero margin},
             }
 
@@ -1439,17 +1441,18 @@
             year = {},}
 
         </pre>
-        <table id="pubTable" class="display"></table>
-        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-        <script type="text/javascript" src="{% static 'bib-publication-list/build/bib-list.js' %}"></script>
-{#        <script type="text/javascript">#}
+            <table id="pubTable" class="display"></table>
+            <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+            <script type="text/javascript" src="{% static 'bib-publication-list/build/bib-list.js' %}"></script>
+            {#        <script type="text/javascript">#}
             {#$(document).ready(function() {#}
-                {#bibtexify("#bibtex", "pubTable", {'tweet': 'vkaravir'});#}
-{#            });#}
-{#        </script>#}
+            {#bibtexify("#bibtex", "pubTable", {'tweet': 'vkaravir'});#}
+            {#            });#}
+            {#        </script>#}
 
-        <script>
-            bibtexify("#bibtex", "pubTable");
-        </script>
+            <script>
+                bibtexify("#bibtex", "pubTable");
+            </script>
+        </div>
     </div>
 {% endblock %}

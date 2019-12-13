@@ -6,67 +6,14 @@
     <link rel="stylesheet" href="{% static 'css/footersilder.css' %}" type="text/css" xmlns="http://www.w3.org/1999/html">
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
-
-    <link rel="stylesheet" href="{% static 'js/footersilder.js' %}" type="text/css" xmlns="http://www.w3.org/1999/html">
-{% endblock %}
-
-{% block content %}
-    <div class="container" style="margin-top:30px">
-        <div class="col-sm-8">
-            <h2>SPARC Lab in the News and Media:</h2>
-            <h5>Apr 2019: IEEE Spectrum suggests SparcLab work as a solution of US Department of Homeland Security advisory</h5>
-            <div class="fakeimg">
-                <img src="{% static "img/news/DHS advisory.png" %}" alt="Lights" >
-                <img src="{% static "img/news/IEEE_Spectrum (Small)976f.png" %}" alt="Lights" >
-                <img src="{% static "img/news/Seal_of_the_United_States_Department_of_Homeland_Security.svg" %}" alt="Lights" >
-
-            </div>
-            <p>The U.S. Department of Homeland Security last week warned that numerous medical devices made by Medtronic are vulnerable to cyber attack. A solution to which is the EQS-HBC recently published. IEEE Spectrum covered our work saying "Medtronic discloses medical device vulnerabilities, while Purdue University scientists propose countermeasure to block attacks".  IEEE Spectrum Article.</p>
-            <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-            <br>
-
-            <h2>Mar 2019: Secure Internet of Body using Electro-Quasistatic Human Body Communication (Scientific Reports (Nature))</h2>
-            <h5></h5>
-            <div class="fakeimg"><iframe width="560" height="315" src="https://www.youtube.com/embed/NHqfT1vIe6E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-            <p></p>
-            <p></p>
-
-            <h2>Mar 2018: Prof. Sen speaking at MIT TR35 India Award Speech</h2>
-            <h5></h5>
-            <div class="fakeimg"><iframe width="560" height="315" src="https://www.youtube.com/embed/nWEhU6EX0R8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-            <p></p>
-            <p></p>
-
-            <h2>Mar 2018: Prof. Sen speaking on Indian National TV CNBC TV-18 Young Turks Program</h2>
-            <h5></h5>
-            <div class="fakeimg"><iframe width="560" height="315" src="https://www.youtube.com/embed/QFSlZ4X3CwQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-            <p></p>
-            <p></p>
-
-            <h2>Mar 2018: MIT TR 35 India Award</h2>
-            <h5></h5>
-            <div> We sincerely thank our sponsors AFOSR YIP, NSF CRII Award and Google FRA for supporting this research spanning from basic research to applications. </div>
-            <div> <img src="{% static "img/news/28699144_1754350207941313_2834275567359897594_o7ab27ab2.jpg" %}" alt="Lights" ></div>
-            <div> <img src="{% static "img/news/28617183_1754350077941326_8450309853273099747_o98439843.jpg" %}" alt="Lights" ></div>
-            <div> <img src="{% static "img/news/28698627_1754351131274554_420695322419662768_oe488e488.jpg" %}" alt="Lights" ></div>
-            <div> <img src="{% static "img/news/28698910_1754350617941272_719549663646809047_o71c771c7.jpg" %}" alt="Lights" ></div>
-            <p></p>
-            <p></p>
-
-            <h2>Dec 2017: Human Body as a Wire</h2>
-            <h5>"Purdue discovery clears way for human body to work as robust communication network for electronic devices"</h5>
-            <div class="fakeimg"> <img src="{% static "img/news/wearable-devicesLO.jpg" %}" alt="Lights" > </div>
-            <p>Dec 2017: Our work on Broadband Interference-robust Human Body Communication was featured by 30+ news sites in USA, UK, Greece, India. </p>
-            <p>We sincerely thank our sponsors AFOSR YIP, NSF CRII Award and Google FRA for supporting this research spanning from basic research to applications. </p>
-
-
-        </div>
-    </div>
-
-
-
 <!------ Include the above in your HEAD tag ---------->
+
+{#<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>#}
+{#    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>#}
+{#    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>#}
+{#    <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>#}
+{#    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>#}
+    <!------ Include the above in your HEAD tag ---------->
     <script>
         $(document).ready(function(){
             $('.customer-logos').slick({
@@ -91,65 +38,168 @@
             });
         });
     </script>
+    <link rel="stylesheet" href="{% static 'js/footersilder.js' %}" type="text/css" xmlns="http://www.w3.org/1999/html">
+{% endblock %}
 
-<div class="container">
-    <h2></h2>
-    <div class="customer-logos slider">
-        <div class="slide">
-            <a href="https://www.globenewswire.com/news-release/2017/12/14/1262163/0/en/Purdue-discovery-clears-way-for-human-body-to-work-as-robust-communication-network-for-electronic-devices.html">
-                <img src="{% static "img/news/logo/5a1dde2adbd8fe0001202701_nasdaq-globenewswire-620x150.png" %}">
-            </a>
-        </div>
-        <div class="slide">
-            <a href="https://www.purdue.edu/newsroom/releases/2017/Q4/purdue-discovery-clears-way-for-human-body-to-work-as-robust-communication-network-for-electronic-devices.html">
-                <img src="{% static "img/news/logo/59021e31b695f.image.gif" %}">
-            </a>
-        </div>
-        <div class="slide">
-            <a href="http://www.ecnmag.com/discovery-clears-way-for-human-body-to-work-as-robust-communication-network-for-electronic-devices/">
-                <img src="{% static "img/news/logo/ecnmag.jpg" %}">
-            </a>
-        </div>
-        <div class="slide">
-            <a href="https://markets.businessinsider.com/news/stocks/purdue-discovery-clears-way-for-human-body-to-work-as-robust-communication-network-for-electronic-devices-1011409883">
-                <img src="{% static "img/news/logo/og-image-logo-social.png" %}">
-            </a>
-        </div>
-        <div class="slide">
-            <a href="https://phys.org/news/2017-12-discovery-human-body-robust-network.html">
-                <img src="{% static "img/news/logo/PhysOrg.png" %}">
-            </a>
-        </div>
-        <div class="slide">
-            <a href="https://www.theengineer.co.uk/human-body-communication-electronics/">
-                <img src="{% static "img/news/logo/theengineer.png" %}">
-            </a>
-        </div>
-        <div class="slide">
-            <a href="#">
-                <img src="{% static "img/news/logo/timestech-new-logo.png" %}">
-            </a>
-        </div>
-        <div class="slide">
-            <a href="https://article.wn.com/view/2017/12/13/Purdue_discovery_clears_way_for_human_body_to_work_as_robust/">
-                <img src="{% static "img/news/logo/wnlogo.png" %}">
-            </a>
-        </div>
-    </div>
-</div>
+{% block content %}
+    <div style="max-width: 80%; margin: 0 auto; padding: 10px">
+        <div class="container-fluid" style="margin-top:30px">
+{#            <div class="col-sm-8">#}
+                <h2 class="accent">SPARC Lab in the News and Media:</h2>
+            <div class="row">
+                <div class="col">
+                    <h5 class="accent">Apr 2019: IEEE Spectrum suggests SparcLab work as a solution of US Department of Homeland Security advisory</h5>
+                    <p>The U.S. Department of Homeland Security last week warned that numerous medical devices made by Medtronic are vulnerable to cyber attack. A solution to which is the EQS-HBC recently published. IEEE Spectrum covered our work saying "Medtronic discloses medical device vulnerabilities, while Purdue University scientists propose countermeasure to block attacks".  IEEE Spectrum Article.</p>
+                    <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                </div>
+                <div class="col">
+                    <div class="fakeimg">
+                        <img src="{% static "img/news/DHS advisory.png" %}" alt="Lights" >
+                        <img src="{% static "img/news/IEEE_Spectrum (Small)976f.png" %}" alt="Lights" >
+                        <img src="{% static "img/news/Seal_of_the_United_States_Department_of_Homeland_Security.svg" %}" alt="Lights" >
 
-<div class="container">
-    <h2>Sparc Lab Research Sponsors</h2>
-    <div class="customer-logos slider">
-        <div class="slide"><img src="{% static "img/logo/1200px-Eli_Lilly_and_Company.svg.png" %}"></div>
-        <div class="slide"><img src="{% static "img/logo/1200px-Google_2015_logo.svg1dc31dc3.png" %}"></div>
-        <div class="slide"><img src="{% static "img/logo/b3bc6e49212072a7b2638c22511a7604_400x400f852f852.jpg" %}"></div>
-        <div class="slide"><img src="{% static "img/logo/cropped-ctsi-logo-horizontal.png" %}"></div>
-        <div class="slide"><img src="{% static "img/logo/DARPA_logo_(current).png" %}"></div>
-        <div class="slide"><img src="{% static "img/logo/nsf-logo.png" %}"></div>
-        <div class="slide"><img src="{% static "img/logo/printlogo.png" %}"></div>
-        <div class="slide"><img src="{% static "img/logo/smartfilms.jpg" %}"></div>
-        <div class="slide"><img src="{% static "img/logo/src-logo-print.png" %}"></div>
+                    </div>
+                </div>
+
+            </div>
+            <br>
+            <div class="row">
+                <div class="col">
+                    <h2 class="accent">Mar 2019: Secure Internet of Body using Electro-Quasistatic Human Body Communication (Scientific Reports (Nature))</h2>
+                </div>
+                <div class="col">
+                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/NHqfT1vIe6E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+
+            </div>
+            <div class="row">
+               <div class="col">
+                  <h2 class="accent">Mar 2018: Prof. Sen speaking at MIT TR35 India Award Speech</h2>
+               </div>
+                <div class="col">
+                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/nWEhU6EX0R8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="row">
+               <div class="col">
+                   <h2 class="accent">Mar 2018: Prof. Sen speaking on Indian National TV CNBC TV-18 Young Turks Program</h2>
+               </div>
+                <div class="col">
+                   <iframe width="100%" height="315" src="https://www.youtube.com/embed/QFSlZ4X3CwQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                  <h2 accent>Mar 2018: MIT TR 35 India Award</h2>
+                  <p>We sincerely thank our sponsors AFOSR YIP, NSF CRII Award and Google FRA for supporting this research spanning from basic research to applications. </p>
+                  <img src="{% static "img/news/28698627_1754351131274554_420695322419662768_oe488e488.jpg" %}" width="100%" alt="Lights" >
+                </div>
+                <div class="col">
+                    <div class="row">
+                        <div class="col">
+
+                            <img src="{% static "img/news/28699144_1754350207941313_2834275567359897594_o7ab27ab2.jpg" %}" width="100%" alt="Lights" >
+                        </div>
+                        <div class="col">
+
+                            <img src="{% static "img/news/28617183_1754350077941326_8450309853273099747_o98439843.jpg" %}" width="100%" alt="Lights" >
+                        </div>
+
+{#                    </div>#}
+                        <div class="row">
+
+                            <img src="{% static "img/news/28698910_1754350617941272_719549663646809047_o71c771c7.jpg" %}" width="100%" height="100%" alt="Lights" >
+
+                        </div>
+
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <h2 class="accent">Dec 2017: Human Body as a Wire</h2>
+                    <ul>
+                        <li>"Purdue discovery clears way for human body to work as robust communication network for electronic devices"</li>
+                        <li>Dec 2017: Our work on Broadband Interference-robust Human Body Communication was featured by 30+ news sites in USA, UK, Greece, India. </li>
+                        <li>We sincerely thank our sponsors AFOSR YIP, NSF CRII Award and Google FRA for supporting this research spanning from basic research to applications. </li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <img src="{% static "img/news/wearable-devicesLO.jpg" %}" alt="Lights" >
+                </div>
+            </div>
+
+
+
+{#            </div>#}
+        </div>
+
+
+
+
+
+        <div class="container-fluid">
+            <h2></h2>
+            <div class="customer-logos slider">
+                <div class="slide">
+                    <a href="https://www.globenewswire.com/news-release/2017/12/14/1262163/0/en/Purdue-discovery-clears-way-for-human-body-to-work-as-robust-communication-network-for-electronic-devices.html">
+                        <img src="{% static "img/news/logo/5a1dde2adbd8fe0001202701_nasdaq-globenewswire-620x150.png" %}">
+                    </a>
+                </div>
+                <div class="slide">
+                    <a href="https://www.purdue.edu/newsroom/releases/2017/Q4/purdue-discovery-clears-way-for-human-body-to-work-as-robust-communication-network-for-electronic-devices.html">
+                        <img src="{% static "img/news/logo/59021e31b695f.image.gif" %}">
+                    </a>
+                </div>
+                <div class="slide">
+                    <a href="http://www.ecnmag.com/discovery-clears-way-for-human-body-to-work-as-robust-communication-network-for-electronic-devices/">
+                        <img src="{% static "img/news/logo/ecnmag.jpg" %}">
+                    </a>
+                </div>
+                <div class="slide">
+                    <a href="https://markets.businessinsider.com/news/stocks/purdue-discovery-clears-way-for-human-body-to-work-as-robust-communication-network-for-electronic-devices-1011409883">
+                        <img src="{% static "img/news/logo/og-image-logo-social.png" %}">
+                    </a>
+                </div>
+                <div class="slide">
+                    <a href="https://phys.org/news/2017-12-discovery-human-body-robust-network.html">
+                        <img src="{% static "img/news/logo/PhysOrg.png" %}">
+                    </a>
+                </div>
+                <div class="slide">
+                    <a href="https://www.theengineer.co.uk/human-body-communication-electronics/">
+                        <img src="{% static "img/news/logo/theengineer.png" %}">
+                    </a>
+                </div>
+                <div class="slide">
+                    <a href="#">
+                        <img src="{% static "img/news/logo/timestech-new-logo.png" %}">
+                    </a>
+                </div>
+                <div class="slide">
+                    <a href="https://article.wn.com/view/2017/12/13/Purdue_discovery_clears_way_for_human_body_to_work_as_robust/">
+                        <img src="{% static "img/news/logo/wnlogo.png" %}">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <h2>Sparc Lab Research Sponsors</h2>
+            <div class="customer-logos slider">
+                <div class="slide"><img src="{% static "img/logo/1200px-Eli_Lilly_and_Company.svg.png" %}"></div>
+                <div class="slide"><img src="{% static "img/logo/1200px-Google_2015_logo.svg1dc31dc3.png" %}"></div>
+                <div class="slide"><img src="{% static "img/logo/b3bc6e49212072a7b2638c22511a7604_400x400f852f852.jpg" %}"></div>
+                <div class="slide"><img src="{% static "img/logo/cropped-ctsi-logo-horizontal.png" %}"></div>
+                <div class="slide"><img src="{% static "img/logo/DARPA_logo_(current).png" %}"></div>
+                <div class="slide"><img src="{% static "img/logo/nsf-logo.png" %}"></div>
+                <div class="slide"><img src="{% static "img/logo/printlogo.png" %}"></div>
+                <div class="slide"><img src="{% static "img/logo/smartfilms.jpg" %}"></div>
+                <div class="slide"><img src="{% static "img/logo/src-logo-print.png" %}"></div>
+            </div>
+        </div>
     </div>
 </div>
 

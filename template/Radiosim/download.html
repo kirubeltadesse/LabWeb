@@ -7,22 +7,24 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 {% endblock %}
 {% block content %}
-<div class="container">
-  <div class="jumbotron">
-    <h1>Hardware Security:</h1>
-    <p>Description: Attenuated Signature Noise Injection (ASNI) is a low overhead hardware obfuscation technique on a
-        traditional encryption engine (AES-128, in this work). ASNI comprises of a Signature Attenuation Hardware (SAH)
-        along with a noise injection (NI) circuit. SAH attenuates the critical AES signature, and minimal noise injection
-        in the attenuated signature domain achieves SCA immunity (MTD > 50K) with high energy efficiency, and without any
-        performance penalty.
-        </p>
-      <p> SAH circuit modelling for the ASNI - AES is provided below.</p>
-  </div>
+    <div style="max-width: 80%; margin: 0 auto; padding: 10px">
+        <div class="container-fluid">
+            <div class="jumbotron" style="background-color:dodgerblue; color: whitesmoke">
+                <h1>Hardware Security:</h1>
+                <p>Description: Attenuated Signature Noise Injection (ASNI) is a low overhead hardware obfuscation technique on a
+                    traditional encryption engine (AES-128, in this work). ASNI comprises of a Signature Attenuation Hardware (SAH)
+                    along with a noise injection (NI) circuit. SAH attenuates the critical AES signature, and minimal noise injection
+                    in the attenuated signature domain achieves SCA immunity (MTD > 50K) with high energy efficiency, and without any
+                    performance penalty.
+                </p>
+                <p> SAH circuit modelling for the ASNI - AES is provided below.</p>
+            </div>
 
 
-    <!-- Auto width -->
-    <p><a class="btn btn-lg btn-primary" href="https://1drv.ms/u/s!AtLcneS-R0AMjwsFSvlOICISyaDX" role="button"><i class="fa fa-download"></i> ASNI Model</a></yypp>
-    <p><a class="btn btn-lg btn-primary" href="https://1drv.ms/u/s!AtLcneS-R0AMjyQiJUCBm7hPIE1r" role="button"><i class="fa fa-download"></i> Model Comparison with Circuit Simulation</a></yypp>
-</div>
+            <!-- Auto width -->
+            <p><a class="btn btn-lg btn-primary" href="https://1drv.ms/u/s!AtLcneS-R0AMjwsFSvlOICISyaDX" role="button"><i class="fa fa-download"></i> ASNI Model</a></yypp>
+            <p><a class="btn btn-lg btn-primary" href="https://1drv.ms/u/s!AtLcneS-R0AMjyQiJUCBm7hPIE1r" role="button"><i class="fa fa-download"></i> Model Comparison with Circuit Simulation</a></yypp>
+        </div>
+    </div>
 
 {% endblock %}
