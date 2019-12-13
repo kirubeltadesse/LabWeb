@@ -1,3 +1,17 @@
+/* Custom Styling */
+p{
+    justify-self: normal;
+    text-align: justify;
+}
+.row {
+  margin: 15px;
+}
+
+/* accent mark*/
+.accent {
+color: #FF0000;
+}
+
 /* GLOBAL STYLES
 -------------------------------------------------- */
 /* Padding below the footer and lighter body text */
@@ -29,10 +43,7 @@ body {
     color: #ffffff;
     background-color: #18171C; /* add background-color to active links */
 }
-/* accent mark*/
-.accent {
-color: #FF0000;
-}
+
 
 .bg-custom-dark{
     background-color: #18171C;

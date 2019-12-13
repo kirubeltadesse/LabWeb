@@ -1,0 +1,55 @@
+{% extends "Radiosim/base.html" %}
+{% block title %} News {% endblock %}
+{% block head %}
+    {{block.super}}
+    {% load static %}
+{#    <link rel="stylesheet" href="{% static 'css/mediaimage.css' %}" type="text/css" xmlns="http://www.w3.org/1999/html">#}
+
+{% endblock %}
+{% block content %}
+    <div style="max-width: 80%; margin: 0 auto; padding: 10px">
+
+        <h2 class="featurette-heading"> Artificial Intelligence in Bioinformatics</h2>
+
+        <h2 class="accent">Species Identification Using Statistical Principal Component Analysis on Genomic Sequence</h2>
+        <p class="lead">Traditionally, species identification in Bioinformatics is performed using sequence alignment, which is a very compute intensive process.
+        In this work we exploit the statistical similarities and uniqueness of the genomic sequences of different species to enable automatic identification of a
+            species from its genome sequence with significantly less computation. A set of 64 three-tuple keywords is first generated using the four types of bases:
+            A, T, C and G. These keywords are searched on N randomly sampled genome sequences, each of a given length (10,000 elements) and the frequency count for
+            each of the 4^3 =64 keywords is obtained. Principal component analysis is then employed on the frequency counts for N sampled instances. The principal
+            component analysis yields a unique feature descriptor for identifying the species from its genome sequence. The variance of the descriptors for a given
+            genome sequence being negligible, the proposed scheme finds extensive applications in automatic species identification. Using this technique, given a
+            genome sequence, instead of performing sequence alignment, a feature descriptor can be generated to identify the species.</p>
+        <br>
+
+        <p class="lead"> Key Publications : LNCS (Springer) 2005, JCIS 2005 </p>
+        <div class="row">
+            <a href="{% static "img/research/PCA.png" %}" data-toggle="lightbox" data-gallery="gallery" class="col-md-12">
+                <img src="{% static "img/research/PCA.png" %}" class="img-fluid rounded">
+            </a>
+
+        </div>
+
+        <h2 class="accent">Topological Clustering of DNA-Descriptors by Self Organizing Feature Map (SOFM) </h2>
+        <p class="lead">In this work we strive to map the DNA-descriptors on to a 2D array of neurons by the well-known Self-organizing Feature Map algorithm. Our main interest is
+        to note whether DNA-descriptors of the same species occupy neighborhood neuronal positions and species having close resemblances in their DNA structure form
+        neighborhood clusters. To verify the above, we considered 36 vectors of each of the following 3 species: Mouse,Yeast and E.coli. Naturally, we have 36 × 3=108
+        vectors to be mapped onto the 2 D array of size (k × k). To perform the experiment, we considered (6× 6) dimensional space for the 2 D array of neurons. Later
+        the maps were created for different dimensions ranging from 4 to 11. After mapping all the 108 input data vectors onto the 2 D array of neurons, it is noted that
+        data from the same species is mapped onto neurons occupying neighboring positions. Hence, it can be inferred that different vectors computed from different samples of
+        the genomic data of a species are close in many respects and hence are mapped onto neighboring spaces on the map,thus forming separate clusters for different species.
+        It can also be claimed that species which are close in characteristics will have similar DNA-descriptors and hence the clusters corresponding to similar species will
+        lie in neighboring positions. Hence, if clustering techniques are applied to DNA-descriptors of a large number of species we will see that species which are similar
+        in many respects e.g. Human and Gorilla will be forming sub-clusters within a super-cluster belonging to their families. Hence, such clustering techniques can help
+            in species identification from genomic sequence. </p>
+
+        <p class="lead">Key Publications : IICAI 2005, Engineering Letters 2007 </p>
+        <div class="row">
+
+            <a href="{% static "img/research/SOFM.png" %}" data-toggle="lightbox" data-gallery="gallery" class="col-md-12">
+                <img src="{% static "img/research/SOFM.png" %}" class="img-fluid rounded">
+            </a>
+
+        </div>
+    </div>
+{% endblock %}

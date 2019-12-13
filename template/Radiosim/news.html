@@ -3,7 +3,12 @@
 {% block head %}
     {{block.super}}
     {% load static %}
-    <link rel="stylesheet" href="{% static 'css/mediaimage.css' %}" type="text/css" xmlns="http://www.w3.org/1999/html">
+     <script>
+        $(document).on("click", '[data-toggle="lightbox"]', function(event) {
+        event.preventDefault();
+        $(this).ekkoLightbox();
+        });
+    </script>
 {% endblock %}
 {% block content %}
 {#<div class="jumbotron">#}
@@ -25,13 +30,13 @@
 {#            <div> <img src="{% static "img/news/Seal_of_the_United_States_Department_of_Homeland_Security.svg" %}" class="rounded float-right" alt="..."></div>#}
 {#        </div>#}
             <div class="row">
-                <a href="#" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
-                   <img src="{% static "img/news/IEEE_Spectrum (Small)976f.png" %}" class="img-fluid rounded"
+                <a href="{% static "img/news/IEEE_Spectrum (Small)976f.png" %}" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
+                   <img src="{% static "img/news/IEEE_Spectrum (Small)976f.png" %}" class="img-fluid rounded">
                 </a>
-                <a href="#" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
+                <a href="{% static "img/news/DHS advisory.png" %}" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
                     <img src="{% static "img/news/DHS advisory.png" %}" class="img-fluid rounded">
                 </a>
-                <a href="#" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
+                <a href="{% static "img/news/Seal_of_the_United_States_Department_of_Homeland_Security.svg" %}" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
                    <img src="{% static "img/news/Seal_of_the_United_States_Department_of_Homeland_Security.svg" %}" class="img-fluid rounded">
                 </a>
             </div>
@@ -63,10 +68,10 @@
         {#                </div>#}
         {#         width=450 height=250       <div class="col-md-5 order-md-1">#}
           <div class="row">
-                <a href="#" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
+                <a href="{% static "img/news/host1_2019.jpg" %}" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
                    <img src="{% static "img/news/host1_2019.jpg" %}" class="img-fluid rounded">
                 </a>
-              <a href="#" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
+              <a href="{% static "img/news/host2_2019 (Small).png" %}" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
                   <img src="{% static "img/news/host2_2019 (Small).png" %}" class="img-fluid rounded">
               </a>
           </div>
@@ -82,10 +87,10 @@
             Congratulations to Baibhab Chatterjee, Shovan Maity, Prof. Dimitrios Peroulis' team, and our LANDAUER collaborators Daniel J. Valentino, Ph.D., and Sean Scott on this award. Great industry-academia collaboration. Thank you all!
             Purdue News Release</p>
         <div class="row">
-            <a href="#" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
+            <a href="{% static "img/news/CICC_2019 (Small).jpg" %}" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
                 <img src="{% static "img/news/CICC_2019 (Small).jpg" %}" class="img-fluid rounded">
             </a>
-            <a href="#" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
+            <a href="{% static "img/news/Shreyas_Sen_CICC_Best_Paper_2019_Monolithic_Radiation_Dosimeter_Time_Based_Sensing (Small).png" %}" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
                 <img src="{% static "img/news/Shreyas_Sen_CICC_Best_Paper_2019_Monolithic_Radiation_Dosimeter_Time_Based_Sensing (Small).png" %}" class="img-fluid rounded">
             </a>
         </div>
@@ -99,7 +104,7 @@
         </p>
 
         <div class="row">
-            <a href="#" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
+            <a href="{% static "img/news/EQS_HBC (Small).png" %}" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
               <img src="{% static "img/news/EQS_HBC (Small).png" %}" class="img-fluid rounded">
             </a>
         </div>
@@ -117,10 +122,10 @@
             Prof. Sen is recognized with the HKN Beta Chapter 'Outstanding Professor Award' and Purdue EVPRP Acorn Award
         </p>
          <div class="row">
-            <a href="#" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
+            <a href="{% static "img/news/HKN_F18_Sen.jpg" %}" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
                 <img src="{% static "img/news/HKN_F18_Sen.jpg" %}" class="img-fluid rounded">
             </a>
-            <a href="#" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
+            <a href="{% static "img/news/Shreyas_Sen_Award_Fall_2018.jpg" %}" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
                <img src="{% static "img/news/Shreyas_Sen_Award_Fall_2018.jpg" %}" class="img-fluid rounded">
             </a>
         </div>
@@ -132,14 +137,14 @@
 
         {#                <p class="lead">Congratulations Debayan and Baibhab and co-authors.</p>#}
          <div class="row">
-            <a href="#" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
+            <a href="{% static "img/logo/landauer_416x416.jpg" %}" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
                <img src="{% static "img/logo/landauer_416x416.jpg" %}" class="img-fluid rounded">
             </a>
         </div>
 
         <h2 class="accent"> CTSI supports Sparc Lab researh on Biomedical Devices<span class="text-muted">(Nov 18)</span></h2>
          <div class="row">
-            <a href="#" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
+            <a href="{% static "img/news/cropped-ctsi-logo-horizontal.png" %}" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
                <img src="{% static "img/news/cropped-ctsi-logo-horizontal.png" %}" class="img-fluid rounded">
             </a>
         </div>
@@ -149,7 +154,7 @@
         <h2 class="accent"> Intel Corporation supports SPARC Lab Research <span class="text-muted"> (Oct 18)</span></h2>
         {#                <p class="lead">Congratulations Debayan and Baibhab and co-authors.</p>#}
          <div class="row">
-            <a href="#" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
+            <a href="{% static "img/logo/printlogo.png" %}" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
                <img src="{% static "img/logo/printlogo.png" %}" class="img-fluid rounded">
             </a>
         </div>
@@ -157,7 +162,7 @@
 
         <h2 class="accent"> SPARC Lab is supported by <a href="https://www.purdue.edu/discoverypark/birck/research/smart-films.php" target="_blank">SMART Films Consortium</a>, Purdue University to develop ULP Sensor Nodes<span class="text-muted">Aug 18</span></h2>
         <div class="row">
-            <a href="#" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
+            <a href="{% static "img/news/smartfilms.jpg" %}" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
                 <img src="{% static "img/news/smartfilms.jpg" %}" class="img-fluid rounded">
             </a>
         </div>
@@ -166,7 +171,7 @@
         <h2 class="accent">SPARC Lab is going to lead and perform on the DARPA MIDAS program to design mm-wave oscillators. <span class="text-muted"> Jul 18</span></h2>
         {#                <p class="lead">Congratulations Debayan and Baibhab and co-authors.</p>#}
         <div class="row">
-            <a href="#" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
+            <a href="{% static "img/news/DARPA_logo_(current).png" %}" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
                 <img src="{% static "img/news/DARPA_logo_(current).png" %}" class="img-fluid rounded">
             </a>
         </div>
@@ -175,7 +180,7 @@
             <a href="https://www.usnews.com/news/best-states/indiana/articles/2017-07-06/eli-lilly-to-fund-up-to-52m-in-purdue-life-science-research" target="_blank">USNews Report.</a> <span class="text-muted">Jun 18</span></h2>
 
         <div class="row">
-            <a href="#" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
+            <a href="{% static "img/news/1200px-Eli_Lilly_and_Company.svg.png" %}" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
                 <img src="{% static "img/news/1200px-Eli_Lilly_and_Company.svg.png" %}" class="img-fluid rounded">
             </a>
         </div>
@@ -188,7 +193,7 @@
            </p>
         {#                <p class="lead">Congratulations Debayan and Baibhab and co-authors.</p>#}
         <div class="row">
-            <a href="#" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
+            <a href="{% static "img/news/IU_AFRL_2030e1f7.jpg" %}" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
                  <img src="{% static "img/news/IU_AFRL_2030e1f7.jpg" %}" class="img-fluid rounded">
             </a>
         </div>
@@ -197,7 +202,7 @@
             <p class="lead">Baibhab Chatterjee and co-authors received 3rd Best Poster Award for paper titled "RF-PUF: IoT Security Enhancement through Authentication of Wireless Nodes using In-situ Machine Learning," at premier <b>Hardware Security</b> Conference
             <a href="http://www.hostsymposium.org/host_2018awards.php">HOST 2018</a>. Congratulations to <b>Baibhab</b> and co-authors. This work shows how <b>In-situ Machine Learning could Secure Radio Communication.</b> </p>
          <div class="row">
-            <a href="#" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
+            <a href="{% static "img/news/Baibhab_Shreyas_HOST_17_RF_PUF (Small).jpg" %}" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
                   <img src="{% static "img/news/Baibhab_Shreyas_HOST_17_RF_PUF (Small).jpg" %}" class="img-fluid rounded">
             </a>
         </div>
@@ -207,7 +212,7 @@
         <p class="lead">Prof. Sen has been named one of India’s top innovators under 35 by MIT Technology Review and Mint.  Mint Newspaper, Purdue News Release</p>
         {#                <p class="lead">Congratulations Debayan and Baibhab and co-authors.</p>#}
          <div class="row">
-            <a href="#" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
+            <a href="{% static "img/news/tr35_in_logo_x350.png" %}" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
                   <img src="{% static "img/news/tr35_in_logo_x350.png" %}" class="img-fluid rounded">
             </a>
         </div>
@@ -398,4 +403,5 @@
         </div>
         -->
     </div>
+
 {% endblock %}

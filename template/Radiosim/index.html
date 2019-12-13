@@ -3,7 +3,9 @@
 {% block head %}
     {{block.super}}
     {% load static %}
-    <link rel="stylesheet" href="{% static 'css/footersilder.css' %}" type="text/css" xmlns="http://www.w3.org/1999/html">
+    <link rel="stylesheet" href="{% static 'css/footersilder.css' %}" type="text/css" xmlns="http://www.w3.org/1999/html"
+          xmlns:p="http://www.w3.org/1999/html">
+
     {#<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">#}
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -93,16 +95,15 @@
                     <p></p>
                 </div>
                 <div class = "row">
-                    <div class="col-lg-4" align="center">
+                    <div class="col-lg-4">
                         <img src="{% static "img/profile_shreyas_sen.jpg" %}" class="rounded-circle" width=350 height = 350 alt="...">
                         <div>
                             <h3>Dr. Shreyas Sen </h3>
-                            <p> <a class="btn btn-lg btn-primary" href="https://onedrive.live.com/?authkey=%21ALONXmWk6Z4LKmQ&cid=0C4047BEE49DDCD2&id=C4047BEE49DDCD2%211566&parId=C4047BEE49DDCD2%211563&o=OneUp" role="button">Full CV</a></p>
+                            <a class="btn btn-lg btn-primary" href="https://onedrive.live.com/?authkey=%21ALONXmWk6Z4LKmQ&cid=0C4047BEE49DDCD2&id=C4047BEE49DDCD2%211566&parId=C4047BEE49DDCD2%211563&o=OneUp" role="button">Full CV</a>
                         </div>
                     </div>
-                    <div class="col-lg-7">
-                        <p></p>
-                        <p align="justify">
+                    <div class="col-lg-8">
+                        <p class="lead">
                             Short Bio: Dr. Sen received   his   Ph.D.    degree    in    Electrical    and    Computer    Engineering
                             from Georgia Tech, Atlanta, USA, in 2011.  He  is  currently  an  Assistant  Professor  in  School  of  Electrical
                             and  Computer  Engineering,  Purdue University. He has over 5 years of industry research  experience  at  Intel  Labs,
@@ -133,7 +134,7 @@
             <div class="row" align="center" >
 
                 <h4 class="display-4"> Research Areas</h4>
-                <p class="lead" align="justify" > Our group is broadly interested in research of circuits/systems that interfaces between the
+                <p class="lead" > Our group is broadly interested in research of circuits/systems that interfaces between the
                     physical world and digital information. More specifically we focus on fundamental improvements in sensing
                     and communication circuits/systems. This research has applications in the areas of Internet of Things (IoT),
                     Biomedical and Security, among others. </p>
