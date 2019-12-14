@@ -43,28 +43,39 @@
             <p></p>
             <h4 align="center"> Chip Gallery </h4>
             <br>
-            <!-- Grid row -->
-            <div class="gallery" id="gallery">
 
-                <!-- Grid column -->
-                <div class="mb-4 pics animation all 2">
-                    <div class="img__wrap">
-                        <img class="img-fluid" src="{% static "img/chip/HBC_IC.jpg" %}">
+            <div class="row">
+                <a href="{% static "img/chip/HBC_IC.jpg" %}" data-toggle="lightbox" data-gallery="gallery" class="col-md-6">
+                   <div class="img__wrap">
+                            <img class="img-fluid" src="{% static "img/chip/HBC_IC.jpg" %}" class="img-fluid rounded">
+                            <p class="img__description">
+                                Process: 65nm TSMC CMOS process
+                                Design: Broadband Human Body Communication Transceiver
+                                Publication: CICC 2018
+                                World's lowest-energy Body Area Network (BAN) IC
+                            </p>
+                        </div>
+                </a>
+
+                <a href="{% static "img/chip/WBJD_SMALLb10e.png" %}" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
+                 <div class="img__wrap">
+
+                        <img class="img-fluid" src="{% static "img/chip/WBJD_SMALLb10e.png" %}" class="img-fluid rounded">
                         <p class="img__description">
-                            Process: 65nm TSMC CMOS process
-                            Design: Broadband Human Body Communication Transceiver
-                            Publication: CICC 2018
-                            World's lowest-energy Body Area Network (BAN) IC
+                            Process: 65 nm TSMC CMOS process
+                            Design: DVH-Receiver with Wideband Jammer Detector
+                            Publication: Shreyas Sen, Ph.D. Thesis, Georgia Tech, 2011
+                            Wideband Jammer detector allowing programmable jammer detection time (5us to 6ms). This allows adaptive receiver power vs. performance trade-off when a jammer is not present
                         </p>
                     </div>
-                </div>
-                <!-- Grid column -->
+                </a>
+            </div>
 
-                <!-- Grid column -->
-                <div class="mb-3 pics animation all 1">
-                    <div class="img__wrap">
+            <div class="row">
+                <a href="{% static "img/chip/ISSCC_2014_Jaussi_small9f30.png" %}" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
+                   <div class="img__wrap">
 
-                        <img class="img-fluid" src="{% static "img/chip/ISSCC_2014_Jaussi_small9f30.png" %}">
+                        <img class="img-fluid" src="{% static "img/chip/ISSCC_2014_Jaussi_small9f30.png" %}" class="img-fluid rounded">
                         <p class="img__description">
                             Process: 22 nm Intel CMOS process
                             Design: 32Gb/s 3-Tap FFE/6-Tap DFE Bidirectional Serial Link Transceiver
@@ -73,28 +84,12 @@
                         </p>
 
                     </div>
-                </div>
-                <!-- Grid column -->
+                </a>
 
-                <!-- Grid column -->
-                <div class="mb-3 pics animation all 1">
+                <a href="{% static "img/chip/ISSCC_2016_smallb430.png" %}" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
                     <div class="img__wrap">
 
-                        <img class="img-fluid" src="{% static "img/chip/ISSCC_2014_Tzu_Chien_small6aeb.png" %}">
-                        <p class="img__description">
-                            Process: 22 nm Intel CMOS process
-                            Design: 25.6Gb/s Differential and DDR4/GDDR5 Dual-Mode Transmitter
-                            Publication: ISSCC 2014
-                        </p>
-                    </div>
-                </div>
-                <!-- Grid column -->
-
-                <!-- Grid column -->
-                <div class="mb-3 pics animation all 2">
-                    <div class="img__wrap">
-
-                        <img class="img-fluid" src="{% static "img/chip/ISSCC_2016_smallb430.png" %}">
+                        <img class="img-fluid" src="{% static "img/chip/ISSCC_2016_smallb430.png" %}" class="img-fluid rounded">
                         <p class="img__description">
                             Process: 14 nm Intel CMOS process
                             Design: 32 Gbps 4-Channel Capacitive Proximity Communication Transceiver
@@ -102,14 +97,11 @@
                             World's fastest and most-energy efficient mm-scale capacitive Proximity Communication Link
                         </p>
                     </div>
-                </div>
-                <!-- Grid column -->
+                </a>
+                <a href="{% static "img/chip/TCAS1_SMALL1467.jpg" %}" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
+                     <div class="img__wrap">
 
-                <!-- Grid column -->
-                <div class="mb-3 pics animation all 2">
-                    <div class="img__wrap">
-
-                        <img class="img-fluid" src="{% static "img/chip/TCAS1_SMALL1467.jpg" %}">
+                        <img class="img-fluid" src="{% static "img/chip/TCAS1_SMALL1467.jpg" %}" class="img-fluid rounded">
                         <p class="img__description">
                             Process: 180 nm National Semiconductor process
                             Design: Orthogonally Tunable LNA for Zero-margin Receiver
@@ -117,25 +109,135 @@
                             Orthogonally tunable LNA that allows independent control of Gain+NF or Linearity with power consumption. This enables dynamically extra power savings in RF receiver in both cases when SNR is high or interference is not present (VIZOR).
                         </p>
                     </div>
-                </div>
-                <!-- Grid column -->
+                </a>
 
-                <!-- Grid column -->
-                <div class="mb-3 pics animation all 1">
-                    <div class="img__wrap">
-
-                        <img class="img-fluid" src="{% static "img/chip/WBJD_SMALLb10e.png" %}">
-                        <p class="img__description">
-                            Process: 65 nm TSMC CMOS process
-                            Design: DVH-Receiver with Wideband Jammer Detector
-                            Publication: Shreyas Sen, Ph.D. Thesis, Georgia Tech, 2011
-                            Wideband Jammer detector allowing programmable jammer detection time (5us to 6ms). This allows adaptive receiver power vs. performance trade-off when a jammer is not present
-                        </p>
-                    </div>
-                </div>
-                <!-- Grid column -->
 
             </div>
+
+            <div class="row">
+                <a href="{% static "img/chip/ISSCC_2014_Tzu_Chien_small6aeb.png" %}" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
+                    <div class="img__wrap">
+
+                        <img class="img-fluid" src="{% static "img/chip/ISSCC_2014_Tzu_Chien_small6aeb.png" %}" class="img-fluid rounded">
+                        <p class="img__description">
+                            Process: 22 nm Intel CMOS process
+                            Design: 25.6Gb/s Differential and DDR4/GDDR5 Dual-Mode Transmitter
+                            Publication: ISSCC 2014
+                        </p>
+                    </div>
+                </a>
+            </div>
+
+
+
+
+            <!-- Grid row -->
+{#            <div class="gallery" id="gallery">#}
+{##}
+{#                <div class="row">#}
+{#                    <!-- Grid column -->#}
+{#                    <div class="col-md-12 mb-4 pics animation all 2">#}
+{#                        <div class="img__wrap">#}
+{#                            <img class="img-fluid" src="{% static "img/chip/HBC_IC.jpg" %}">#}
+{#                            <p class="img__description">#}
+{#                                Process: 65nm TSMC CMOS process#}
+{#                                Design: Broadband Human Body Communication Transceiver#}
+{#                                Publication: CICC 2018#}
+{#                                World's lowest-energy Body Area Network (BAN) IC#}
+{#                            </p>#}
+{#                        </div>#}
+{#                    </div>#}
+{#                </div>#}
+{#                <!-- Grid column -->#}
+{#                <div class="mb-4 pics animation all 2">#}
+{#                    <div class="img__wrap">#}
+{#                        <img class="img-fluid" src="{% static "img/chip/HBC_IC.jpg" %}">#}
+{#                        <p class="img__description">#}
+{#                            Process: 65nm TSMC CMOS process#}
+{#                            Design: Broadband Human Body Communication Transceiver#}
+{#                            Publication: CICC 2018#}
+{#                            World's lowest-energy Body Area Network (BAN) IC#}
+{#                        </p>#}
+{#                    </div>#}
+{#                </div>#}
+{#                <!-- Grid column -->#}
+{##}
+{#                <!-- Grid column -->#}
+{#                <div class="mb-3 pics animation all 1">#}
+{#                    <div class="img__wrap">#}
+{##}
+{#                        <img class="img-fluid" src="{% static "img/chip/ISSCC_2014_Jaussi_small9f30.png" %}">#}
+{#                        <p class="img__description">#}
+{#                            Process: 22 nm Intel CMOS process#}
+{#                            Design: 32Gb/s 3-Tap FFE/6-Tap DFE Bidirectional Serial Link Transceiver#}
+{#                            Publication: ISSCC 2014, JSSC 2014#}
+{#                            Lowest-energy Scalable 4-32 Gbps Serial-link + Low-profile connector that impacted the design of USB-C type connector#}
+{#                        </p>#}
+{##}
+{#                    </div>#}
+{#                </div>#}
+{#                <!-- Grid column -->#}
+{##}
+{#                <!-- Grid column -->#}
+{#                <div class="mb-3 pics animation all 1">#}
+{#                    <div class="img__wrap">#}
+{##}
+{#                        <img class="img-fluid" src="{% static "img/chip/ISSCC_2014_Tzu_Chien_small6aeb.png" %}">#}
+{#                        <p class="img__description">#}
+{#                            Process: 22 nm Intel CMOS process#}
+{#                            Design: 25.6Gb/s Differential and DDR4/GDDR5 Dual-Mode Transmitter#}
+{#                            Publication: ISSCC 2014#}
+{#                        </p>#}
+{#                    </div>#}
+{#                </div>#}
+{#                <!-- Grid column -->#}
+{##}
+{#                <!-- Grid column -->#}
+{#                <div class="mb-3 pics animation all 2">#}
+{#                    <div class="img__wrap">#}
+{##}
+{#                        <img class="img-fluid" src="{% static "img/chip/ISSCC_2016_smallb430.png" %}">#}
+{#                        <p class="img__description">#}
+{#                            Process: 14 nm Intel CMOS process#}
+{#                            Design: 32 Gbps 4-Channel Capacitive Proximity Communication Transceiver#}
+{#                            Publication: ISSCC 2016, JSSC 2016#}
+{#                            World's fastest and most-energy efficient mm-scale capacitive Proximity Communication Link#}
+{#                        </p>#}
+{#                    </div>#}
+{#                </div>#}
+{#                <!-- Grid column -->#}
+{##}
+{#                <!-- Grid column -->#}
+{#                <div class="mb-3 pics animation all 2">#}
+{#                    <div class="img__wrap">#}
+{##}
+{#                        <img class="img-fluid" src="{% static "img/chip/TCAS1_SMALL1467.jpg" %}">#}
+{#                        <p class="img__description">#}
+{#                            Process: 180 nm National Semiconductor process#}
+{#                            Design: Orthogonally Tunable LNA for Zero-margin Receiver#}
+{#                            Publication: ISCAS 2011, TCASI 2011 (special issue)#}
+{#                            Orthogonally tunable LNA that allows independent control of Gain+NF or Linearity with power consumption. This enables dynamically extra power savings in RF receiver in both cases when SNR is high or interference is not present (VIZOR).#}
+{#                        </p>#}
+{#                    </div>#}
+{#                </div>#}
+{#                <!-- Grid column -->#}
+{##}
+{#                <!-- Grid column -->#}
+{#                <div class="mb-3 pics animation all 1">#}
+{#                    <div class="img__wrap">#}
+{##}
+{#                        <img class="img-fluid" src="{% static "img/chip/WBJD_SMALLb10e.png" %}">#}
+{#                        <p class="img__description">#}
+{#                            Process: 65 nm TSMC CMOS process#}
+{#                            Design: DVH-Receiver with Wideband Jammer Detector#}
+{#                            Publication: Shreyas Sen, Ph.D. Thesis, Georgia Tech, 2011#}
+{#                            Wideband Jammer detector allowing programmable jammer detection time (5us to 6ms). This allows adaptive receiver power vs. performance trade-off when a jammer is not present#}
+{#                        </p>#}
+{#                    </div>#}
+{#                </div>#}
+{#                <!-- Grid column -->#}
+{##}
+{#            </div>#}
         </div>
     </div>
         <!-- Grid row -->
