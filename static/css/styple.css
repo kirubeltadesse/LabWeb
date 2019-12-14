@@ -16,8 +16,11 @@ p{
     .carousel-inner{
         display: none;
     }
-    p{
+    .lead{
         text-align: left;
-        font-size: inherit;
+        font-size: small;
     }
+    .featurette-heading, .accent, .display-4, h4, h3, h2, h1 {
+    font-size: 20px;
+  }
 }
