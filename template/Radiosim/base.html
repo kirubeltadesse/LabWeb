@@ -28,19 +28,19 @@
                 margin-top: -1px;
             }
         </script>
-         <script>
-        $('.dropdown-submenu > a').on("click", function(e) {
-            var submenu = $(this);
-            $('.dropdown-submenu .dropdown-menu').removeClass('show');
-            submenu.next('.dropdown-menu').addClass('show');
-            e.stopPropagation();
-        });
+        <script>
+            $('.dropdown-submenu > a').on("click", function(e) {
+                var submenu = $(this);
+                $('.dropdown-submenu .dropdown-menu').removeClass('show');
+                submenu.next('.dropdown-menu').addClass('show');
+                e.stopPropagation();
+            });
 
-        $('.dropdown').on("hidden.bs.dropdown", function() {
-            // hide any open menus when parent closes
-            $('.dropdown-menu.show').removeClass('show');
-        });
-    </script>
+            $('.dropdown').on("hidden.bs.dropdown", function() {
+                // hide any open menus when parent closes
+                $('.dropdown-menu.show').removeClass('show');
+            });
+        </script>
     {% endblock %}
 
 </head>
@@ -155,26 +155,26 @@
 {#            </form>#}
         </div>
     </nav>
-    <script>
-        .navbar-nav li:hover > ul.dropdown-menu {
-            display: block;
-        }
-        .dropdown-submenu {
-            position:relative;
-        }
-        .dropdown-submenu>.dropdown-menu {
-            top: 0;
-            left: 100%;
-            margin-top:-6px;
-        }
+        <script>
+            .navbar-nav li:hover > ul.dropdown-menu {
+                display: block;
+            }
+            .dropdown-submenu {
+                position:relative;
+            }
+            .dropdown-submenu>.dropdown-menu {
+                top: 0;
+                left: 100%;
+                margin-top:-6px;
+            }
 
-/* rotate caret on hover */
-        .dropdown-menu > li > a:hover:after {
-            text-decoration: underline;
-            transform: rotate(-90deg);
-        }
+            /* rotate caret on hover */
+            .dropdown-menu > li > a:hover:after {
+                text-decoration: underline;
+                transform: rotate(-90deg);
+            }
 
-    </script>
+        </script>
     </div>
 {% endblock %}
 {#<div class="container">#}
