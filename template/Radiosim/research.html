@@ -9,52 +9,64 @@
 {% endblock %}
 
 {% block content %}
-<div style="max-width: 80%; margin: 0 auto; padding: 10px">
 
-    <h2 class="featurette-heading">Secure and Efficient Internet of Body using Electro-Quasistatic Human Body Communication  <span class="text-muted"></span></h2>
-    <p class="lead"> Radiative communication using electro-magnetic (EM) fields amongst the wearable and implantable devices act as the backbone for information exchange around a human body, thereby enabling prime applications in the fields of connected healthcare, electroceuticals, neuroscience, augmented and virtual reality. However, owing to such radiative nature of the traditional wireless communication, EM signals propagate in all directions, inadvertently allowing an eavesdropper to intercept the information. In this context, the human body, primarily due to its high water content, has emerged as a medium for low-loss transmission, termed human body communication (HBC), enabling energy-efficient means for wearable communication. However, conventional HBC implementations suffer from significant radiation which also compromises security. In this work, we develop Electro-Quasistatic Human Body Communication (EQS-HBC), a method for localizing signals within the body using low-frequency carrier-less (broadband) transmission, thereby making it extremely difficult for a nearby eavesdropper to intercept critical private data, thus producing a covert communication channel, i.e. the human body. This work, for the first time, demonstrates and analyzes the improvement in private space enabled by EQS-HBC. Detailed experiments, supported by theoretical modeling and analysis, reveal that the quasi-static (QS) leakage due to the on-body EQS-HBC transmitter-human body interface is detectable up to <0.15 m, whereas the human body alone leaks only up to ~0.01 m, compared to >5 m detection range for on-body EM wireless communication, highlighting the underlying advantage of EQS-HBC to enable covert communication.
-        Prof. Shreyas Sen explaining Physical Security of BAN</p>
-    <br>
-    <div class="row">
-        <a href="https://www.youtube.com/embed/NHqfT1vIe6E" data-toggle="lightbox" data-gallery="gallery" class="col-md-6">
-              <iframe width="100%" height="100%" src="https://www.youtube.com/embed/NHqfT1vIe6E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </a>
-        <a href="{% static "img/news/EQS_HBC (Small).png" %}" data-toggle="lightbox" data-gallery="gallery" class="col-md-6">
-            <img src="{% static "img/news/EQS_HBC (Small).png" %}" class="img-fluid rounded">
-        </a>
-    </div>
+    <div class="bg-custom">
 
-    <h2 class="featurette-heading">Efficient Internet Body-area Network using Broadband Human Body Communication <span class="text-muted"></span></h2>
-    <p class="lead">The human body could be used as a very good conductor because of its high water content, allowing low-loss broadband communication. However, it picks up interference from the world around it, such as FM radio signals. The Purdue technology suppresses those interfering signals to allow for improved communication between devices. Our technology uses the human body as a ‘wire’ and demonstrated greater than an order of magnitude lower-energy per communicated bit compared to the state-of-the-art design and about 100 times lower energy compared to today’s wireless BAN. </p>
-    <br>
-     <div class="row">
-        <a href="{% static "img/research/sen-wireLO.jpg" %}" data-toggle="lightbox" data-gallery="gallery" class="col-md-6">
-            <img src="{% static "img/research/sen-wireLO.jpg" %}" class="img-fluid rounded">
-        </a>
-         <a href="{% static "img/research/human-wireLO.jpg" %}" data-toggle="lightbox" data-gallery="gallery" class="col-md-6">
-             <img src="{% static "img/research/human-wireLO.jpg" %}" class="img-fluid rounded">
-         </a>
-     </div>
-
-
-    <h2 class="featurette-heading">Security: Electromagnetic Side-Channel Attack <span class="text-muted"></span></h2>
-    <p class="lead">When ‘mathematically secure’ cryptographic cores are implemented on physical substrates they leak correlated information through unintended physical ‘side-channels’, such as power, electromagnetic(EM) radiation, acoustic, temperature etc. Side-channel attack (SCA) using electromagnetic (EM) radiation is a prominent tool to extract the secret key of an encryption device. This work investigates the root-cause behind the genesis of this EM leakage, presents the first ‘White-Box Model’ of EM Side-Channel Leakage and leverages it to develop an energy-efficient countermeasure using a signature attenuation hardware (SAH) to prevent such attacks on cryptographic ICs. More details can be found in the paper below:</p>
-    <br>
-    <div class="row">
-        <a href="{% static "img/research/host2_2019 (Small).png" %}" data-toggle="lightbox" data-gallery="gallery" class="col-md-12">
-            <img src="{% static "img/research/host2_2019 (Small).png" %}" class="img-fluid rounded">
-        </a>
+        <div style="max-width: 80%; margin: 0 auto; padding: 10px">
+            <h2 class="featurette-heading">Secure and Efficient Internet of Body using Electro-Quasistatic Human Body Communication  <span class="text-muted"></span></h2>
+            <p class="lead"> Radiative communication using electro-magnetic (EM) fields amongst the wearable and implantable devices act as the backbone for information exchange around a human body, thereby enabling prime applications in the fields of connected healthcare, electroceuticals, neuroscience, augmented and virtual reality. However, owing to such radiative nature of the traditional wireless communication, EM signals propagate in all directions, inadvertently allowing an eavesdropper to intercept the information. In this context, the human body, primarily due to its high water content, has emerged as a medium for low-loss transmission, termed human body communication (HBC), enabling energy-efficient means for wearable communication. However, conventional HBC implementations suffer from significant radiation which also compromises security. In this work, we develop Electro-Quasistatic Human Body Communication (EQS-HBC), a method for localizing signals within the body using low-frequency carrier-less (broadband) transmission, thereby making it extremely difficult for a nearby eavesdropper to intercept critical private data, thus producing a covert communication channel, i.e. the human body. This work, for the first time, demonstrates and analyzes the improvement in private space enabled by EQS-HBC. Detailed experiments, supported by theoretical modeling and analysis, reveal that the quasi-static (QS) leakage due to the on-body EQS-HBC transmitter-human body interface is detectable up to <0.15 m, whereas the human body alone leaks only up to ~0.01 m, compared to >5 m detection range for on-body EM wireless communication, highlighting the underlying advantage of EQS-HBC to enable covert communication.
+                Prof. Shreyas Sen explaining Physical Security of BAN</p>
+            <br>
+            <div class="row">
+                <a href="https://www.youtube.com/embed/NHqfT1vIe6E" data-toggle="lightbox" data-gallery="gallery" class="col-md-6">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/NHqfT1vIe6E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </a>
+                <a href="{% static "img/news/EQS_HBC (Small).png" %}" data-toggle="lightbox" data-gallery="gallery" class="col-md-6">
+                    <img src="{% static "img/news/EQS_HBC (Small).png" %}" class="img-fluid rounded">
+                </a>
+            </div>
+        </div>
     </div>
 
 
-    <h2 class="featurette-heading">Time-Based High-Resolution Energy-Resolution Scalable Biosensing <span class="text-muted"></span></h2>
-    <p class="lead">In this work, we are developing the first monolithic CMOS radiation to digital converter, which consists of a floating-gate radiation sensor and a time-based resistance-to-digital-converter (RDC). The time-based RDC exhibits in-field resolution-energy scalability by controlling the total integrated time for measurement. Time-based sensing provides high-resolution (18 bit) by utilizing the availability of time, for extra low-frequency (ELF) application with ultra-low power (861nW). This research will enable wearable devices for real-time sensing of radiation exposure, for example in scenarios involving healthcare workers in a hospital setting during medical procedures (e.g. Chest CT-SCAN).
-    </p>
-    <br>
-     <div class="row">
-        <a href="{% static "img/research/sen.png" %}" data-toggle="lightbox" data-gallery="gallery" class="col-md-12">
-            <img src="{% static "img/research/sen.png" %}" class="img-fluid rounded">
-        </a>
+    <div style="max-width: 80%; margin: 0 auto; padding: 10px">
+        <h2 class="featurette-heading">Efficient Internet Body-area Network using Broadband Human Body Communication <span class="text-muted"></span></h2>
+        <p class="lead">The human body could be used as a very good conductor because of its high water content, allowing low-loss broadband communication. However, it picks up interference from the world around it, such as FM radio signals. The Purdue technology suppresses those interfering signals to allow for improved communication between devices. Our technology uses the human body as a ‘wire’ and demonstrated greater than an order of magnitude lower-energy per communicated bit compared to the state-of-the-art design and about 100 times lower energy compared to today’s wireless BAN. </p>
+        <br>
+        <div class="row">
+            <a href="{% static "img/research/sen-wireLO.jpg" %}" data-toggle="lightbox" data-gallery="gallery" class="col-md-6">
+                <img src="{% static "img/research/sen-wireLO.jpg" %}" class="img-fluid rounded">
+            </a>
+            <a href="{% static "img/research/human-wireLO.jpg" %}" data-toggle="lightbox" data-gallery="gallery" class="col-md-6">
+                <img src="{% static "img/research/human-wireLO.jpg" %}" class="img-fluid rounded">
+            </a>
+        </div>
     </div>
-</div>
+
+
+    <div class="bg-custom-dark">
+        <div style="max-width: 80%; margin: 0 auto; padding: 10px">
+            <h2 class="featurette-heading">Security: Electromagnetic Side-Channel Attack <span class="text-muted"></span></h2>
+            <p class="lead">When ‘mathematically secure’ cryptographic cores are implemented on physical substrates they leak correlated information through unintended physical ‘side-channels’, such as power, electromagnetic(EM) radiation, acoustic, temperature etc. Side-channel attack (SCA) using electromagnetic (EM) radiation is a prominent tool to extract the secret key of an encryption device. This work investigates the root-cause behind the genesis of this EM leakage, presents the first ‘White-Box Model’ of EM Side-Channel Leakage and leverages it to develop an energy-efficient countermeasure using a signature attenuation hardware (SAH) to prevent such attacks on cryptographic ICs. More details can be found in the paper below:</p>
+            <br>
+            <div class="row">
+                <a href="{% static "img/research/host2_2019 (Small).png" %}" data-toggle="lightbox" data-gallery="gallery" class="col-md-12">
+                    <img src="{% static "img/research/host2_2019 (Small).png" %}" class="img-fluid rounded">
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+    <div style="max-width: 80%; margin: 0 auto; padding: 10px">
+        <h2 class="featurette-heading">Time-Based High-Resolution Energy-Resolution Scalable Biosensing <span class="text-muted"></span></h2>
+        <p class="lead">In this work, we are developing the first monolithic CMOS radiation to digital converter, which consists of a floating-gate radiation sensor and a time-based resistance-to-digital-converter (RDC). The time-based RDC exhibits in-field resolution-energy scalability by controlling the total integrated time for measurement. Time-based sensing provides high-resolution (18 bit) by utilizing the availability of time, for extra low-frequency (ELF) application with ultra-low power (861nW). This research will enable wearable devices for real-time sensing of radiation exposure, for example in scenarios involving healthcare workers in a hospital setting during medical procedures (e.g. Chest CT-SCAN).
+        </p>
+        <br>
+        <div class="row">
+            <a href="{% static "img/research/sen.png" %}" data-toggle="lightbox" data-gallery="gallery" class="col-md-12">
+                <img src="{% static "img/research/sen.png" %}" class="img-fluid rounded">
+            </a>
+        </div>
+    </div>
 {% endblock %}
