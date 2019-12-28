@@ -41,6 +41,17 @@
                 $('.dropdown-menu.show').removeClass('show');
             });
         </script>
+        {# jQuery hover()        #}
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $(".dropdown, .btn-group").hover(function(){
+                    var dropdownMenu = $(this).children(".dropdown-menu");
+                    if(dropdownMenu.is(":visible")){
+                        dropdownMenu.parent().toggleClass("open");
+                    }
+                });
+            });
+        </script>
     {% endblock %}
 
 </head>
