@@ -48,6 +48,8 @@ body {
     /*left: 0;*/
     top: 10%;
 }
+
+
 /************************** Font ****************************************/
 /*h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {*/
 /*margin-bottom: 0.5rem;*/
@@ -177,6 +179,7 @@ body {
 }
 
 /* jQuery hover() method */
+/* mobile Display*/
 @media screen and (min-width: 768px){
   .dropdown:hover .dropdown-menu, .btn-group:hover .dropdown-menu{
         display: block;
@@ -191,6 +194,10 @@ body {
         margin-bottom: 0;
     }
 }
+
+/* Disktop Display*/
+
+
 
 /*
 body{
