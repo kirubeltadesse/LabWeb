@@ -7,9 +7,9 @@
             <div class="row">
                 <div class="col-md-8 blog-main">
                     <br>
-                    <h3 class="pb-3 mb-4 font-italic border-bottom">
-                        Teaching
-                    </h3>
+{#                    <h3 class="pb-3 mb-4 font-italic border-bottom">#}
+{#                        Teaching#}
+{#                    </h3>#}
 
                     <div class="blog-post">
                         <h2 class="blog-post-title">ECE 270: Introduction to Digital System Design </h2>
@@ -64,13 +64,15 @@
                         </blockquote>
 
                         <a href="https://engineering.purdue.edu/ProEd/digital-badges/design-for-security"><h2 class="blog-post-title">CYBER SECURITY COURSES: DESIGN FOR SECURITY PROGRAM </h2></a>
-                        <div>
-                            <iframe width="640" height="360" src="https://www.youtube.com/embed/jKOzejmg2dE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <div class="row">
+                            <a href="https://www.youtube.com/embed/jKOzejmg2dE" data-toggle="lightbox" data-gallery="gallery" class="col-md-6">
+                                <iframe width="100%" height="100%"  src="https://www.youtube.com/embed/jKOzejmg2dE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </a>
+                            <a href="https://www.purdue.edu/newsroom/releases/2018/Q2/design-for-security-program-launched-by-purdue,-intel.html" data-toggle="lightbox" data-gallery="gallery" class="col-md-6">
+                                <img src="{% static "img/chiang-intelLO.jpg" %}" class="img-fluid rounded" >
+                            </a>
                         </div>
-                        <div>
-                            <a href="https://www.purdue.edu/newsroom/releases/2018/Q2/design-for-security-program-launched-by-purdue,-intel.html"><img src="{% static "img/chiang-intelLO.jpg" %}"></a>
-                        </div>
-                    
+
 
                     </div><!-- /.blog-post -->
 

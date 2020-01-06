@@ -8,7 +8,7 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <!------ Include the above in your HEAD tag ---------->
 
-{#<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>#}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
 {#    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>#}
 {#    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>#}
 {#    <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>#}
@@ -43,98 +43,118 @@
 
 {% block content %}
     <div style="max-width: 80%; margin: 0 auto; padding: 10px">
-        <div class="container-fluid" style="margin-top:30px">
-{#            <div class="col-sm-8">#}
-                <h2 class="accent">SPARC Lab in the News and Media:</h2>
-            <div class="row">
-                <div class="col">
-                    <h5 class="accent">Apr 2019: IEEE Spectrum suggests SparcLab work as a solution of US Department of Homeland Security advisory</h5>
-                    <p>The U.S. Department of Homeland Security last week warned that numerous medical devices made by Medtronic are vulnerable to cyber attack. A solution to which is the EQS-HBC recently published. IEEE Spectrum covered our work saying "Medtronic discloses medical device vulnerabilities, while Purdue University scientists propose countermeasure to block attacks".  IEEE Spectrum Article.</p>
-                    <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-                </div>
-                <div class="col">
-                    <div class="fakeimg">
-                        <img src="{% static "img/news/DHS advisory.png" %}" alt="Lights" >
-                        <img src="{% static "img/news/IEEE_Spectrum (Small)976f.png" %}" alt="Lights" >
-                        <img src="{% static "img/news/Seal_of_the_United_States_Department_of_Homeland_Security.svg" %}" alt="Lights" >
+        {#        <div class="container-fluid" style="margin-top:30px">#}
+        {#            <div class="col-sm-8">#}
+        <h2 class="accent">SPARC Lab in the News and Media:</h2>
+        <h2 class="accent">Apr 2019: IEEE Spectrum suggests SparcLab work as a solution of US Department of Homeland Security advisory</h2>
+        <p class="lead">The <a href="https://www.us-cert.gov/ics/advisories/ICSMA-19-080-01" target="_blank">U.S. Department of Homeland Security</a> last week
+            <a href="https://www.us-cert.gov/ics/advisories/ICSMA-19-080-01" target="_blank">warned</a> that numerous medical devices made by Medtronic are vulnerable to cyber
+            attack. A solution to which is the EQS-HBC recently published. IEEE Spectrum covered our work saying "Medtronic discloses medical
+            device vulnerabilities, while Purdue University scientists propose countermeasure to block attacks". <a
+                    href="https://spectrum.ieee.org/the-human-os/biomedical/devices/thwart-cyber-attacks-on-implanted-medical-devices" target="_blank">IEEE Spectrum Article.</a></p>
+        <div class="row">
+            <a href="{% static "img/news/IEEE_Spectrum (Small)976f.png" %}" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
+                <img src="{% static "img/news/IEEE_Spectrum (Small)976f.png" %}" class="img-fluid rounded">
+            </a>
+            <a href="{% static "img/news/DHS advisory.png" %}" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
+                <img src="{% static "img/news/DHS advisory.png" %}" class="img-fluid rounded">
+            </a>
+            <a href="{% static "img/news/Seal_of_the_United_States_Department_of_Homeland_Security.svg" %}" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
+                <img src="{% static "img/news/Seal_of_the_United_States_Department_of_Homeland_Security.svg" %}" class="img-fluid rounded">
+            </a>
+        </div>
 
-                    </div>
-                </div>
 
-            </div>
-            <br>
-            <div class="row">
-                <div class="col">
-                    <h2 class="accent">Mar 2019: Secure Internet of Body using Electro-Quasistatic Human Body Communication (Scientific Reports (Nature))</h2>
-                </div>
-                <div class="col">
-                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/NHqfT1vIe6E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
+        <br>
+        <h2 class="accent">Mar 2019: Secure Internet of Body using Electro-Quasistatic Human Body Communication <a
+                href="https://www.nature.com/articles/s41598-018-38303-x">(Scientific Reports (Nature))</a></h2>
+        <div class="row">
+            <a href="https://www.youtube.com/embed/NHqfT1vIe6E" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/NHqfT1vIe6E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </a>
+        </div>
+        <h2>Covered by 50+ news websites worldwide: </h2>
+        <p class="lead"><a href="https://www.eurekalert.org/pub_releases/2019-03/pu-ybi031219.php" target="_blank">EurekAlert!,</a>
+            <a href="https://www.sciencedaily.com/releases/2019/03/190312151233.htm" target="_blank"> Science Daily,</a><a href="https://www.popularmechanics.com/science/health/a26801867/scientists-design-a-network-that-lives-inside-your-body/" target="_blank"> Popular Mechanics, </a>
+            <a href="https://venturebeat.com/2019/03/12/researchers-say-quasistatic-signals-will-protect-wearables-and-implants-from-hackers/" target="_blank">VentureBeat,</a> <a href="https://www.medicaldesignandoutsourcing.com/a-prototype-watch-tries-to-ward-off-deadly-human-body-hackers/" target="_blank">ECNmag,</a>
+            <a href="http://www.asianage.com/technology/in-other-news/160319/your-body-is-your-internet-and-now-it-cant-be-hacked-indian-professor-research.html" target="_blank">The Asian Age,</a>
+            <a href="https://www.deccanchronicle.com/technology/in-other-news/160319/your-body-is-your-internet-and-now-it-cant-be-hacked-indian-profess.html" target="_blank"> Deccan Chronicle,</a><a href="https://www.futurity.org/pacemaker-hacking-security-device-2006962/" target="_blank"> Futurity,</a>
+            <a href="https://newatlas.com/prototype-watch-body-hackers/58855/" target="_blank"> New Atlas,</a> <a href="https://techxplore.com/news/2019-03-body-internetand-hacked.html" target="_blank">TechXplore,</a>
+            <a href="https://www.wired.it/scienza/biotech/2019/03/15/attacchi-hacker-dispositivi-medici/?refresh_ce=" target="_blank"> Wired.IT,</a>  <a href="https://www.theengineer.co.uk/prototype-body-secure-biomed/" target="_blank">The Engineer,</a><a href="https://www.medgadget.com/2019/03/wireless-body-network-keeps-implants-and-body-worn-devices-safe-from-hackers.html" target="_blank"> MedGadget,</a>
+            <a href="https://www.innovationtoronto.com/2019/03/protecting-body-based-medical-tech-from-remote-hacks-before-they-happen/" target="_blank"> Innovation Toronto,</a><a href="https://www.purdue.edu/newsroom/releases/2019/Q1/your-body-has-internet--and-now-it-cant-be-hacked.html" target="_blank"> PurdueU,</a>
+            <a href="https://scienceblog.com/506653/your-body-has-internet-and-now-it-cant-be-hacked/" target="_blank">ScienceBlog,</a><a href="https://www.purdueexponent.org/campus/article_c876987a-44ec-11e9-9843-b3b9ca59e8ae.html" target="_blank"> Purdue Exponent,</a> <a href="https://www.tunisiesoir.com/tech/tech-researchers-have-protected-your-pacemaker-other-medical-tech-from-remote-hacks-before-they-happen-report-14033-2019/" target="_blank">Tdnews,</a>
+            <a href="http://ein.iconnect007.com/index.php/article/116037/your-body-is-your-internet-and-now-it-cant-be-hacked/116040/?skin=ein" target="_blank"> I-Connect007,</a> <a href="https://globalhealthnewswire.com/2019/03/13/your-body-is-your-internet-and-now-it-cant-be-hacked/" target="_blank">Global Health News Wire,</a>
+            <a href="https://www.techexplorist.com/your-body-has-internet-and-now-it-cant-be-hacked/21540/" target="_blank">Tech Explorist,</a> <a href="https://www.youthhealthmag.com/articles/53125/20190313/body-internet-now-cant-hacked.htm" target="_blank">Youth Health,</a> <a href="https://www.tasnimnews.com/en/news/2019/03/13/1967383/researchers-say-human-body-network-can-be-hacked" target="_blank">Tasnim News Agency,</a>
+            <a href="http://www.dpaonthenet.net/article/167869/Your-body-is-your-internet-and-now-it-can-t-be-hacked.aspx" target="_blank">Design Products and Application,</a><a href="https://www.domain-b.com/technology/20190313_hacked.html" target="_blank">Domain-b,</a> <a href="https://koddos.net/blog/medical-hackers-worst-enemy-electro-quasistatic-signals/" target="_blank">Koddos,</a> <a href="https://www.medicaldesignandoutsourcing.com/a-prototype-watch-tries-to-ward-off-deadly-human-body-hackers/" target="_blank">ECNmag,</a>
+            <a href="https://www.engineering.com/DesignerEdge/DesignerEdgeArticles/ArticleID/18750/Protecting-the-Internet-of-Your-Body-from-Hackers.aspx" target="_blank">Engineering,</a> <a href="https://www.rtl.it/notizie/articoli/sempre-piu-connesso-il-corpo-umano-e-a-rischio-hacker/" target="_blank">RTL,</a>
+            <a href="https://www.infosalus.com/asistencia/noticia-desarrollan-dispositivo-mejorar-seguridad-dispositivos-medicos-contra-posible-hackeo-20190313175841.html" target="_blank">Infosalus,</a> <a href="https://www.elespanol.com/omicrono/tecnologia/20190315/hackear-humanos-no-posible-cuerpo-humano-escudo/383463105_0.html" target="_blank">Omicrono,</a>
+            <a href="https://pplware.sapo.pt/ciencia/cientistas-projetam-uma-rede-que-vive-dentro-de-seu-corpo/" target="_blank">PPLware,</a> <a href="https://www.mdr.de/wissen/faszination-technik/it-sicherheit-medizinische-implantate-100.html" target="_blank">mdrWISSEN,</a><a href="http://www.pieuvre.ca/2019/03/14/technologie-sante-piratage-corps/" target="_blank">Pieuvre,</a>
+            <a href="https://www.laregione.ch/rubriche/tecnologia/1357889/anche-il-corpo-umano-e-a-rischio-hacker" target="_blank">laRegione,</a>  <a href="https://www.cnbeta.com/articles/tech/827321.htm" target="_blank">cnBeta,</a> <a href="https://uncached.com/new-tech-sends-signals-directly-through-skin-to-avoid-hackers/" target="_blank">uncached,</a> <a href="https://www.eedesignit.com/preventing-your-body-from-getting-hacked/" target="_blank">eeDesignIt,</a> <a href="http://www.xduster.com/your-body-is-your-internet-and-now-it-cant-be-hacked/" target="_blank">xduster,</a>
+            <a href="https://engineering.purdue.edu/~shreyas/SparcLab/home/goog_378244992.html" target="_blank">IEEE GlobalSpec,</a> <a href="https://www.microsiervos.com/archivo/seguridad/tecnologia-seguridad-internet-cuerpo.html" target="_blank">microsiervos.</a> <a href="http://www.ansa.it/canale_scienza_tecnica/notizie/tecnologie/2019/03/14/dal-pacemaker-allo-smartwatch-il-corpo-umano-e-a-rischio-hacker-_5b1a30dc-75b9-4b25-9849-4aeb66baae7d.html" target="_blank">ANSA,</a> <a href="https://invdes.com.mx/salud/blindan-por-fin-el-internet-del-cuerpo/" target="_blank">InvDes,</a>
+            <a href="https://www.tendencias21.net/Blindan-por-fin-el-Internet-del-Cuerpo_a45143.html" target="_blank">Tendencias,</a><a href="https://www.eltelegrafo.com.ec/noticias/tecnologia/1/internet-cuerpo-nuevo-escudo" target="_blank"> eltelegrafo,</a><a href="https://gamer4k.com/scientists-draw-an-intranet-that-lives-inside-your-body/" target="_blank"> Gamer4K,</a> <a href="https://securityboulevard.com/2019/03/securing-the-internet-of-the-body/" target="_blank">Security Boulevard,</a> <a href="https://www.livemint.com/technology/tech-news/why-some-young-scientists-are-riding-high-on-radio-waves-1553588125263.html" target="_blank">livemint,</a>
+            <a href="https://zap.aeiou.pt/cientistas-internet-corpo-248164" target="_blank">ZAP</a>, <a href="https://www.eltelegrafo.com.ec/noticias/tecnologia/1/internet-cuerpo-nuevo-escudo" target="_blank">The Teleraph,</a> <a href="https://www.maakindustrie.nl/communicatie-via-lichaamsvloeistoffen-maakt-implantaten-veiliger/" target="_blank">MAAKINDUSTRIE,</a>
+            <a href="https://www.inovacaotecnologica.com.br/noticias/noticia.php?artigo=seu-corpo-sua-internet-ela-hackeada&id=010150190326#.XfmQbWRKiUl" target="_blank">Inovacao tecnologica,</a> <a href="http://www.xduster.com/your-body-is-your-internet-and-now-it-cant-be-hacked/" target="_blank"> De-Thinkers,</a>
+            <a href="https://www.wearable-technologies.com/2019/03/keep-your-body-and-implants-safe-from-hackers-with-this-wireless-body-network/" target="_blank">Wearable Technologies,</a> ...</p>
 
-            </div>
-            <div class="row">
-               <div class="col">
-                  <h2 class="accent">Mar 2018: Prof. Sen speaking at MIT TR35 India Award Speech</h2>
-               </div>
-                <div class="col">
-                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/nWEhU6EX0R8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-            </div>
-            <div class="row">
-               <div class="col">
-                   <h2 class="accent">Mar 2018: Prof. Sen speaking on Indian National TV CNBC TV-18 Young Turks Program</h2>
-               </div>
-                <div class="col">
-                   <iframe width="100%" height="315" src="https://www.youtube.com/embed/QFSlZ4X3CwQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-            </div>
+        <div class="row">
+            <a href="{% static "img/news/Security_of_internet_of_body_Prof._Shreyas_Sen.png" %}" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
+                <img src="{% static "img/news/Security_of_internet_of_body_Prof._Shreyas_Sen.png" %}" class="img-fluid rounded">
+            </a>
+        </div>
 
-            <div class="row">
-                <div class="col">
-                  <h2 accent>Mar 2018: MIT TR 35 India Award</h2>
-                  <p>We sincerely thank our sponsors AFOSR YIP, NSF CRII Award and Google FRA for supporting this research spanning from basic research to applications. </p>
-                  <img src="{% static "img/news/28698627_1754351131274554_420695322419662768_oe488e488.jpg" %}" width="100%" alt="Lights" >
-                </div>
-                <div class="col">
-                    <div class="row">
-                        <div class="col">
+        <h2 class="accent">Mar 2018: Prof. Sen speaking at MIT TR35 India Award Speech</h2>
+        <div class="row">
+            <a href="https://www.youtube.com/embed/nWEhU6EX0R8" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/nWEhU6EX0R8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </a>
+        </div>
+        <h2 class="accent">Mar 2018: Prof. Sen speaking on Indian National TV CNBC TV-18 Young Turks Program</h2>
+        <div class="row">
+            <a href="https://www.youtube.com/embed/nWEhU6EX0R8" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/QFSlZ4X3CwQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </a>
+        </div>
 
-                            <img src="{% static "img/news/28699144_1754350207941313_2834275567359897594_o7ab27ab2.jpg" %}" width="100%" alt="Lights" >
-                        </div>
-                        <div class="col">
+        <h2 accent>Mar 2018: MIT TR 35 India Award</h2>
+        <p class="lead">We sincerely thank our sponsors AFOSR YIP, NSF CRII Award and Google FRA for supporting this research spanning from basic research to applications. </p>
 
-                            <img src="{% static "img/news/28617183_1754350077941326_8450309853273099747_o98439843.jpg" %}" width="100%" alt="Lights" >
-                        </div>
+        <div class="row">
+            <a href="{% static "img/news/28699144_1754350207941313_2834275567359897594_o7ab27ab2.jpg" %}" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
+                <img src="{% static "img/news/28699144_1754350207941313_2834275567359897594_o7ab27ab2.jpg" %}" class="img-fluid rounded">
+            </a>
+            <a href="{% static "img/news/Mint_photo.jpg" %}" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
+                <img src="{% static "img/news/Mint_photo.jpg" %}" class="img-fluid rounded" >
+            </a>
+            <a href="{% static "img/news/28617183_1754350077941326_8450309853273099747_o98439843.jpg" %}" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
+                <img src="{% static "img/news/28617183_1754350077941326_8450309853273099747_o98439843.jpg" %}" class="img-fluid rounded">
+            </a>
+        </div>
+        <div class="row">
+            <a href="" class="col-md-4">
 
-{#                    </div>#}
-                        <div class="row">
+            </a>
+            <a href="{% static "img/news/28698910_1754350617941272_719549663646809047_o71c771c7.jpg" %}" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
+                 <img src="{% static "img/news/28698910_1754350617941272_719549663646809047_o71c771c7.jpg" %}" class="img-fluid rounded">
+            </a>
+        </div>
 
-                            <img src="{% static "img/news/28698910_1754350617941272_719549663646809047_o71c771c7.jpg" %}" width="100%" height="100%" alt="Lights" >
+        <h2 class="accent">Dec 2017: Human Body as a Wire</h2>
+        <ul class="lead">
+            <li>Dec 2017: Our work on <a href="https://www.purdue.edu/newsroom/releases/2017/Q4/purdue-discovery-clears-way-for-human-body-to-work-as-robust-communication-network-for-electronic-devices.html" target="_blank">Broadband Interference-robust Human Body Communication</a> was featured by <b class="accent">30+ news sites</b> in USA, UK, Greece, India. </li>
+            <li>We sincerely thank our sponsors <a href="https://www.wpafb.af.mil/News/Article-Display/Article/969772/afosr-awards-grants-to-58-scientists-and-engineers-through-its-young-investigat/" target="_blank"> AFOSR YIP </a>, <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1657455" target="_blank"> NSF CRII Award </a>, and <a
+                href="https://ai.googleblog.com/2017/02/google-research-awards-2016.html" target="_blank">Google FRA</a> for supporting this research spanning from basic research to applications. </li>
+            <li>"Purdue discovery clears way for human body to work as robust communication network for electronic devices"</li>
 
-                        </div>
-
-                </div>
-
-            </div>
-
-            <div class="row">
-                <div class="col">
-                    <h2 class="accent">Dec 2017: Human Body as a Wire</h2>
-                    <ul>
-                        <li>"Purdue discovery clears way for human body to work as robust communication network for electronic devices"</li>
-                        <li>Dec 2017: Our work on Broadband Interference-robust Human Body Communication was featured by 30+ news sites in USA, UK, Greece, India. </li>
-                        <li>We sincerely thank our sponsors AFOSR YIP, NSF CRII Award and Google FRA for supporting this research spanning from basic research to applications. </li>
-                    </ul>
-                </div>
-                <div class="col">
-                    <img src="{% static "img/news/wearable-devicesLO.jpg" %}" alt="Lights" >
-                </div>
-            </div>
+        </ul>
+        <div class="row">
+            <a href="{% static "img/news/wearable-devicesLO.jpg" %}" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
+                <img src="{% static "img/news/wearable-devicesLO.jpg" %}" class="img-fluid rounded">
+            </a>
+        </div>
 
 
 
 {#            </div>#}
-        </div>
 
 
 
@@ -184,24 +204,28 @@
                     </a>
                 </div>
             </div>
-        </div>
+            {#            </div>#}
+            <p class="lead">
+                Smart wearable devices allow for the exchange of information using the human body as a robust communication medium for networking electronic devices.
+                In this photo, a researcher wears devices that allow for the exchange of information using the body to communicate instead of sending a signal through the airwaves that could be hacked.
+            </p>
 
-        <div class="container-fluid">
-            <h2>Sparc Lab Research Sponsors</h2>
-            <div class="customer-logos slider">
-                <div class="slide"><img src="{% static "img/logo/1200px-Eli_Lilly_and_Company.svg.png" %}"></div>
-                <div class="slide"><img src="{% static "img/logo/1200px-Google_2015_logo.svg1dc31dc3.png" %}"></div>
-                <div class="slide"><img src="{% static "img/logo/b3bc6e49212072a7b2638c22511a7604_400x400f852f852.jpg" %}"></div>
-                <div class="slide"><img src="{% static "img/logo/cropped-ctsi-logo-horizontal.png" %}"></div>
-                <div class="slide"><img src="{% static "img/logo/DARPA_logo_(current).png" %}"></div>
-                <div class="slide"><img src="{% static "img/logo/nsf-logo.png" %}"></div>
-                <div class="slide"><img src="{% static "img/logo/printlogo.png" %}"></div>
-                <div class="slide"><img src="{% static "img/logo/smartfilms.jpg" %}"></div>
-                <div class="slide"><img src="{% static "img/logo/src-logo-print.png" %}"></div>
+            <div class="container-fluid">
+                <h2 style="text-align: center">Sparc Lab Research Sponsors:</h2>
+                <div class="customer-logos slider">
+                    <div class="slide"><img src="{% static "img/logo/1200px-Eli_Lilly_and_Company.svg.png" %}"></div>
+                    <div class="slide"><img src="{% static "img/logo/1200px-Google_2015_logo.svg1dc31dc3.png" %}"></div>
+                    <div class="slide"><img src="{% static "img/logo/b3bc6e49212072a7b2638c22511a7604_400x400f852f852.jpg" %}"></div>
+                    <div class="slide"><img src="{% static "img/logo/cropped-ctsi-logo-horizontal.png" %}"></div>
+                    <div class="slide"><img src="{% static "img/logo/DARPA_logo_(current).png" %}"></div>
+                    <div class="slide"><img src="{% static "img/logo/nsf-logo.png" %}"></div>
+                    <div class="slide"><img src="{% static "img/logo/printlogo.png" %}"></div>
+                    <div class="slide"><img src="{% static "img/logo/smartfilms.jpg" %}"></div>
+                    <div class="slide"><img src="{% static "img/logo/src-logo-print.png" %}"></div>
+                </div>
             </div>
         </div>
     </div>
-</div>
 
 
 

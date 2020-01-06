@@ -15,6 +15,18 @@ class HomeView(TemplateView):
 class ResearchView(TemplateView):
     template_name = 'Radiosim/research.html'
 
+class HighView(TemplateView):
+    template_name = 'Radiosim/highspeedio.html'
+
+class LowView(TemplateView):
+    template_name = 'Radiosim/lowpower.html'
+
+class RfView(TemplateView):
+    template_name = 'Radiosim/rftest.html'
+
+class SpeciesView(TemplateView):
+    template_name = 'Radiosim/speciesindet.html'
+
 class MediaView(TemplateView):
     template_name = 'Radiosim/media.html'
 

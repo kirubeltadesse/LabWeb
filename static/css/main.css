@@ -1,3 +1,5 @@
+
+
 /* GLOBAL STYLES
 -------------------------------------------------- */
 /* Padding below the footer and lighter body text */
@@ -29,10 +31,7 @@ body {
     color: #ffffff;
     background-color: #18171C; /* add background-color to active links */
 }
-/* accent mark*/
-.accent {
-color: #FF0000;
-}
+
 
 .bg-custom-dark{
     background-color: #18171C;
@@ -168,6 +167,7 @@ color: #FF0000;
   .featurette-heading {
     font-size: 50px;
   }
+
 }
 
 @media (min-width: 62em) {
@@ -176,6 +176,21 @@ color: #FF0000;
   }
 }
 
+/* jQuery hover() method */
+@media screen and (min-width: 768px){
+  .dropdown:hover .dropdown-menu, .btn-group:hover .dropdown-menu{
+        display: block;
+    }
+    .dropdown-menu{
+        margin-top: 0;
+    }
+    .dropdown-toggle{
+        margin-bottom: 2px;
+    }
+    .navbar .dropdown-toggle, .nav-tabs .dropdown-toggle{
+        margin-bottom: 0;
+    }
+}
 
 /*
 body{
