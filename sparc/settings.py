@@ -27,8 +27,8 @@ SECRET_KEY = '#fyg%zqn+9$!@+=&5$ftbna86hujql_^7m@g2f@n0iw(d7j1!)'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
-# ALLOWED_HOSTS = ['sparchbcsim.herokuapp.com']
+# ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['sparchbcsim.herokuapp.com']
 #
 
 # Application definition
@@ -77,16 +77,16 @@ WSGI_APPLICATION = 'sparc.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/2.0/ref/settings/#databases
-# import dj_database_url
-# prod_db  =  dj_database_url.config(conn_max_age=500)
+import dj_database_url
+prod_db  =  dj_database_url.config(conn_max_age=500)
 #     DATABASES['default'].update(prod_db)
-# DATABASES = {'default': dj_database_url.config()}
-DATABASES = {
-   'default': {
-       'ENGINE': 'django.db.backends.sqlite3',
-       'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-   }
-}
+DATABASES = {'default': dj_database_url.config()}
+# DATABASES = {
+#    'default': {
+#        'ENGINE': 'django.db.backends.sqlite3',
+#        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+#    }
+# }
 
 
 # Password validation
