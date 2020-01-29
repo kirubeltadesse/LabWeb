@@ -1,4 +1,4 @@
-{% extends "Radiosim/base.html" %}
+{% extends "SparcLab/base.html" %}
 {% block title %} SPARC Lab {% endblock %}
 {% block head %}
     {{block.super}}
@@ -140,20 +140,20 @@
                     Biomedical and Security, among others. </p>
 
                 <div class="col-lg-4">
-                    <a href="{% url 'Radiosim:Research' %}#hbc "><img src="{% static "img/Home/Area1_png.png" %}" width="60%"  ></a>
+                    <a href="{% url 'SparcLab:Research' %}#hbc "><img src="{% static "img/Home/Area1_png.png" %}" width="60%"  ></a>
 {#                    width="350" height="233"  alt="Lights" >#}
-                    <h2><a href="{% url 'Radiosim:Research' %}#hbc">HBC (Physics to IC)</a> </h2>
+                    <h2><a href="{% url 'SparcLab:Research' %}#hbc">HBC (Physics to IC)</a> </h2>
 {#                    <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>#}
                 </div>
                 <div class="col-lg-4">
-                    <a href="{% url 'Radiosim:Research' %}#security"><img src="{% static "img/Home/Area2.png"%}" width="60%"></a>
+                    <a href="{% url 'SparcLab:Research' %}#security"><img src="{% static "img/Home/Area2.png"%}" width="60%"></a>
 
-                    <h2 ><a href="{% url 'Radiosim:Research' %}#security"> Hardware Security IC</a>  </h2>
+                    <h2 ><a href="{% url 'SparcLab:Research' %}#security"> Hardware Security IC</a>  </h2>
 {#                    <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>#}
                 </div>
                 <div class="col-lg-4">
-                    <a href="{% url 'Radiosim:Research' %}#iot"><img src="{% static "img/research/Display2.PNG" %}" width="60%" ></a>
-                    <h2><a href="{% url 'Radiosim:Research' %}#iot">Intelligent IoT Sensor Nodes</a> </h2>
+                    <a href="{% url 'SparcLab:Research' %}#iot"><img src="{% static "img/research/Display2.PNG" %}" width="60%" ></a>
+                    <h2><a href="{% url 'SparcLab:Research' %}#iot">Intelligent IoT Sensor Nodes</a> </h2>
 {#                    <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>#}
                 </div>
             </div>
@@ -246,7 +246,7 @@
                 <hr>
                 <div class="row">
                     <h1> <b class="accent"> We are hiring! </b> Prospective PhD students and Post-Doctoral researchers may apply. For details  <b>
-                        <a href="{% url 'Radiosim:Open' %}">Click here</a> </b>.</h1>
+                        <a href="{% url 'SparcLab:Open' %}">Click here</a> </b>.</h1>
 
                 </div>
                 {#                <hr>#}

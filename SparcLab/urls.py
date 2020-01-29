@@ -1,10 +1,10 @@
 from django.urls import path, re_path
-from Radiosim import views
+from SparcLab import views
 # Create your views here.
 
 urlpatterns=[
-    path('', views.IndexView.as_view(), name='index'),
-    path('home', views.HomeView.as_view(), name='Home'),
+    # path('', views.IndexView.as_view(), name='index'),
+    path('', views.HomeView.as_view(), name='Home'),
     path('research', views.ResearchView.as_view(), name='Research'),
     path('highspeedio', views.HighView.as_view(), name='High'),
     path('lowpower', views.LowView.as_view(), name='Low'),

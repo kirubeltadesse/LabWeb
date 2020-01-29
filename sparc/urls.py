@@ -20,6 +20,6 @@ from django.views.generic.base import RedirectView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', RedirectView.as_view(url='/Radiosim'), name='index'),
-    path('Radiosim/', include(('Radiosim.urls','Radiosim'), namespace='Radiosim', )),
+    path('', RedirectView.as_view(url='/SparcLab'), name='index'),
+    path('SparcLab/', include(('SparcLab.urls','SparcLab'), namespace='SparcLab', )),
 ]
