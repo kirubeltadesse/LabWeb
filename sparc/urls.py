@@ -15,11 +15,13 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from SparcLab import views
 
 from django.views.generic.base import RedirectView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', RedirectView.as_view(url='/SparcLab'), name='index'),
-    path('SparcLab/', include(('SparcLab.urls','SparcLab'), namespace='SparcLab', )),
+    # path('', RedirectView.as_view(url='/'), name='home'),
+    path('', views.HomeView.as_view(), name='home'),
+    path('', include(('SparcLab.urls','SparcLab'), namespace='SparcLab', )),
 ]
