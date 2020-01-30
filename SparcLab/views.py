@@ -6,11 +6,11 @@ import logging
 
 logger = logging.getLogger(__name__)
 
-class IndexView(TemplateView):
-    template_name = 'SparcLab/index.html'
+# class IndexView(TemplateView):
+#     template_name = 'SparcLab/index.html'
 
 class HomeView(TemplateView):
-    template_name = 'SparcLab/index.html'
+    template_name = 'SparcLab/home.html'
 
 class ResearchView(TemplateView):
     template_name = 'SparcLab/research.html'
