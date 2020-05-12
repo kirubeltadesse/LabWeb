@@ -29,9 +29,9 @@
             }
         </script>
         <script>
-            $('.dropdown-submenu > a').on("click", function(e) {
+            $('.child ancestor > a').on("click", function(e) {
                 var submenu = $(this);
-                $('.dropdown-submenu .dropdown-menu').removeClass('show');
+                $('.child selected .child sibling').removeClass('show');
                 submenu.next('.dropdown-menu').addClass('show');
                 e.stopPropagation();
             });
